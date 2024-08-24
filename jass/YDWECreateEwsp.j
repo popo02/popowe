@@ -5,7 +5,7 @@
 
 library YDWECreateEwsp requires YDWEBase
 //===========================================================================
-//环绕技能模板 
+//禄路脠脝录录脛脺脛拢掳氓 
 //===========================================================================
 private function Loop takes nothing returns nothing
     local timer t = GetExpiredTimer()
