@@ -5,7 +5,7 @@
 
 library MeatHook requires YDWEBase
 //****************************//
-//* ¼¼ÄÜ-¹³×Ó Fetrix_saiÐÞÕý *//
+//* æŠ€èƒ½-é’©å­ Fetrix_saiä¿®æ­£ *//
 //****************************//
     #define MOVE_DIST 40.0
     #define KEEP_DIST 50.0
@@ -32,7 +32,7 @@ library MeatHook requires YDWEBase
             exitwhen f == null
             if GetWidgetLife(f) > 0.405 and not(IsUnitType(f, UNIT_TYPE_STRUCTURE)) and not(IsUnitInGroup(f, Except)) and f != pudge then
                 if (GetUnitX(f)-x)*(GetUnitX(f)-x)+(GetUnitY(f)-y)*(GetUnitY(f)-y)+(GetUnitZ(f)-z)*(GetUnitZ(f)-z) < 14400 then
-                    //* ²»ÐÒ±»¹³×Ó¹´ÖÐÁË£¬Í´¿àµØº°³öÒ»Éù¡°ÑÅóºµû~¡±
+                    //* ä¸å¹¸è¢«é’©å­å‹¾ä¸­äº†ï¼Œç—›è‹¦åœ°å–Šå‡ºä¸€å£°â€œé›…è ›è¶~â€
                     set bj_lastAbilityTargetUnit = f
                     call YDWESyStemAbilityCastingOverTriggerAction(pudge, 4) 
                     call YDWESaveIntegerByString(key, "Switch", 2)
