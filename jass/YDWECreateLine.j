@@ -4,7 +4,7 @@
 #include "YDWEBase.j"
 
 //===========================================================================
-//飘动的红丝带
+//椋樺姩鐨勭孩涓濆甫
 //===========================================================================    
 library YDWECreateLine requires YDWEBase
 private function Setline takes nothing returns nothing
@@ -73,7 +73,7 @@ private function Setline takes nothing returns nothing
 endfunction
 
 
-//红丝带的先决条件            (udg_cinS_actor[11],'h01J',12,50,60,30,0.03,120,10,100,30)
+//绾笣甯︾殑鍏堝喅鏉′欢            (udg_cinS_actor[11],'h01J',12,50,60,30,0.03,120,10,100,30)
 function YDWECreateLine takes unit tru,integer ut,integer count,real angleadd,real distance,real lasttime,real eachtime,real heightstart,real heightadd,real sizestart,real sizeadd returns nothing
     local timer t = CreateTimer()
     local real ux = GetUnitX(tru)
