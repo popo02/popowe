@@ -4,7 +4,7 @@
 #include "YDWEBase.j"
 
 //===========================================================================
-//Ӷ��ϵͳ 
+//Ó¶±øÏµÍ³ 
 //===========================================================================
 library YDWESetGuard requires YDWEBase
 private function IsUnitIdle takes unit u returns boolean
