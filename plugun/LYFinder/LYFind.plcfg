@@ -1,0 +1,8 @@
+[Info]
+PluginName = LYFind
+[Load]
+Loader = LYFind.lua
+Enable = 1
+Dll    = LYFind.dll
+
+
