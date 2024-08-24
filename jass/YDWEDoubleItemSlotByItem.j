@@ -4,7 +4,7 @@
 #include "YDWEBase.j"
 
 //===========================================================================
-//多重物品栏 
+//露脿脰脴脦茂脝路脌赂 
 //===========================================================================   
 library YDWEDoubleItemSlotByItem requires YDWEBase 
 function YDWEIsItemSwitch takes unit u returns boolean    
@@ -39,7 +39,7 @@ function YDWEItemSwitch takes unit Ua,unit Ub returns nothing
         endif 
         set i = i+1 
      endloop  
- //给A的物品    
+ //赂酶A碌脛脦茂脝路    
      set i = 0
      loop             
         exitwhen i >5
