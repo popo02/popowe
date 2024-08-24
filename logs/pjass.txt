@@ -1,0 +1,4 @@
+Parse successful:     2418 lines: D:\popowe\WorldEdit v1.2.9c\plugin\jasshelper\common.j
+Parse successful:    10230 lines: D:\popowe\WorldEdit v1.2.9c\plugin\jasshelper\blizzard.j
+Parse successful:     4993 lines: logs\currentmapscript.j
+Parse successful:    17641 lines: <total>

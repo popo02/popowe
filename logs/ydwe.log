@@ -1,0 +1,900 @@
+2024-08-24 22:53:08.557 [root]-[info ] ------------------------------------------------------
+2024-08-24 22:53:08.559 [root]-[info ] YDWE Script engine 1, 31, 8, 1850 started.
+2024-08-24 22:53:08.559 [root]-[info ] Compiled at 10:50:34, Aug 16 2018
+2024-08-24 22:53:08.559 [root]-[info ] Windows version: 10.0.19041
+2024-08-24 22:53:08.560 [root]-[debug] Initialize script engine successfully.
+2024-08-24 22:53:08.560 [root]-[info ] Script engine startup complete.
+2024-08-24 22:53:08.560 [lua]-[debug] ********************* ydwe initialize start *********************
+2024-08-24 22:53:08.560 [lua]-[trace] Initializing 'sys'
+2024-08-24 22:53:08.561 [lua]-[trace] Initializing 'filesystem'
+2024-08-24 22:53:08.562 [lua]-[trace] Initializing 'gui'
+2024-08-24 22:53:08.563 [lua]-[trace] Initializing 'util'
+2024-08-24 22:53:08.564 [lua]-[trace] Initializing 'ffi.unicode'
+2024-08-24 22:53:08.564 [lua]-[trace] Initializing 'ffi'
+2024-08-24 22:53:08.564 [lua]-[debug] ydwe path D:\popowe\WorldEdit v1.2.9c
+2024-08-24 22:53:08.564 [lua]-[trace] Initializing 'event'
+2024-08-24 22:53:08.567 [lua]-[trace] Initializing 'virtual_mpq'
+2024-08-24 22:53:08.569 [lua]-[trace] Initializing 'registry'
+2024-08-24 22:53:08.570 [lua]-[trace] Initializing 'version'
+2024-08-24 22:53:08.570 [lua]-[trace] Initializing 'localization'
+2024-08-24 22:53:08.570 [lua]-[trace] Initializing 'i18n'
+2024-08-24 22:53:08.572 [lua]-[trace] Initializing 'config'
+2024-08-24 22:53:08.572 [lua]-[debug] war3 path D:\popowe\Warcraft III
+2024-08-24 22:53:08.572 [lua]-[trace] Initializing 'plugin'
+2024-08-24 22:53:08.573 [lua]-[trace] Initializing 'uiloader'
+2024-08-24 22:53:08.573 [lua]-[trace] Initializing 'stringify_slk'
+2024-08-24 22:53:08.573 [lua]-[trace] Initializing 'ui-builder.init'
+2024-08-24 22:53:08.573 [lua]-[trace] Initializing 'ui-builder.old-reader'
+2024-08-24 22:53:08.574 [lua]-[trace] Initializing 'ui-builder.new-reader'
+2024-08-24 22:53:08.574 [lua]-[trace] Initializing 'lni-c'
+2024-08-24 22:53:08.575 [lua]-[trace] Initializing 'ui-builder.old-writer'
+2024-08-24 22:53:08.575 [lua]-[trace] Initializing 'ui-builder.new-writer'
+2024-08-24 22:53:08.576 [lua]-[trace] Initializing 'ui-builder.merge'
+2024-08-24 22:53:08.576 [lua]-[trace] Initializing 'w3xparser'
+2024-08-24 22:53:08.577 [lua]-[trace] Initializing 'check_object'
+2024-08-24 22:53:08.578 [lua]-[trace] Initializing 'ffi.storm'
+2024-08-24 22:53:08.578 [lua]-[trace] Initializing 'ffi.loadlibrary'
+2024-08-24 22:53:08.578 [lua]-[trace] Initializing 'ffi.gui'
+2024-08-24 22:53:08.578 [event]-[trace] RegisterEvent id: 7
+2024-08-24 22:53:08.579 [lua]-[trace] Initializing 'ydwe_on_menu'
+2024-08-24 22:53:08.579 [event]-[trace] RegisterEvent id: 5
+2024-08-24 22:53:08.579 [lua]-[trace] Initializing 'ydwe_on_save'
+2024-08-24 22:53:08.579 [lua]-[trace] Initializing 'compile.inject_code'
+2024-08-24 22:53:08.580 [lua]-[trace] Initializing 'compile.wave'
+2024-08-24 22:53:08.580 [lua]-[trace] Initializing 'compile.template'
+2024-08-24 22:53:08.580 [lua]-[trace] Initializing 'compile.cjass'
+2024-08-24 22:53:08.581 [lua]-[trace] Initializing 'compile.jasshelper'
+2024-08-24 22:53:08.581 [lua]-[trace] Initializing 'mpq_util'
+2024-08-24 22:53:08.581 [lua]-[trace] Initializing 'ffi.stormlib'
+2024-08-24 22:53:08.582 [lua]-[trace] Initializing 'compile.native'
+2024-08-24 22:53:08.582 [event]-[trace] RegisterEvent id: 3
+2024-08-24 22:53:08.582 [event]-[trace] RegisterEvent id: 2
+2024-08-24 22:53:08.582 [lua]-[trace] Initializing 'ydwe_on_test'
+2024-08-24 22:53:08.582 [lua]-[trace] Initializing 'w3x2lni'
+2024-08-24 22:53:08.583 [lua]-[trace] Initializing 'utility'
+2024-08-24 22:53:08.583 [lua]-[trace] Initializing 'mapdump'
+2024-08-24 22:53:08.583 [event]-[trace] RegisterEvent id: 4
+2024-08-24 22:53:08.583 [lua]-[trace] Initializing 'ydwe_on_startup'
+2024-08-24 22:53:08.584 [event]-[trace] RegisterEvent id: 0
+2024-08-24 22:53:08.584 [event]-[trace] RegisterEvent id: 1
+2024-08-24 22:53:08.584 [event]-[trace] RegisterEvent id: 6
+2024-08-24 22:53:08.584 [lua]-[trace] Initializing 'ydwe_on_dialog_message'
+2024-08-24 22:53:08.683 [event]-[trace] RegisterEvent id: 8
+2024-08-24 22:53:08.683 [lua]-[trace] Initializing 'ydwe_on_new_object_id'
+2024-08-24 22:53:08.684 [event]-[trace] RegisterEvent id: 9
+2024-08-24 22:53:08.684 [lua]-[debug] ********************* ydwe initialize end *********************
+2024-08-24 22:53:08.687 [event]-[info ] Entering main program.
+2024-08-24 22:53:08.687 [event]-[debug] Command line:
+2024-08-24 22:53:08.689 [lua]-[debug] ********************* on startup start *********************
+2024-08-24 22:53:08.695 [lua]-[debug] ydwe version 0.0.0.0
+2024-08-24 22:53:08.695 [lua]-[debug] war3 version 1.27.0.52240
+2024-08-24 22:53:08.695 [lua]-[debug] war3 path D:\popowe\Warcraft III
+2024-08-24 22:53:08.695 [lua]-[trace] check_conflicting_ui
+2024-08-24 22:53:08.695 [lua]-[trace] check_conflicting_units
+2024-08-24 22:53:08.695 [lua]-[trace] clear_potential_conflicting
+2024-08-24 22:53:08.695 [lua]-[trace] check_war3_version
+2024-08-24 22:53:08.699 [lua]-[error] Cannot find war3.mpq
+2024-08-24 22:53:08.700 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\LYFinder\LYFind.plcfg
+2024-08-24 22:53:08.711 [lua]-[debug] LYFind loaded successfully.
+2024-08-24 22:53:08.711 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\tesh\Tesh.plcfg
+2024-08-24 22:53:08.722 [lua]-[debug] Tesh loaded successfully.
+2024-08-24 22:53:08.733 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\YDClient.plcfg
+2024-08-24 22:53:08.735 [lua]-[debug] YDClient loaded successfully.
+2024-08-24 22:53:08.735 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\YDColorizer\YDColorizer.plcfg
+2024-08-24 22:53:08.735 [lua]-[trace] Initializing 'dotnet'
+2024-08-24 22:53:08.736 [lua]-[trace] Initializing 'clr'
+2024-08-24 22:53:08.841 [lua]-[debug] .net component loaded successfully.
+2024-08-24 22:53:12.710 [lua]-[debug] YDColorizer loaded successfully.
+2024-08-24 22:53:12.710 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\YDFont\YDFont.plcfg
+2024-08-24 22:53:12.711 [lua]-[warn ] failed: disable
+2024-08-24 22:53:12.711 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\YDInternalIdShow.plcfg
+2024-08-24 22:53:12.711 [lua]-[warn ] failed: disable
+2024-08-24 22:53:12.711 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\YDTaskbarSupport.plcfg
+2024-08-24 22:53:13.109 [lua]-[debug] YDTaskbarSupport loaded successfully.
+2024-08-24 22:53:13.110 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\YDTrigger.plcfg
+2024-08-24 22:53:13.111 [lua]-[debug] YDTrigger loaded successfully.
+2024-08-24 22:53:13.112 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\YDWeHelper.plcfg
+2024-08-24 22:53:13.113 [inject]-[debug] Start installing inline hooks.
+2024-08-24 22:53:13.113 [inject]-[trace] Found WeGetSystemParameter at 0x004D1DB0.
+2024-08-24 22:53:13.113 [inject]-[trace] WeGetSystemParameter hook installation succeeded.
+2024-08-24 22:53:13.113 [inject]-[trace] Found WeVerifyMapCellsLimit at 0x004E1EF0.
+2024-08-24 22:53:13.113 [inject]-[trace] Found GetUnkownFlag at 0x004D0AC0.
+2024-08-24 22:53:13.113 [inject]-[trace] WeVerifyMapCellsLimit hook installation succeeded.
+2024-08-24 22:53:13.113 [inject]-[trace] Found WeTriggerNameCheck at 0x005A4B40.
+2024-08-24 22:53:13.113 [inject]-[trace] WeTriggerNameCheck hook installation succeeded.
+2024-08-24 22:53:13.113 [inject]-[trace] Found WeTriggerNameInputCharCheck at 0x0042E390.
+2024-08-24 22:53:13.113 [inject]-[trace] WeTriggerNameInputCharCheck hook installation succeeded.
+2024-08-24 22:53:13.113 [inject]-[trace] Found WeSetWindowCaption at 0x00433A00.
+2024-08-24 22:53:13.113 [inject]-[trace] WeSetWindowCaption hook installation succeeded.
+2024-08-24 22:53:13.113 [inject]-[trace] Found WeSetMenuItem at 0x0042AA10.
+2024-08-24 22:53:13.113 [inject]-[trace] WeSetMenuItem hook installation succeeded.
+2024-08-24 22:53:13.113 [inject]-[trace] Found WeStringCompare at 0x004D2D90.
+2024-08-24 22:53:13.113 [inject]-[trace] WeStringCompare hook installation succeeded.
+2024-08-24 22:53:13.113 [inject]-[trace] Found TriggerEditorEditboxCopy at 0x0071FE90.
+2024-08-24 22:53:13.113 [inject]-[trace] WeTriggerEditorEditboxCopy hook installation succeeded.
+2024-08-24 22:53:13.113 [inject]-[trace] Found WeUtf8ToAnsi at 0x00429CD0.
+2024-08-24 22:53:13.113 [inject]-[trace] WeUtf8ToAnsi hook installation succeeded.
+2024-08-24 22:53:13.113 [inject]-[debug] Installing inline hooks complete.
+2024-08-24 22:53:13.113 [inject]-[debug] IAT hook initialization started.
+2024-08-24 22:53:13.113 [inject]-[trace] WE SHBrowseForFolderA IAT hook succeeded.
+2024-08-24 22:53:13.113 [inject]-[trace] WE GetSaveFileNameA IAT hook succeeded.
+2024-08-24 22:53:13.113 [inject]-[trace] WE GetOpenFileNameA IAT hook succeeded.
+2024-08-24 22:53:13.113 [inject]-[debug] IAT hook initialization completed.
+2024-08-24 22:53:13.113 [inject]-[debug] Patches initialization started.
+2024-08-24 22:53:13.113 [inject]-[trace] Installing syntax check patch
+2024-08-24 22:53:13.113 [inject]-[trace] Patch syntaxCheck in 0x005BC089 success.
+2024-08-24 22:53:13.113 [inject]-[trace] Installing auto disable patch
+2024-08-24 22:53:13.113 [inject]-[trace] Patch autoDisable in 0x005CEFF3 success.
+2024-08-24 22:53:13.113 [inject]-[trace] Installing enable trigger check patch
+2024-08-24 22:53:13.113 [inject]-[trace] Patch enableTriggerCheck1 in 0x005C88F5 success.
+2024-08-24 22:53:13.113 [inject]-[trace] Patch enableTriggerCheck2 in 0x005C88DA success.
+2024-08-24 22:53:13.113 [inject]-[trace] Installing doodad limit patch
+2024-08-24 22:53:13.113 [inject]-[trace] Patch doodadLimit in 0x0054CAD8 success.
+2024-08-24 22:53:13.113 [inject]-[trace] Installing unit/item limit patch
+2024-08-24 22:53:13.113 [inject]-[trace] Patch unitItemLimit in 0x00554B7B success.
+2024-08-24 22:53:13.113 [inject]-[trace] Installing editor multi-instance patch
+2024-08-24 22:53:13.113 [inject]-[trace] Patch editorInstanceCheck in 0x00435870 success.
+2024-08-24 22:53:13.113 [inject]-[trace] Installing attack table patch
+2024-08-24 22:53:13.113 [inject]-[debug] Patches initialization completed.
+2024-08-24 22:53:13.113 [inject]-[info ] YDWE startup complete.
+2024-08-24 22:53:13.113 [lua]-[debug] YDWeHelper loaded successfully.
+2024-08-24 22:53:13.114 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass
+2024-08-24 22:53:13.114 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\11api
+2024-08-24 22:53:13.114 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\AntiBJLeak
+2024-08-24 22:53:13.114 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\AntiBJLeak\detail
+2024-08-24 22:53:13.123 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\Base
+2024-08-24 22:53:13.124 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\japi
+2024-08-24 22:53:13.124 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\nzjapi
+2024-08-24 22:53:13.125 [lua]-[warn ] 注入函数[YDWEGetObjectProperty]重复定义
+2024-08-24 22:53:13.125 [lua]-[warn ] 注入函数[YDWEGetObjectProperty]重复定义
+2024-08-24 22:53:13.125 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiScript.j	17193974453957389
+2024-08-24 22:53:13.125 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.125 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyInteger]重复定义
+2024-08-24 22:53:13.125 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyInteger]重复定义
+2024-08-24 22:53:13.125 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiScript.j	17193974453957389
+2024-08-24 22:53:13.125 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.125 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyReal]重复定义
+2024-08-24 22:53:13.125 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyReal]重复定义
+2024-08-24 22:53:13.125 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiScript.j	17193974453957389
+2024-08-24 22:53:13.125 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.125 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyString]重复定义
+2024-08-24 22:53:13.125 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyString]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiScript.j	17193974453957389
+2024-08-24 22:53:13.126 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[YDWEDisplayChat]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[YDWEDisplayChat]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.126 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiOther.j	15241171450981974
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[YDWEGetUnitId]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[YDWEGetUnitId]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.126 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiOther.j	15241171450981974
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[YDWESetUnitId]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[YDWESetUnitId]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.126 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiOther.j	15241171450981974
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[YDWERevealTrainingProcess]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[YDWERevealTrainingProcess]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.126 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiOther.j	15241171450981974
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[YDWEGetGameBaseAdr]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[YDWEGetGameBaseAdr]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.126 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiOther.j	15241171450981974
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXGetEffectX]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXGetEffectX]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.126 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXGetEffectY]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXGetEffectY]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.126 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXGetEffectZ]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXGetEffectZ]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.126 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXSetEffectXY]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXSetEffectXY]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.126 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXSetEffectZ]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXSetEffectZ]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.126 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXGetEffectSize]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXGetEffectSize]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.126 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXSetEffectSize]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXSetEffectSize]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.126 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXEffectMatRotateX]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXEffectMatRotateX]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.126 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXEffectMatRotateY]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXEffectMatRotateY]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.126 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXEffectMatRotateZ]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXEffectMatRotateZ]重复定义
+2024-08-24 22:53:13.126 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.126 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 22:53:13.126 [lua]-[warn ] 注入函数[EXEffectMatScale]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[EXEffectMatScale]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.127 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[EXEffectMatReset]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[EXEffectMatReset]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.127 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[EXSetEffectSpeed]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[EXSetEffectSpeed]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.127 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWESetEffectLoc]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWESetEffectLoc]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.127 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEIsEventPhysicalDamage]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEIsEventPhysicalDamage]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.127 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEEventDamageData.j	15241171450961974
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEIsEventAttackDamage]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEIsEventAttackDamage]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.127 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEEventDamageData.j	15241171450961974
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEIsEventRangedDamage]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEIsEventRangedDamage]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.127 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEEventDamageData.j	15241171450961974
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEIsEventDamageType]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEIsEventDamageType]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.127 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEEventDamageData.j	15241171450961974
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEIsEventWeaponType]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEIsEventWeaponType]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.127 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEEventDamageData.j	15241171450961974
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEIsEventAttackType]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEIsEventAttackType]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.127 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEEventDamageData.j	15241171450961974
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWESetEventDamage]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWESetEventDamage]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.127 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEEventDamageData.j	15241171450961974
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityState]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityState]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.127 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataInteger]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataInteger]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.127 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataReal]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataReal]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.127 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataString]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataString]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.127 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWESetUnitAbilityState]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWESetUnitAbilityState]重复定义
+2024-08-24 22:53:13.127 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.127 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 22:53:13.127 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataInteger]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataInteger]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.128 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataReal]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataReal]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.128 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataString]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataString]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.128 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWEUnitTransform]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWEUnitTransform]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.128 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWEGetItemDataString]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWEGetItemDataString]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.128 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWESetItemDataString]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWESetItemDataString]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.128 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWEUnitAddStun]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWEUnitAddStun]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.128 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiUnit.j	16758251463693205
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWEUnitRemoveStun]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWEUnitRemoveStun]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.128 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiUnit.j	16758251463693205
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[EXSetUnitFacing]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[EXSetUnitFacing]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.128 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiUnit.j	16758251463693205
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[EXSetUnitMoveType]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[EXSetUnitMoveType]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.128 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiUnit.j	16758251463693205
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[EXSetUnitCollisionType]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[EXSetUnitCollisionType]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 22:53:13.128 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiUnit.j	16758251463693205
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWEGetObjectProperty]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyInteger]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyReal]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyString]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWEDisplayChat]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWEGetUnitId]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWESetUnitId]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWERevealTrainingProcess]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[YDWEGetGameBaseAdr]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[EXGetEffectX]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[EXGetEffectY]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[EXGetEffectZ]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[EXSetEffectXY]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[EXSetEffectZ]重复定义
+2024-08-24 22:53:13.128 [lua]-[warn ] 注入函数[EXGetEffectSize]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[EXSetEffectSize]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[EXEffectMatRotateX]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[EXEffectMatRotateY]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[EXEffectMatRotateZ]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[EXEffectMatScale]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[EXEffectMatReset]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[EXSetEffectSpeed]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWESetEffectLoc]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWEIsEventPhysicalDamage]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWEIsEventAttackDamage]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWEIsEventRangedDamage]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWEIsEventDamageType]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWEIsEventWeaponType]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWEIsEventAttackType]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWESetEventDamage]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityState]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataInteger]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataReal]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataString]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWESetUnitAbilityState]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataInteger]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataReal]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataString]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWEUnitTransform]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWEGetItemDataString]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWESetItemDataString]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWEUnitAddStun]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[YDWEUnitRemoveStun]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[EXSetUnitFacing]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[EXSetUnitMoveType]重复定义
+2024-08-24 22:53:13.129 [lua]-[warn ] 注入函数[EXSetUnitCollisionType]重复定义
+2024-08-24 22:53:13.129 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package
+2024-08-24 22:53:13.129 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin
+2024-08-24 22:53:13.130 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\effect
+2024-08-24 22:53:13.130 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\scripts
+2024-08-24 22:53:13.130 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\scripts\core
+2024-08-24 22:53:13.130 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\scripts\core\ac
+2024-08-24 22:53:13.130 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\scripts\core\share
+2024-08-24 22:53:13.130 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\scripts\core\types
+2024-08-24 22:53:13.130 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\scripts\core\util
+2024-08-24 22:53:13.130 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\scripts\map
+2024-08-24 22:53:13.130 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\scripts\map\record
+2024-08-24 22:53:13.130 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\Ui
+2024-08-24 22:53:13.132 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\popo
+2024-08-24 22:53:13.134 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\PreloadSL
+2024-08-24 22:53:13.134 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\system
+2024-08-24 22:53:13.135 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\system\ht
+2024-08-24 22:53:13.135 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\system\rb
+2024-08-24 22:53:13.135 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\Util
+2024-08-24 22:53:13.139 [lua]-[trace] Scanned file: 126
+2024-08-24 22:53:13.140 [lua]-[debug] ********************* on startup end *********************
+2024-08-24 22:53:13.691 [lua]-[trace] virtual_mpq 'worldeditstrings'
+2024-08-24 22:53:13.704 [lua]-[trace] virtual_mpq 'triggerdata'
+2024-08-24 22:53:13.824 [lua]-[trace] virtual_mpq 'triggerstrings'
+2024-08-24 22:53:13.889 [lua]-[debug] Loading provider D:\popowe\Warcraft III\11环境.asi
+2024-08-24 22:53:14.730 [lua]-[debug] Loading provider D:\popowe\Warcraft III\MapHelper.asi
+2024-08-24 22:53:14.970 [lua]-[debug] Loading provider D:\popowe\Warcraft III\ydwe-file-path-fix.asi
+2024-08-24 22:53:14.974 [lua]-[debug] Loading provider D:\popowe\Warcraft III\redist\miles\Mp3dec.asi
+2024-08-24 22:53:14.976 [lua]-[debug] Loading provider D:\popowe\Warcraft III\redist\miles\Mssdolby.m3d
+2024-08-24 22:53:14.976 [lua]-[debug] Loading provider D:\popowe\Warcraft III\redist\miles\Msseax2.m3d
+2024-08-24 22:53:14.977 [lua]-[debug] Loading provider D:\popowe\Warcraft III\redist\miles\Mssfast.m3d
+2024-08-24 22:53:14.978 [lua]-[debug] Loading provider D:\popowe\Warcraft III\redist\miles\Reverb3.flt
+2024-08-24 22:53:16.189 [lua]-[debug] ********************* on menuinit start *********************
+2024-08-24 22:53:16.189 [lua]-[debug] ********************* on menuinit end *********************
+2024-08-24 22:53:20.615 [lua]-[debug] --------------maphelper--------------------
+2024-08-24 22:53:24.899 [lua]-[debug] ********************* on exit start *********************
+2024-08-24 22:53:24.899 [lua]-[trace] Unload plugin YDClient.
+2024-08-24 22:53:24.899 [lua]-[trace] Unload plugin YDTaskbarSupport.
+2024-08-24 22:53:24.899 [lua]-[trace] Unload plugin YDTrigger.
+2024-08-24 22:53:24.899 [lua]-[trace] Unload plugin LYFind.
+2024-08-24 22:53:24.901 [lua]-[trace] Unload plugin Tesh.
+2024-08-24 22:53:24.903 [lua]-[trace] Unload plugin YDWeHelper.
+2024-08-24 22:53:24.903 [inject]-[debug] IAT hook cleanup started.
+2024-08-24 22:53:24.904 [inject]-[trace] WE IAT hook cleaned.
+2024-08-24 22:53:24.904 [inject]-[trace] Storm.dll IAT hook cleaned.
+2024-08-24 22:53:24.904 [inject]-[debug] IAT hook cleanup completed.
+2024-08-24 22:53:24.904 [inject]-[debug] Inline hook uninstallation begins!
+2024-08-24 22:53:24.904 [inject]-[trace] WeSetWindowCaption hook uninstallation succeeded.
+2024-08-24 22:53:24.904 [inject]-[trace] WeTriggerNameInputCharCheck hook uninstallation succeeded.
+2024-08-24 22:53:24.904 [inject]-[trace] WeTriggerNameCheck hook uninstallation succeeded.
+2024-08-24 22:53:24.904 [inject]-[trace] WeVerifyMapCellsLimit hook uninstallation succeeded.
+2024-08-24 22:53:24.904 [inject]-[trace] WeGetSystemParameter hook uninstallation succeeded.
+2024-08-24 22:53:24.904 [inject]-[debug] Inline hook uninstallation finished!
+2024-08-24 22:53:24.904 [lua]-[trace] Unload plugin YDColorizer.
+2024-08-24 22:53:24.904 [lua]-[debug] ********************* on exit end *********************
+2024-08-24 22:53:24.904 [event]-[info ] Main program exit.
+2024-08-24 22:53:25.103 [root]-[info ] Script engine has been shut down.
+2024-08-24 23:34:51.419 [root]-[info ] ------------------------------------------------------
+2024-08-24 23:34:51.421 [root]-[info ] YDWE Script engine 1, 31, 8, 1850 started.
+2024-08-24 23:34:51.421 [root]-[info ] Compiled at 10:50:34, Aug 16 2018
+2024-08-24 23:34:51.421 [root]-[info ] Windows version: 10.0.19041
+2024-08-24 23:34:51.421 [root]-[debug] Initialize script engine successfully.
+2024-08-24 23:34:51.421 [root]-[info ] Script engine startup complete.
+2024-08-24 23:34:51.421 [lua]-[debug] ********************* ydwe initialize start *********************
+2024-08-24 23:34:51.421 [lua]-[trace] Initializing 'sys'
+2024-08-24 23:34:51.422 [lua]-[trace] Initializing 'filesystem'
+2024-08-24 23:34:51.422 [lua]-[trace] Initializing 'gui'
+2024-08-24 23:34:51.422 [lua]-[trace] Initializing 'util'
+2024-08-24 23:34:51.423 [lua]-[trace] Initializing 'ffi.unicode'
+2024-08-24 23:34:51.423 [lua]-[trace] Initializing 'ffi'
+2024-08-24 23:34:51.423 [lua]-[debug] ydwe path D:\popowe\WorldEdit v1.2.9c
+2024-08-24 23:34:51.423 [lua]-[trace] Initializing 'event'
+2024-08-24 23:34:51.424 [lua]-[trace] Initializing 'virtual_mpq'
+2024-08-24 23:34:51.425 [lua]-[trace] Initializing 'registry'
+2024-08-24 23:34:51.425 [lua]-[trace] Initializing 'version'
+2024-08-24 23:34:51.425 [lua]-[trace] Initializing 'localization'
+2024-08-24 23:34:51.425 [lua]-[trace] Initializing 'i18n'
+2024-08-24 23:34:51.426 [lua]-[trace] Initializing 'config'
+2024-08-24 23:34:51.426 [lua]-[debug] war3 path D:\popowe\Warcraft III
+2024-08-24 23:34:51.426 [lua]-[trace] Initializing 'plugin'
+2024-08-24 23:34:51.427 [lua]-[trace] Initializing 'uiloader'
+2024-08-24 23:34:51.427 [lua]-[trace] Initializing 'stringify_slk'
+2024-08-24 23:34:51.427 [lua]-[trace] Initializing 'ui-builder.init'
+2024-08-24 23:34:51.427 [lua]-[trace] Initializing 'ui-builder.old-reader'
+2024-08-24 23:34:51.427 [lua]-[trace] Initializing 'ui-builder.new-reader'
+2024-08-24 23:34:51.428 [lua]-[trace] Initializing 'lni-c'
+2024-08-24 23:34:51.428 [lua]-[trace] Initializing 'ui-builder.old-writer'
+2024-08-24 23:34:51.428 [lua]-[trace] Initializing 'ui-builder.new-writer'
+2024-08-24 23:34:51.428 [lua]-[trace] Initializing 'ui-builder.merge'
+2024-08-24 23:34:51.429 [lua]-[trace] Initializing 'w3xparser'
+2024-08-24 23:34:51.429 [lua]-[trace] Initializing 'check_object'
+2024-08-24 23:34:51.429 [lua]-[trace] Initializing 'ffi.storm'
+2024-08-24 23:34:51.430 [lua]-[trace] Initializing 'ffi.loadlibrary'
+2024-08-24 23:34:51.430 [lua]-[trace] Initializing 'ffi.gui'
+2024-08-24 23:34:51.430 [event]-[trace] RegisterEvent id: 7
+2024-08-24 23:34:51.430 [lua]-[trace] Initializing 'ydwe_on_menu'
+2024-08-24 23:34:51.430 [event]-[trace] RegisterEvent id: 5
+2024-08-24 23:34:51.430 [lua]-[trace] Initializing 'ydwe_on_save'
+2024-08-24 23:34:51.430 [lua]-[trace] Initializing 'compile.inject_code'
+2024-08-24 23:34:51.431 [lua]-[trace] Initializing 'compile.wave'
+2024-08-24 23:34:51.431 [lua]-[trace] Initializing 'compile.template'
+2024-08-24 23:34:51.431 [lua]-[trace] Initializing 'compile.cjass'
+2024-08-24 23:34:51.431 [lua]-[trace] Initializing 'compile.jasshelper'
+2024-08-24 23:34:51.431 [lua]-[trace] Initializing 'mpq_util'
+2024-08-24 23:34:51.431 [lua]-[trace] Initializing 'ffi.stormlib'
+2024-08-24 23:34:51.432 [lua]-[trace] Initializing 'compile.native'
+2024-08-24 23:34:51.432 [event]-[trace] RegisterEvent id: 3
+2024-08-24 23:34:51.432 [event]-[trace] RegisterEvent id: 2
+2024-08-24 23:34:51.432 [lua]-[trace] Initializing 'ydwe_on_test'
+2024-08-24 23:34:51.432 [lua]-[trace] Initializing 'w3x2lni'
+2024-08-24 23:34:51.432 [lua]-[trace] Initializing 'utility'
+2024-08-24 23:34:51.433 [lua]-[trace] Initializing 'mapdump'
+2024-08-24 23:34:51.433 [event]-[trace] RegisterEvent id: 4
+2024-08-24 23:34:51.433 [lua]-[trace] Initializing 'ydwe_on_startup'
+2024-08-24 23:34:51.433 [event]-[trace] RegisterEvent id: 0
+2024-08-24 23:34:51.433 [event]-[trace] RegisterEvent id: 1
+2024-08-24 23:34:51.433 [event]-[trace] RegisterEvent id: 6
+2024-08-24 23:34:51.433 [lua]-[trace] Initializing 'ydwe_on_dialog_message'
+2024-08-24 23:34:51.534 [event]-[trace] RegisterEvent id: 8
+2024-08-24 23:34:51.534 [lua]-[trace] Initializing 'ydwe_on_new_object_id'
+2024-08-24 23:34:51.534 [event]-[trace] RegisterEvent id: 9
+2024-08-24 23:34:51.534 [lua]-[debug] ********************* ydwe initialize end *********************
+2024-08-24 23:34:51.537 [event]-[info ] Entering main program.
+2024-08-24 23:34:51.537 [event]-[debug] Command line:
+2024-08-24 23:34:51.539 [lua]-[debug] ********************* on startup start *********************
+2024-08-24 23:34:51.539 [lua]-[debug] ydwe version 0.0.0.0
+2024-08-24 23:34:51.539 [lua]-[debug] war3 version 1.27.0.52240
+2024-08-24 23:34:51.540 [lua]-[debug] war3 path D:\popowe\Warcraft III
+2024-08-24 23:34:51.540 [lua]-[trace] check_conflicting_ui
+2024-08-24 23:34:51.540 [lua]-[trace] check_conflicting_units
+2024-08-24 23:34:51.540 [lua]-[trace] clear_potential_conflicting
+2024-08-24 23:34:51.540 [lua]-[trace] check_war3_version
+2024-08-24 23:34:51.542 [lua]-[error] Cannot find war3.mpq
+2024-08-24 23:34:51.544 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\LYFinder\LYFind.plcfg
+2024-08-24 23:34:51.550 [lua]-[debug] LYFind loaded successfully.
+2024-08-24 23:34:51.550 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\tesh\Tesh.plcfg
+2024-08-24 23:34:51.556 [lua]-[debug] Tesh loaded successfully.
+2024-08-24 23:34:51.564 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\YDClient.plcfg
+2024-08-24 23:34:51.564 [lua]-[debug] YDClient loaded successfully.
+2024-08-24 23:34:51.564 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\YDColorizer\YDColorizer.plcfg
+2024-08-24 23:34:51.565 [lua]-[trace] Initializing 'dotnet'
+2024-08-24 23:34:51.565 [lua]-[trace] Initializing 'clr'
+2024-08-24 23:34:51.575 [lua]-[debug] .net component loaded successfully.
+2024-08-24 23:34:53.549 [lua]-[debug] YDColorizer loaded successfully.
+2024-08-24 23:34:53.549 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\YDFont\YDFont.plcfg
+2024-08-24 23:34:53.549 [lua]-[warn ] failed: disable
+2024-08-24 23:34:53.550 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\YDInternalIdShow.plcfg
+2024-08-24 23:34:53.550 [lua]-[warn ] failed: disable
+2024-08-24 23:34:53.550 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\YDTaskbarSupport.plcfg
+2024-08-24 23:34:53.947 [lua]-[debug] YDTaskbarSupport loaded successfully.
+2024-08-24 23:34:53.949 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\YDTrigger.plcfg
+2024-08-24 23:34:53.950 [lua]-[debug] YDTrigger loaded successfully.
+2024-08-24 23:34:53.950 [lua]-[trace] Load plugin config D:\popowe\WorldEdit v1.2.9c\plugin\YDWeHelper.plcfg
+2024-08-24 23:34:53.950 [inject]-[debug] Start installing inline hooks.
+2024-08-24 23:34:53.950 [inject]-[trace] Found WeGetSystemParameter at 0x004D1DB0.
+2024-08-24 23:34:53.951 [inject]-[trace] WeGetSystemParameter hook installation succeeded.
+2024-08-24 23:34:53.951 [inject]-[trace] Found WeVerifyMapCellsLimit at 0x004E1EF0.
+2024-08-24 23:34:53.951 [inject]-[trace] Found GetUnkownFlag at 0x004D0AC0.
+2024-08-24 23:34:53.951 [inject]-[trace] WeVerifyMapCellsLimit hook installation succeeded.
+2024-08-24 23:34:53.951 [inject]-[trace] Found WeTriggerNameCheck at 0x005A4B40.
+2024-08-24 23:34:53.951 [inject]-[trace] WeTriggerNameCheck hook installation succeeded.
+2024-08-24 23:34:53.951 [inject]-[trace] Found WeTriggerNameInputCharCheck at 0x0042E390.
+2024-08-24 23:34:53.951 [inject]-[trace] WeTriggerNameInputCharCheck hook installation succeeded.
+2024-08-24 23:34:53.951 [inject]-[trace] Found WeSetWindowCaption at 0x00433A00.
+2024-08-24 23:34:53.951 [inject]-[trace] WeSetWindowCaption hook installation succeeded.
+2024-08-24 23:34:53.951 [inject]-[trace] Found WeSetMenuItem at 0x0042AA10.
+2024-08-24 23:34:53.951 [inject]-[trace] WeSetMenuItem hook installation succeeded.
+2024-08-24 23:34:53.951 [inject]-[trace] Found WeStringCompare at 0x004D2D90.
+2024-08-24 23:34:53.951 [inject]-[trace] WeStringCompare hook installation succeeded.
+2024-08-24 23:34:53.951 [inject]-[trace] Found TriggerEditorEditboxCopy at 0x0071FE90.
+2024-08-24 23:34:53.951 [inject]-[trace] WeTriggerEditorEditboxCopy hook installation succeeded.
+2024-08-24 23:34:53.951 [inject]-[trace] Found WeUtf8ToAnsi at 0x00429CD0.
+2024-08-24 23:34:53.951 [inject]-[trace] WeUtf8ToAnsi hook installation succeeded.
+2024-08-24 23:34:53.951 [inject]-[debug] Installing inline hooks complete.
+2024-08-24 23:34:53.951 [inject]-[debug] IAT hook initialization started.
+2024-08-24 23:34:53.951 [inject]-[trace] WE SHBrowseForFolderA IAT hook succeeded.
+2024-08-24 23:34:53.951 [inject]-[trace] WE GetSaveFileNameA IAT hook succeeded.
+2024-08-24 23:34:53.951 [inject]-[trace] WE GetOpenFileNameA IAT hook succeeded.
+2024-08-24 23:34:53.951 [inject]-[debug] IAT hook initialization completed.
+2024-08-24 23:34:53.951 [inject]-[debug] Patches initialization started.
+2024-08-24 23:34:53.951 [inject]-[trace] Installing syntax check patch
+2024-08-24 23:34:53.951 [inject]-[trace] Patch syntaxCheck in 0x005BC089 success.
+2024-08-24 23:34:53.951 [inject]-[trace] Installing auto disable patch
+2024-08-24 23:34:53.951 [inject]-[trace] Patch autoDisable in 0x005CEFF3 success.
+2024-08-24 23:34:53.951 [inject]-[trace] Installing enable trigger check patch
+2024-08-24 23:34:53.951 [inject]-[trace] Patch enableTriggerCheck1 in 0x005C88F5 success.
+2024-08-24 23:34:53.951 [inject]-[trace] Patch enableTriggerCheck2 in 0x005C88DA success.
+2024-08-24 23:34:53.951 [inject]-[trace] Installing doodad limit patch
+2024-08-24 23:34:53.951 [inject]-[trace] Patch doodadLimit in 0x0054CAD8 success.
+2024-08-24 23:34:53.951 [inject]-[trace] Installing unit/item limit patch
+2024-08-24 23:34:53.951 [inject]-[trace] Patch unitItemLimit in 0x00554B7B success.
+2024-08-24 23:34:53.951 [inject]-[trace] Installing editor multi-instance patch
+2024-08-24 23:34:53.951 [inject]-[trace] Patch editorInstanceCheck in 0x00435870 success.
+2024-08-24 23:34:53.951 [inject]-[trace] Installing attack table patch
+2024-08-24 23:34:53.951 [inject]-[debug] Patches initialization completed.
+2024-08-24 23:34:53.951 [inject]-[info ] YDWE startup complete.
+2024-08-24 23:34:53.951 [lua]-[debug] YDWeHelper loaded successfully.
+2024-08-24 23:34:53.951 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass
+2024-08-24 23:34:53.951 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\11api
+2024-08-24 23:34:53.952 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\AntiBJLeak
+2024-08-24 23:34:53.952 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\AntiBJLeak\detail
+2024-08-24 23:34:53.957 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\Base
+2024-08-24 23:34:53.958 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\japi
+2024-08-24 23:34:53.959 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\nzjapi
+2024-08-24 23:34:53.959 [lua]-[warn ] 注入函数[YDWEGetObjectProperty]重复定义
+2024-08-24 23:34:53.959 [lua]-[warn ] 注入函数[YDWEGetObjectProperty]重复定义
+2024-08-24 23:34:53.959 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiScript.j	17193974453957389
+2024-08-24 23:34:53.959 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.959 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyInteger]重复定义
+2024-08-24 23:34:53.959 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyInteger]重复定义
+2024-08-24 23:34:53.959 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiScript.j	17193974453957389
+2024-08-24 23:34:53.959 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.959 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyReal]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyReal]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiScript.j	17193974453957389
+2024-08-24 23:34:53.960 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.960 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyString]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyString]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiScript.j	17193974453957389
+2024-08-24 23:34:53.960 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.960 [lua]-[warn ] 注入函数[YDWEDisplayChat]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 注入函数[YDWEDisplayChat]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.960 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiOther.j	15241171450981974
+2024-08-24 23:34:53.960 [lua]-[warn ] 注入函数[YDWEGetUnitId]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 注入函数[YDWEGetUnitId]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.960 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiOther.j	15241171450981974
+2024-08-24 23:34:53.960 [lua]-[warn ] 注入函数[YDWESetUnitId]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 注入函数[YDWESetUnitId]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.960 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiOther.j	15241171450981974
+2024-08-24 23:34:53.960 [lua]-[warn ] 注入函数[YDWERevealTrainingProcess]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 注入函数[YDWERevealTrainingProcess]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.960 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiOther.j	15241171450981974
+2024-08-24 23:34:53.960 [lua]-[warn ] 注入函数[YDWEGetGameBaseAdr]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 注入函数[YDWEGetGameBaseAdr]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.960 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiOther.j	15241171450981974
+2024-08-24 23:34:53.960 [lua]-[warn ] 注入函数[EXGetEffectX]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 注入函数[EXGetEffectX]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.960 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 23:34:53.960 [lua]-[warn ] 注入函数[EXGetEffectY]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 注入函数[EXGetEffectY]重复定义
+2024-08-24 23:34:53.960 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.960 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXGetEffectZ]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXGetEffectZ]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.961 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXSetEffectXY]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXSetEffectXY]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.961 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXSetEffectZ]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXSetEffectZ]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.961 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXGetEffectSize]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXGetEffectSize]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.961 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXSetEffectSize]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXSetEffectSize]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.961 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXEffectMatRotateX]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXEffectMatRotateX]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.961 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXEffectMatRotateY]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXEffectMatRotateY]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.961 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXEffectMatRotateZ]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXEffectMatRotateZ]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.961 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXEffectMatScale]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXEffectMatScale]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.961 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXEffectMatReset]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXEffectMatReset]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.961 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXSetEffectSpeed]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[EXSetEffectSpeed]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.961 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[YDWESetEffectLoc]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[YDWESetEffectLoc]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.961 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiEffect.j	15241171450971974
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[YDWEIsEventPhysicalDamage]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[YDWEIsEventPhysicalDamage]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.961 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEEventDamageData.j	15241171450961974
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[YDWEIsEventAttackDamage]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[YDWEIsEventAttackDamage]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.961 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEEventDamageData.j	15241171450961974
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[YDWEIsEventRangedDamage]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[YDWEIsEventRangedDamage]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.961 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEEventDamageData.j	15241171450961974
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[YDWEIsEventDamageType]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[YDWEIsEventDamageType]重复定义
+2024-08-24 23:34:53.961 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.961 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEEventDamageData.j	15241171450961974
+2024-08-24 23:34:53.961 [lua]-[warn ] 注入函数[YDWEIsEventWeaponType]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEIsEventWeaponType]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.962 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEEventDamageData.j	15241171450961974
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEIsEventAttackType]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEIsEventAttackType]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.962 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEEventDamageData.j	15241171450961974
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWESetEventDamage]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWESetEventDamage]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.962 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEEventDamageData.j	15241171450961974
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityState]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityState]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.962 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataInteger]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataInteger]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.962 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataReal]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataReal]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.962 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataString]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataString]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.962 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWESetUnitAbilityState]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWESetUnitAbilityState]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.962 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataInteger]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataInteger]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.962 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataReal]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataReal]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.962 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataString]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataString]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.962 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEUnitTransform]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEUnitTransform]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.962 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEGetItemDataString]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEGetItemDataString]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.962 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWESetItemDataString]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWESetItemDataString]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.962 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEAbilityState.j	15241171450961974
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEUnitAddStun]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEUnitAddStun]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.962 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiUnit.j	16758251463693205
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEUnitRemoveStun]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[YDWEUnitRemoveStun]重复定义
+2024-08-24 23:34:53.962 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.962 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiUnit.j	16758251463693205
+2024-08-24 23:34:53.962 [lua]-[warn ] 注入函数[EXSetUnitFacing]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXSetUnitFacing]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.963 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiUnit.j	16758251463693205
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXSetUnitMoveType]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXSetUnitMoveType]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.963 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiUnit.j	16758251463693205
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXSetUnitCollisionType]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXSetUnitCollisionType]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 	生效	D:\popowe\WorldEdit v1.2.9c\jass\nzjapi\YDWEjapi.j	17170562812153355
+2024-08-24 23:34:53.963 [lua]-[warn ] 	失效	D:\popowe\WorldEdit v1.2.9c\jass\japi\YDWEJapiUnit.j	16758251463693205
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWEGetObjectProperty]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyInteger]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyReal]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWEGetObjectPropertyString]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWEDisplayChat]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWEGetUnitId]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWESetUnitId]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWERevealTrainingProcess]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWEGetGameBaseAdr]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXGetEffectX]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXGetEffectY]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXGetEffectZ]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXSetEffectXY]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXSetEffectZ]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXGetEffectSize]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXSetEffectSize]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXEffectMatRotateX]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXEffectMatRotateY]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXEffectMatRotateZ]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXEffectMatScale]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXEffectMatReset]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[EXSetEffectSpeed]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWESetEffectLoc]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWEIsEventPhysicalDamage]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWEIsEventAttackDamage]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWEIsEventRangedDamage]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWEIsEventDamageType]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWEIsEventWeaponType]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWEIsEventAttackType]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWESetEventDamage]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityState]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataInteger]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataReal]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWEGetUnitAbilityDataString]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWESetUnitAbilityState]重复定义
+2024-08-24 23:34:53.963 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataInteger]重复定义
+2024-08-24 23:34:53.964 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataReal]重复定义
+2024-08-24 23:34:53.964 [lua]-[warn ] 注入函数[YDWESetUnitAbilityDataString]重复定义
+2024-08-24 23:34:53.964 [lua]-[warn ] 注入函数[YDWEUnitTransform]重复定义
+2024-08-24 23:34:53.964 [lua]-[warn ] 注入函数[YDWEGetItemDataString]重复定义
+2024-08-24 23:34:53.964 [lua]-[warn ] 注入函数[YDWESetItemDataString]重复定义
+2024-08-24 23:34:53.964 [lua]-[warn ] 注入函数[YDWEUnitAddStun]重复定义
+2024-08-24 23:34:53.964 [lua]-[warn ] 注入函数[YDWEUnitRemoveStun]重复定义
+2024-08-24 23:34:53.964 [lua]-[warn ] 注入函数[EXSetUnitFacing]重复定义
+2024-08-24 23:34:53.964 [lua]-[warn ] 注入函数[EXSetUnitMoveType]重复定义
+2024-08-24 23:34:53.964 [lua]-[warn ] 注入函数[EXSetUnitCollisionType]重复定义
+2024-08-24 23:34:53.964 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package
+2024-08-24 23:34:53.964 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin
+2024-08-24 23:34:53.964 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\effect
+2024-08-24 23:34:53.964 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\scripts
+2024-08-24 23:34:53.964 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\scripts\core
+2024-08-24 23:34:53.964 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\scripts\core\ac
+2024-08-24 23:34:53.964 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\scripts\core\share
+2024-08-24 23:34:53.965 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\scripts\core\types
+2024-08-24 23:34:53.965 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\scripts\core\util
+2024-08-24 23:34:53.965 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\scripts\map
+2024-08-24 23:34:53.965 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\scripts\map\record
+2024-08-24 23:34:53.965 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\package\plugin\Ui
+2024-08-24 23:34:53.966 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\popo
+2024-08-24 23:34:53.968 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\PreloadSL
+2024-08-24 23:34:53.968 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\system
+2024-08-24 23:34:53.968 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\system\ht
+2024-08-24 23:34:53.968 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\system\rb
+2024-08-24 23:34:53.968 [lua]-[trace] Scanning for inject files in D:\popowe\WorldEdit v1.2.9c\jass\Util
+2024-08-24 23:34:53.972 [lua]-[trace] Scanned file: 126
+2024-08-24 23:34:53.972 [lua]-[debug] ********************* on startup end *********************
+2024-08-24 23:34:54.435 [lua]-[trace] virtual_mpq 'worldeditstrings'
+2024-08-24 23:34:54.449 [lua]-[trace] virtual_mpq 'triggerdata'
+2024-08-24 23:34:54.581 [lua]-[trace] virtual_mpq 'triggerstrings'
+2024-08-24 23:34:54.635 [lua]-[debug] Loading provider D:\popowe\Warcraft III\11环境.asi
+2024-08-24 23:34:55.255 [lua]-[debug] Loading provider D:\popowe\Warcraft III\MapHelper.asi
+2024-08-24 23:34:55.487 [lua]-[debug] Loading provider D:\popowe\Warcraft III\ydwe-file-path-fix.asi
+2024-08-24 23:34:55.490 [lua]-[debug] Loading provider D:\popowe\Warcraft III\redist\miles\Mp3dec.asi
+2024-08-24 23:34:55.491 [lua]-[debug] Loading provider D:\popowe\Warcraft III\redist\miles\Mssdolby.m3d
+2024-08-24 23:34:55.491 [lua]-[debug] Loading provider D:\popowe\Warcraft III\redist\miles\Msseax2.m3d
+2024-08-24 23:34:55.491 [lua]-[debug] Loading provider D:\popowe\Warcraft III\redist\miles\Mssfast.m3d
+2024-08-24 23:34:55.492 [lua]-[debug] Loading provider D:\popowe\Warcraft III\redist\miles\Reverb3.flt
+2024-08-24 23:34:56.732 [lua]-[debug] ********************* on menuinit start *********************
+2024-08-24 23:34:56.732 [lua]-[debug] ********************* on menuinit end *********************
+2024-08-24 23:35:01.241 [lua]-[debug] --------------maphelper--------------------
+2024-08-24 23:35:06.612 [lua]-[info ] OpenPathAsArchive	Melee_V1
+2024-08-24 23:35:06.612 [lua]-[info ] OpenPathAsArchive	Melee_V1
+2024-08-24 23:35:06.612 [lua]-[info ] OpenPathAsArchive	Melee_V1
+2024-08-24 23:35:06.644 [lua]-[error] D:\popowe\WorldEdit v1.2.9c\share\script\uiloader.lua:137: 
+abilitydata.slk:0: abilitydata.slk
+2024-08-24 23:35:06.655 [lua]-[error] D:\popowe\WorldEdit v1.2.9c\share\script\uiloader.lua:137: 
+abilitydata.slk:0: abilitydata.slk
+2024-08-24 23:35:06.670 [lua]-[trace] virtual_mpq 'worldeditstrings'
+2024-08-24 23:35:06.684 [lua]-[trace] virtual_mpq 'triggerdata'
+2024-08-24 23:35:06.818 [lua]-[trace] virtual_mpq 'triggerstrings'
+2024-08-24 23:35:21.198 [event]-[trace] WE is about to compile maps.
+2024-08-24 23:35:21.217 [event]-[trace] Executing map D:\popowe\Warcraft III\Maps\Test\WorldEditTestMap.w3x
+2024-08-24 23:35:21.217 [event]-[trace] Need to compile...
+2024-08-24 23:35:21.217 [lua]-[debug] ********************* on save start *********************
+2024-08-24 23:35:21.217 [lua]-[debug] war3 path D:\popowe\Warcraft III
+2024-08-24 23:35:21.217 [lua]-[trace] Saving D:\popowe\Warcraft III\Maps\Test\WorldEditTestMap.w3x
+2024-08-24 23:35:21.217 [lua]-[trace] Save version 1.27.0.52240
+2024-08-24 23:35:21.217 [lua]-[trace] mpq_util.update_file.
+2024-08-24 23:35:21.218 [lua]-[trace] war3map.j has been extracted from WorldEditTestMap.w3x
+2024-08-24 23:35:21.218 [lua]-[trace] Processing file.out
+2024-08-24 23:35:21.219 [lua]-[trace] Wave compilation start.
+2024-08-24 23:35:21.227 [lua]-[trace] Executed "D:\popowe\WorldEdit v1.2.9c\plugin\wave\Wave.exe" --autooutput --sysinclude="D:\popowe\WorldEdit v1.2.9c\plugin\wave\include" --sysinclude="D:\popowe\WorldEdit v1.2.9c\plugin" --include="D:\popowe\Warcraft III\Maps\Test" --include="D:\popowe\WorldEdit v1.2.9c\jass" --define=WARCRAFT_VERSION=127 --define=YDWE_VERSION_STRING=\"0.0.0.0\" --define=SCRIPT_INJECTION=1 --forceinclude=WaveForce.i --extended --c99 --preserve=2 --line=0  "D:\popowe\WorldEdit v1.2.9c\logs\file.out".
+2024-08-24 23:35:21.281 [lua]-[trace] Template compilation start.
+2024-08-24 23:35:21.286 [lua]-[trace] Initializing 'computed.ability2order'
+2024-08-24 23:35:21.286 [lua]-[trace] Initializing 'computed.order_list'
+2024-08-24 23:35:21.287 [lua]-[trace] Initializing 'computed.order_id'
+2024-08-24 23:35:21.548 [lua]-[trace] [stormlib]import file	YDWEXweiObjectSlk.lua
+2024-08-24 23:35:21.549 [lua]-[trace] [stormlib]import file	Console.lua
+2024-08-24 23:35:21.549 [lua]-[trace] [stormlib]import file	Maprecord.lua
+2024-08-24 23:35:21.549 [lua]-[trace] Initializing 'slk'
+2024-08-24 23:35:21.637 [lua]-[trace] Initializing 'archive'
+2024-08-24 23:35:21.637 [lua]-[trace] Initializing 'archive_mpq'
+2024-08-24 23:35:21.637 [lua]-[trace] Initializing 'archive_dir'
+2024-08-24 23:35:21.638 [lua]-[trace] Initializing 'ffi.sleep'
+2024-08-24 23:35:21.638 [lua]-[trace] Initializing 'progress'
+2024-08-24 23:35:21.638 [lua]-[trace] Initializing 'slk.frontend'
+2024-08-24 23:35:21.639 [lua]-[trace] Initializing 'slk.frontend_wts'
+2024-08-24 23:35:21.639 [lua]-[trace] Initializing 'lpeg'
+2024-08-24 23:35:21.720 [lua]-[trace] Initializing 'slk.frontend_merge'
+2024-08-24 23:35:21.763 [lua]-[trace] Initializing 'slk.frontend_misc'
+2024-08-24 23:35:22.241 [lua]-[trace] Initializing 'slk.backend_obj'
+2024-08-24 23:35:22.242 [lua]-[debug] refresh object: war3map.w3a
+2024-08-24 23:35:22.242 [lua]-[debug] refresh object: war3map.w3h
+2024-08-24 23:35:22.242 [lua]-[debug] refresh object: war3map.w3u
+2024-08-24 23:35:22.243 [lua]-[debug] Template compilation succeeded.
+2024-08-24 23:35:22.248 [lua]-[trace] JassHelper compilation start.
+2024-08-24 23:35:23.388 [lua]-[trace] Executed "D:\popowe\WorldEdit v1.2.9c\plugin\jasshelper\jasshelper.exe" "D:\popowe\WorldEdit v1.2.9c\plugin\jasshelper\common.j" "D:\popowe\WorldEdit v1.2.9c\plugin\jasshelper\blizzard.j" "D:\popowe\Warcraft III\Maps\Test\WorldEditTestMap.w3x", returned 0
+2024-08-24 23:35:23.388 [lua]-[debug] Result true
+2024-08-24 23:35:23.388 [lua]-[debug] ********************* on save end *********************
+2024-08-24 23:35:23.388 [lua]-[debug] ********************* on test start *********************
+2024-08-24 23:35:23.389 [lua]-[debug] war3 path D:\popowe\Warcraft III
+2024-08-24 23:35:23.389 [lua]-[debug] Testing D:\popowe\Warcraft III\Maps\Test\WorldEditTestMap.w3x
+2024-08-24 23:35:23.389 [lua]-[debug] Testing "D:\popowe\Warcraft III\War3.exe" -loadfile Maps\Test\WorldEditTestMap.w3x
+2024-08-24 23:35:23.389 [lua]-[debug] Testing 0
+2024-08-24 23:35:23.393 [lua]-[trace] Executed "D:\popowe\Warcraft III\war3.exe" -loadfile "D:\popowe\Warcraft III\Maps\Test\WorldEditTestMap.w3x" -opengl -window -ydwe "D:\popowe\WorldEdit v1.2.9c".
+2024-08-24 23:35:23.393 [lua]-[debug] ********************* on test end *********************
