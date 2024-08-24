@@ -1,0 +1,111 @@
+//  带边框的贴图（提示框）
+Frame "BACKDROP" "PO_BACKDROP"
+{
+    BackdropTileBackground, 
+    BackdropBackground "UI\Widgets\ToolTips\Human\human-tooltip-background.blp", 
+    BackdropBackgroundSize 0.35, 
+    BackdropBackgroundInsets 0.0025 0.0025 0.0025 0.0025,
+    BackdropCornerFlags "UL|UR|BL|BR|T|L|B|R", 
+    BackdropCornerSize 0.012, 
+    BackdropEdgeFile "UI\Widgets\ToolTips\Human\human-tooltip-border.blp", 
+    BackdropBlendAll, 
+}
+//  带阴影的字体
+Frame "TEXT" "PO_TEXT"
+{
+    DecorateFileNames,
+    FontShadowColor 0.0 0.0 0.0 0.9,
+    FontShadowOffset 0.001 -0.001,
+    Text "",
+}
+//  贴图按钮
+Frame "BUTTON" "PO_BUTTON" 
+{
+    ControlBackdrop "PO_BUTTON-1",
+    Frame "BACKDROP" "PO_BUTTON-1"
+    {
+        BackdropBackground "",
+        BackdropBlendAll,
+    }
+    ControlPushedBackdrop "PO_BUTTON-2",
+    Frame "BACKDROP" "PO_BUTTON-2"
+    {
+        BackdropBackground "",
+        BackdropBlendAll,
+    }
+    ControlDisabledBackdrop "PO_BUTTON-3",
+    Frame "BACKDROP" "PO_BUTTON-3"
+    {
+        BackdropBackground "",
+        BackdropBlendAll,
+    }
+}
+//  自带缩放的贴图按钮
+Frame "BUTTON" "PO_BUTTON-00" 
+{
+    ControlBackdrop "PO_BUTTON-01",
+    Frame "BACKDROP" "PO_BUTTON-01"
+    {
+        BackdropBackground  "",
+        BackdropBlendAll,
+    }
+    ControlPushedBackdrop "PO_BUTTON-02",
+    Frame "BACKDROP" "PO_BUTTON-02"
+    {
+        BackdropBackground  "",
+        BackdropBackgroundInsets 0.001 0.001 0.001 0.001,
+        BackdropBlendAll,
+    }
+    ControlDisabledBackdrop "PO_BUTTON-03",
+    Frame "BACKDROP" "PO_BUTTON-03"
+    {
+        BackdropBackground  "",
+        BackdropBlendAll,
+    }
+}
+//  垂直
+Frame "SLIDER" "PO_SLIDER-1" {
+    SliderLayoutVertical,
+
+    ControlBackdrop "PO_SLIDER1-1",
+    Frame "BACKDROP" "PO_SLIDER1-1" {
+        BackdropBlendAll,
+        BackdropBackground "",
+    }
+    SliderThumbButtonFrame "PO_SLIDER2-1",
+    Frame "BUTTON" "PO_SLIDER2-1" {
+
+        ControlBackdrop "PO_SLIDER3-1",
+        Frame "BACKDROP" "PO_SLIDER3-1" {
+            BackdropBlendAll,
+            BackdropBackground "",
+        }
+
+    }
+}
+//  横向
+Frame "SLIDER" "PO_SLIDER-2" {
+    SliderLayoutHorizontal,
+
+    ControlBackdrop "PO_SLIDER1-2",
+    Frame "BACKDROP" "PO_SLIDER1-2" {
+        BackdropBlendAll,
+        BackdropBackground "",
+    }
+    SliderThumbButtonFrame "PO_SLIDER2-2",
+    Frame "BUTTON" "PO_SLIDER2-2" {
+
+        ControlBackdrop "PO_SLIDER3-2",
+        Frame "BACKDROP" "PO_SLIDER3-2" {
+            BackdropBlendAll,
+            BackdropBackground "",
+        }
+
+    }
+}
+
+
+Frame "SIMPLEFRAME" "xuetiao-1" {
+    Frame "FRAME" "xuetiao-2" {}
+}
+        
