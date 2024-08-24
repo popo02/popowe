@@ -6,9 +6,9 @@
 library_once YDWETimerPattern initializer Init requires YDWEBase
 
 //***************************************************
-//* ¡Æ - Matrix ÍòÄÜÄ£°åº¯Êı
+//* âˆ‘ - Matrix ä¸‡èƒ½æ¨¡æ¿å‡½æ•°
 //*--------------------
-//* ×÷Õß£ºWarft_TigerCN  ´úÂëÓÅ»¯£ºFetrix_sai
+//* ä½œè€…ï¼šWarft_TigerCN  ä»£ç ä¼˜åŒ–ï¼šFetrix_sai
 //***************************************************
 
     #define TIMER_PATTERN_RADIUS 120.0
