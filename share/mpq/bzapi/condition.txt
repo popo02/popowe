@@ -1,0 +1,14 @@
+﻿[OperatorCompareGameKey]
+title = "按键"
+description = "[按键] - ${KeyA} ${Operator} ${KeyB}"
+comment = ""
+category = TC_CONDITION
+[[.args]]
+type = gamekey
+default = "GameKey_TriggerGameKey"
+[[.args]]
+type = EqualNotEqualOperator
+default = "OperatorEqualENE"
+[[.args]]
+type = gamekey
+default = "GameKey_A"

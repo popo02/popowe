@@ -1,0 +1,1923 @@
+[POPOGetRe]
+title = "获取jass函数返回值 [P]"
+description = "获取返回值: loc_${变量名}"
+comment = "逆天局部变量模拟的返回值."
+category = PO_func
+returns = AnyReturnType
+[[.args]]
+type = scriptcode
+
+
+
+
+
+
+[PO_HS_BEIZHU01]
+title = "---------- ★  整数  ★ ----------"
+description = "---------- ★  整数  ★ ----------"
+comment = ""
+category = NZjapi
+returns = integer
+
+[PO_HS_1603]
+title = "读取当前游戏模型内存个数 [内置japi]"
+description = "读取当前游戏模型内存个数"
+comment ="读取当前游戏模型内存个数,应该算是模型泄露的一种"
+category = NZjapi
+returns = integer
+
+[PO_HS_1615]
+title = "异步获取网易的UID(整数) [内置japi]"
+description = "异步获取网易的UID(整数) [内置japi]"
+comment ="异步函数 建议同步后使用 小心使用"
+category = NZjapi
+returns = integer
+
+
+
+
+[PO_HS_1607]
+title = "设置Frame模型添加绑点特效 [内置japi]"
+description = "设置Frame ${控件} 的附加点上 ${origin} 绑定特效 ${特效}"
+comment ="返回模型地址"
+category = NZFrame
+returns = integer
+[[.args]]
+type = frame
+[[.args]]
+type = string
+default = "\"overhead\""
+[[.args]]
+type = modelfile
+default = "\"Abilities\\Spells\\Other\\TalkToMe\\TalkToMe.mdl\""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[PO_HS_BEIZHU02]
+title = "---------- ★  实数  ★ ----------"
+description = "---------- ★  实数  ★ ----------"
+comment = ""
+category = NZjapi
+returns = real
+
+[PO_HS_1605]
+title = "读取游戏fps [内置japi]"
+description = "读取游戏fps"
+comment ="异步读取当前游戏fps"
+category = NZjapi
+returns = real
+
+
+
+
+[PO_HS_1613]
+title = "世界坐标转换屏幕坐标 [内置japi]"
+description = "世界坐标(X:${real} Y:${real}) 转换为 ${integer}"
+comment ="异步函数"
+category = NZFrame
+returns = real
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = screen
+default = "ScreenX"
+
+[PO_HS_1608]
+title = "屏幕坐标转换世界坐标 [内置japi]"
+description = "屏幕坐标(X:${real} Y:${real}) 转换为 ${integer}"
+comment ="异步函数"
+category = NZFrame
+returns = real
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = world
+default = "WorldX"
+
+[PO_HS_1627]
+title = "获取单位世界坐标转换后的屏幕坐标 [内置japi]"
+description = "单位(${unit}) 转换为 ${integer}"
+comment ="异步函数"
+category = NZFrame
+returns = real
+[[.args]]
+type = unit
+default = "GetTriggerUnit"
+[[.args]]
+type = screen
+default = "ScreenX"
+
+
+
+
+
+
+
+
+
+
+[PO_HS_BEIZHU03]
+title = "---------- ★  布尔值  ★ ----------"
+description = "---------- ★  布尔值  ★ ----------"
+comment = ""
+category = NZjapi
+returns = boolean
+
+[PO_HS_1604]
+title = "判断魔兽3是否处于窗口模式 [内置japi]"
+description = "判断魔兽3是否处于窗口模式"
+comment ="判断玩家当前魔兽争霸3是不是窗口状态"
+category = NZjapi
+returns = boolean
+
+[GetChatState]
+title = "判断聊天窗口是否打开 [内置japi]"
+description = "获取聊天窗口是否打开"
+comment =""
+category = NZjapi
+returns = boolean
+
+
+
+
+
+
+
+
+
+
+
+
+
+[PO_HS_BEIZHU04]
+title = "---------- ★  字符串  ★ ----------"
+description = "---------- ★  字符串  ★ ----------"
+comment = ""
+category = NZjapi
+returns = string
+
+[PO_HS_1600]
+title = "读取内置japi版本信息 [内置japi]"
+description = "读取内置japi版本信息"
+comment ="读取内置japi版本号返回,成功显示则代表内置japi启动成功"
+category = NZjapi
+returns = string
+
+[PO_HS_1616]
+title = "异步获取网易的UID(字符串) [内置japi]"
+description = "异步获取网易的UID(字符串) [内置japi]"
+comment ="异步函数 建议同步后使用 小心使用"
+category = NZjapi
+returns = string
+
+
+
+
+[PO_HS_1624]
+title = "获取原生控件贴图 [内置japi]"
+description = "获取 ${原生控件} 的贴图"
+comment =""
+category = NZFrame
+returns = string
+[[.args]]
+type = frame
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[PO_HS_BEIZHU05]
+title = "---------- ★  单位、英雄  ★ ----------"
+description = "---------- ★  单位、英雄  ★ ----------"
+comment = ""
+category = NZjapi
+returns = unit
+
+[PO_HS_1611]
+title = "获取商店目标 [内置japi]"
+description = "获取商店 ${商店} 选中了 ${玩家} 的单位"
+comment ="获取指定商店 选择 指定玩家的哪个单位 返回值是同步的接口 可以安全使用"
+category = NZjapi
+returns = unit
+[[.args]]
+type = unit
+[[.args]]
+type = player
+default = "Player00"
+
+[PO_HS_1601]
+title = "读取玩家当前选中单位 [内置japi]"
+description = "读取玩家当前选中单位"
+comment ="异步获取玩家当前选中的单位"
+category = NZjapi
+returns = unit
+
+[PO_HS_1602]
+title = "读取当前鼠标所指向单位 [内置japi]"
+description = "读取当前鼠标所指向单位"
+comment ="异步获取玩家当前鼠标指向的单位"
+category = NZjapi
+returns = unit
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+[PO_HS_BEIZHU06]
+title = "---------- ★  技能  ★ ----------"
+description = "---------- ★  技能  ★ ----------"
+comment = ""
+category = NZjapi
+returns = abilcode
+
+[PO_HS_1617]
+title = "获取物品技能 [内置japi]"
+description = "获取 ${物品} 指定槽位 ${slot} 的技能 [内置japi]"
+comment ="槽位从0开始"
+category = NZjapi
+returns = abilcode
+[[.args]]
+type = item
+[[.args]]
+type = integer
+default = "0"
+
+
+
+
+
+[PO_HS_1612]
+title = "获取当前技能面板的X,Y位置的技能id [内置japi]"
+description = "获取技能面板 (X:${0-3} Y:${0-2}) 上的技能id"
+comment ="只能获取技能的ID，异步函数"
+category = NZFrame
+returns = abilcode
+[[.args]]
+type = integer
+default = "0"
+min = 0
+max = 3
+[[.args]]
+type = integer
+default = "0"
+min = 0
+max = 2
+
+
+
+
+
+
+
+
+
+
+
+[PO_HS_BEIZHU07]
+title = "---------- ★  Frame模型  ★ ----------"
+description = "---------- ★  Frame模型  ★ ----------"
+comment = ""
+category = NZFrame
+returns = frame
+
+[PO_HS_1606]
+title = "创建一个模型Frame [内置japi]"
+description = "创建一个模型Frame[内置japi]"
+comment ="可以使用内置japi的UI封装进行操作"
+category = NZFrame
+returns = frame
+
+[PO_HS_1614]
+title = "创建一个模型Frame(父节点) [内置japi]"
+description = "创建一个模型Frame 父节点:${parent} [内置japi]"
+comment ="可以使用内置japi的UI封装进行操作"
+category = NZFrame
+returns = frame
+[[.args]]
+type = frame
+default = DzGetGameUI
+
+
+
+
+
+
+
+
+[PO_HS_BEIZHU08]
+title = "---------- ★  Frame函数  ★ ----------"
+description = "---------- ★  Frame函数  ★ ----------"
+comment = ""
+category = NZFrame
+returns = frame
+
+[PO_HS_1620]
+title = "获取农民图标控件 [内置japi]"
+description = "获取农民图标控件"
+comment =""
+category = NZFrame
+returns = frame
+
+[PO_HS_1618]
+title = "获取框选的图标控件 [内置japi]"
+description = "获取框选的图标控件:${slot}"
+comment ="从0-11"
+category = NZFrame
+returns = frame
+[[.args]]
+type = integer
+default = "0"
+
+[PO_HS_1619]
+title = "获取单位面板BUFF图标控件 [内置japi]"
+description = "获取单位面板BUFF图标控件:${slot}"
+comment ="从0-7"
+category = NZFrame
+returns = frame
+[[.args]]
+type = integer
+default = "0"
+
+[PO_HS_1621]
+title = "获取技能右下角数字文本控件 [内置japi]"
+description = "获取 ${控件} 右下角数字文本控件"
+comment =""
+category = NZFrame
+returns = frame
+[[.args]]
+type = frame
+default = DzFrameGetCommandBarButton
+
+[PO_HS_1622]
+title = "获取技能右下角控件 [内置japi]"
+description = "获取 ${控件} 右下角控件"
+comment =""
+category = NZFrame
+returns = frame
+[[.args]]
+type = frame
+default = DzFrameGetCommandBarButton
+
+[PO_HS_1623]
+title = "获取控件是否显示 [内置japi]"
+description = "获取 ${控件} 是否显示"
+comment =""
+category = NZFrame
+returns = frame
+[[.args]]
+type = frame
+
+[PO_HS_1609]
+title = "获取Frame父控件 [内置japi]"
+description = "获取Frame ${控件} 的父控件"
+comment ="获取指定frame的父控件 不能对simple类型的控件使用 可以获取 大头像模型 的父控件 然后为其新建子控件 用来放置在所有界面之下"
+category = NZFrame
+returns = frame
+[[.args]]
+type = frame
+
+[PO_HS_1610]
+title = "获取Frame子控件 [内置japi]"
+description = "获取Frame ${控件} 的 ${控件} 子控件"
+comment ="获取指定frame的子控件 不能对simple类型的控件使用"
+category = NZFrame
+returns = frame
+[[.args]]
+type = frame
+[[.args]]
+type = integer
+default = "0"
+
+[PO_HS_1625]
+title = "获取Simple类型控件的父控件 [内置japi]"
+description = "获取Simple类型 ${控件} 的父控件"
+comment =""
+category = NZFrame
+returns = frame
+[[.args]]
+type = frame
+
+[PO_HS_1626]
+title = "设置Simple类型绑定Frame类型的子控件 [内置japi]"
+description = "设置Simple类型 ${控件} 绑定子Frame ${控件}"
+comment ="返回的Frame用于解除绑定"
+category = NZFrame
+returns = frame
+[[.args]]
+type = frame
+[[.args]]
+type = frame
+
+
+
+
+
+
+
+
+
+[Cast_Spell_A]
+title = "无目标类型施法 [P]"
+description = "无目标类型施法"
+comment = ""
+category = PO_unit
+returns = PPCast_Spell
+
+[Cast_Spell_B]
+title = "坐标类型施法 [P]"
+description = "坐标类型施法 X:${value} Y:${value}"
+comment = ""
+category = PO_unit
+returns = PPCast_Spell
+[[.args]]
+type = real
+[[.args]]
+type = real
+
+[Cast_Spell_C]
+title = "单位类型施法 [P]"
+description = "单位类型施法 ${单位}"
+comment = ""
+category = PO_unit
+returns = PPCast_Spell
+[[.args]]
+type = unit
+
+[Judge_Spell]
+title = "通魔技能目标类型判断 [P]"
+description = "通魔 ${技能} 的目标类型为 ${目标类型} "
+comment = "只对通魔技能生效,其他技能均为false"
+category = PO_unit
+returns = boolean
+[[.args]]
+type = abilcode
+[[.args]]
+type = PPtongmo
+default = "PPtongmo1"
+
+
+
+
+[PO_MobileX]
+title = "计算X坐标位移 [P]"
+description = "从X坐标: ${坐标X} 开始,距离 ${数据} ,方向 ${数据} 度的位移处"
+comment = ""
+category = PO_real
+returns = real
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "256"
+[[.args]]
+type = degree
+default = "0"
+
+[PO_MobileY]
+title = "计算Y坐标位移 [P]"
+description = "从Y坐标: ${坐标Y} 开始,距离 ${数据} ,方向 ${数据} 度的位移处"
+comment = ""
+category = PO_real
+returns = real
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "256"
+[[.args]]
+type = degree
+default = "0"
+
+[PO_DisXY]
+title = "计算坐标与坐标的距离 [P]"
+description = "计算坐标（X:${数据} Y:${数据}）与坐标（X:${数据} Y:${数据}）的距离"
+comment = ""
+category = PO_real
+returns = real
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+
+[PO_PosH]
+title = "获取坐标的高度 [P]"
+description = "获取坐标（X:${数据} Y:${数据}）的高度"
+comment = ""
+category = PO_real
+returns = real
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+
+[PO_DegXY]
+title = "坐标到坐标的角度 [P]"
+description = "计算坐标（X:${数据} Y:${数据}）到坐标（X:${数据} Y:${数据}）的角度"
+comment = ""
+category = PO_real
+returns = degree
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+
+[PO_CreateGroupEnumUnits2]
+title = "坐标范围内的指定单位 [P]"
+description = "以坐标( ${X} ${Y} )为圆心，${实数} 为半径的范围内的单位"
+comment = "会创建单位组"
+category = PO_unit
+returns = group
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "512"
+
+
+[PO_SelectInLineUnits2]
+title = "方形范围内的指定单位 [P]"
+description = "以坐标( ${X} ${Y} )为起点，直线角度 ${实数} 度，长 ${实数}，宽 ${实数} 为方形的范围内的单位"
+comment = "会创建单位组"
+category = PO_unit
+returns = group
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = degree
+default = "60"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+
+
+[PO_SelectSectorUnits2]
+title = "扇形范围内单位 [P]"
+description = "以坐标( ${X} ${Y} )为起点，${实数} 为半径，选取角度 ${实数} 度，扇形角度 ${实数} 度 为扇形的范围内的单位"
+comment = "会创建单位组"
+category = PO_unit
+returns = group
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "512"
+[[.args]]
+type = degree
+default = "60"
+[[.args]]
+type = degree
+default = "60"
+
+[PO_CreateGroupEnumUnits]
+title = "坐标范围内的指定单位[条件] [P]"
+description = "以坐标( ${X} ${Y} )为圆心，${实数} 为半径的范围内，满足 ${条件} 的单位"
+comment = "会创建单位组"
+category = PO_unit
+returns = group
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "512"
+[[.args]]
+type = boolexpr
+default = "null"
+
+
+[PO_SelectInLineUnits]
+title = "方形范围内的指定单位[条件] [P]"
+description = "以坐标( ${X} ${Y} )为起点，直线角度 ${实数} 度，长 ${实数}，宽 ${实数} 为方形的范围内，满足 ${条件} 的单位"
+comment = "会创建单位组"
+category = PO_unit
+returns = group
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = degree
+default = "60"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = boolexpr
+default = "null"
+
+
+[PO_SelectSectorUnits]
+title = "扇形范围内单位[条件] [P]"
+description = "以坐标( ${X} ${Y} )为起点，${实数} 为半径，选取角度 ${实数} 度，扇形角度 ${实数} 度 为扇形的范围内，满足 ${条件} 的单位"
+comment = "会创建单位组"
+category = PO_unit
+returns = group
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "512"
+[[.args]]
+type = degree
+default = "60"
+[[.args]]
+type = degree
+default = "60"
+[[.args]]
+type = boolexpr
+default = "null"
+
+
+
+
+
+
+
+
+[PO_HS_BEIZHU10]
+title = "---------- ★  整数组函数  ★ ----------"
+description = "---------- ★  整数组函数  ★ ----------"
+comment = ""
+category = PO_IntGroup
+returns = IntGroup
+
+[pp_IntGroup_create]
+title = "新建的整数组 [P]"
+description = "新建的空整数组"
+comment ="会创建整数组实例."
+category = PO_IntGroup
+returns = IntGroup
+
+[pp_IntGroup_Engraved]
+title = "复刻的整数组 [P]"
+description = "新建整数组并复刻 ${整数组} 中所有整数"
+comment ="会创建整数组实例."
+category = PO_IntGroup
+returns = IntGroup
+[[.args]]
+type = IntGroup
+default = "PO_lastCreatedIntGroup"
+
+[pp_IntGroup_Remove]
+title = "抽取整数并返回该整数 [P]"
+description = "从 ${整数组} 中抽取整数 [${是否保留} 整数]"
+comment =""
+category = PO_IntGroup
+returns = integer
+[[.args]]
+type = IntGroup
+default = "PO_lastCreatedIntGroup"
+[[.args]]
+type = IntGroupflag
+
+[pp_IntGroup_Quantity]
+title = "获取整数组中整数的数量 [P]"
+description = "获取 ${整数组} 中整数的数量"
+comment =""
+category = PO_IntGroup
+returns = integer
+[[.args]]
+type = IntGroup
+default = "PO_lastCreatedIntGroup"
+
+[IntGroup_IsIntInGroup_PP]
+title = "整数组中是否存在某个整数 [P]"
+description = "判断 ${整数组} 中是否存在 [${类型}]${null}"
+comment =""
+category = PO_IntGroup
+returns = boolean
+[[.args]]
+type = IntGroup
+default = "PO_lastCreatedIntGroup"
+[[.args]]
+type = IntGrouptype
+[[.args]]
+type = Null
+
+[GetEnumInteger]
+title = "选取整数 [P]"
+description = "选取整数"
+comment ="使用'选取整数组做动作'时, 指代相应的整数."
+category = PO_IntGroup
+returns = integer
+
+[GetEnumUnitcode]
+title = "选取单位类型 [P]"
+description = "选取单位类型"
+comment ="使用'选取整数组做动作'时, 指代相应的单位类型."
+category = PO_IntGroup
+returns = unitcode
+
+[GetEnumItemcode]
+title = "选取物品类型 [P]"
+description = "选取整数"
+comment ="使用'选取整数组做动作'时, 指代相应的物品类型."
+category = PO_IntGroup
+returns = itemcode
+
+[GetEnumFrame]
+title = "选取Frame [P]"
+description = "选取Frame"
+comment ="使用'选取整数组做动作'时, 指代相应的frame."
+category = PO_IntGroup
+returns = frame
+
+
+
+
+
+
+
+
+
+[PO_HS_BEIZHU13]
+title = "---------- ★  特效实例函数  ★ ----------"
+description = "---------- ★  特效实例函数  ★ ----------"
+comment = ""
+category = PO_Effect
+returns = EffectId
+
+[PO_EctCreate]
+title = "新建特效实例(创建到坐标) [P]"
+description = "新建特效实例 ${Model File} 在(${X},${Y})处"
+comment = "会创建特效.纯净模式不会创建特效.异步显示开关仅影响显示依旧会创建特效.特效实例属于整数类型."
+category = PO_Effect
+returns = EffectId
+[[.args]]
+type = modelfile
+default = "\"Abilities\\Spells\\Other\\TalkToMe\\TalkToMe.mdl\""
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+
+[PO_EctCreateUnit]
+title = "新建特效实例(创建到单位) [P]"
+description = "新建特效实例 ${Model File} 并绑定到 ${单位} 的 ${Attachment Point} 附加点上"
+comment = "会创建特效.纯净模式不会创建特效.异步显示开关仅影响显示依旧会创建特效.特效实例属于整数类型."
+category = PO_Effect
+returns = EffectId
+[[.args]]
+type = modelfile
+default = "\"Abilities\\Spells\\Other\\TalkToMe\\TalkToMe.mdl\""
+[[.args]]
+type = unit
+default = "GetTriggerUnit"
+[[.args]]
+type = string
+default = "\"overhead\""
+
+[PO_EctCreateA]
+title = "新建伤害特效实例(创建到坐标) [P]"
+description = "玩家:${player} 新建伤害特效实例 ${Model File} 在(${X},${Y},${Z})处"
+comment = "会创建特效.纯净模式不会创建特效.与伤害异步显示相关.特效实例属于整数类型.只显示当前玩家特效."
+category = PO_Effect
+returns = EffectId
+[[.args]]
+type = player
+default = "Player00"
+[[.args]]
+type = modelfile
+default = "\"Abilities\\Spells\\Other\\TalkToMe\\TalkToMe.mdl\""
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+
+[PO_EctbyHandle]
+title = "转换特效为特效实例 [P]"
+description = "转换 ${Special Effect} 为特效实例"
+comment = ""
+category = PO_Effect
+returns = EffectId
+[[.args]]
+type = effect
+default = "GetLastCreatedEffectBJ"
+
+[PO_EctGroup_FirstOfEctGroup]
+title = "特效实例组中第一个特效实例 [P]"
+description = "${特效实例组} 中第一个特效实例"
+comment = ""
+category = PO_Effect
+returns = EffectId
+[[.args]]
+type = EctGroup
+
+[PO_EctGroup_RandomOfEctGroup]
+title = "特效实例组中随机特效实例 [P]"
+description = "${特效实例组} 中随机特效实例"
+comment = ""
+category = PO_Effect
+returns = EffectId
+[[.args]]
+type = EctGroup
+
+[PO_GetEctHandle]
+title = "转换特效实例为特效 [P]"
+description = "转换 ${Special Effect} 为特效"
+comment = ""
+category = PO_Effect
+returns = effect
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+
+[PO_GetLastCreatedEffect]
+title = "最后创建的特效实例 [P]"
+description = "最后创建的特效实例"
+comment = "最后一个使用'特殊效果 - 创建特效实例'动作创建的效果实例."
+category = PO_Effect
+returns = EffectId
+
+[PO_LoadEffect]
+title = "<1.24> 从哈希表提取特效实例 [P]"
+description = "在 ${Hashtable} 的主索引 ${Value} 子索引 ${Value} 内提取特效实例"
+comment = "如果不存在则返回0"
+category = PO_Effect
+returns = EffectId
+[[.args]]
+type = hashtable
+default = "GetLastCreatedHashtableBJ"
+[[.args]]
+type = integer
+[[.args]]
+type = integer
+
+[PO_GetEctHandleId]
+title = "获取特效实例的句柄 [P]"
+description = "获取 ${Special Effect} 的整数句柄"
+comment = "用于逆天自定义值与哈希表的索引"
+category = PO_Effect
+returns = integer
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+
+[PO_GetEctX]
+title = "X轴坐标 [P]"
+description = "${特效实例} 的X轴坐标"
+comment = ""
+category = PO_Effect
+returns = real
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+
+[PO_GetEctY]
+title = "Y轴坐标 [P]"
+description = "${特效实例} 的Y轴坐标"
+comment = ""
+category = PO_Effect
+returns = real
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+
+[PO_GetEctZ]
+title = "高度 [P]"
+description = "${特效实例} 的高度"
+comment = ""
+category = PO_Effect
+returns = real
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+
+[PO_GetEctSize]
+title = "大小 [P]"
+description = "${特效实例} 的大小"
+comment = ""
+category = PO_Effect
+returns = real
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+
+
+
+
+
+
+
+
+
+[PO_HS_BEIZHU12]
+title = "---------- ★  特效实例组函数  ★ ----------"
+description = "---------- ★  特效实例组函数  ★ ----------"
+comment = ""
+category = PO_EctGroup
+returns = EctGroup
+
+[PO_EctGroup_create]
+title = "新建的特效实例组 [P]"
+description = "新建的空特效实例组"
+comment ="会创建特效实例组实例."
+category = PO_EctGroup
+returns = EctGroup
+
+[PO_EctGroup_Quantity]
+title = "获取特效实例组中特效实例的数量 [P]"
+description = "获取 ${特效实例组} 中特效实例的数量"
+comment =""
+category = PO_EctGroup
+returns = integer
+[[.args]]
+type = EctGroup
+default = "PO_lastCreatedEffectId"
+
+[PO_EctGroup_IsEctInGroupSorting]
+title = "特效实例在特效实例组中的排序 [P]"
+description = "获取 ${特效实例组} 中 ${特效实例} 的排序"
+comment =""
+category = PO_EctGroup
+returns = integer
+[[.args]]
+type = EctGroup
+default = "PO_lastCreatedEffectId"
+[[.args]]
+type = EffectId
+
+[PO_EctGroup_IsEctInGroup]
+title = "特效实例组中是否存在某个特效实例 [P]"
+description = "判断 ${特效实例组} 中 ${特效实例} 是否存在"
+comment =""
+category = PO_EctGroup
+returns = boolean
+[[.args]]
+type = EctGroup
+default = "PO_lastCreatedEffectId"
+[[.args]]
+type = EffectId
+
+[GetEnumEffectId]
+title = "选取特效实例 [P]"
+description = "选取特效实例"
+comment ="使用'选取特效实例组做动作'时, 指代相应的特效实例."
+category = PO_EctGroup
+returns = EffectId
+
+
+
+
+
+
+
+
+[PO_HS_BEIZHU14]
+title = "---------- ★  物品组函数  ★ ----------"
+description = "---------- ★  物品组函数  ★ ----------"
+comment = ""
+category = PO_ItemGroup
+returns = ItemGroup
+
+[PO_ItemGroup_create]
+title = "新建的物品组 [P]"
+description = "新建的空物品组"
+comment ="会创建物品组."
+category = PO_ItemGroup
+returns = ItemGroup
+
+[PO_ItemGroup_GroupEnumItemsInRange_B]
+title = "选取物品添加到新建的物品组(坐标) [P]"
+description = "添加以( ${坐标X} , ${坐标Y} )为圆心，${半径} 为半径的圆范围内的物品"
+comment ="会创建物品组."
+category = PO_ItemGroup
+returns = ItemGroup
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "512"
+min = 0
+
+[PO_ItemGroup_GroupEnumItemsInRange_C]
+title = "选取物品添加到新建的物品组(矩形区域) [P]"
+description = "添加 ${矩形区域} 范围内的物品"
+comment ="会创建物品组."
+category = PO_ItemGroup
+returns = ItemGroup
+[[.args]]
+type = rect
+
+[PO_ItemGroup_Quantity]
+title = "获取物品组中物品的数量 [P]"
+description = "获取 ${物品组} 中物品的数量"
+comment =""
+category = PO_ItemGroup
+returns = integer
+[[.args]]
+type = ItemGroup
+default = "PO_lastCreatedItemGroup"
+
+[PO_ItemGroup_IsItemInGroupSorting]
+title = "物品在物品组中的排序 [P]"
+description = "获取 ${物品组} 中 ${物品} 的排序"
+comment =""
+category = PO_ItemGroup
+returns = integer
+[[.args]]
+type = ItemGroup
+default = "PO_lastCreatedItemGroup"
+[[.args]]
+type = item
+
+[PO_ItemGroup_IsItemInGroup]
+title = "物品组中是否存在某个物品 [P]"
+description = "判断 ${物品组} 中 ${物品} 是否存在"
+comment =""
+category = PO_ItemGroup
+returns = boolean
+[[.args]]
+type = ItemGroup
+default = "PO_lastCreatedItemGroup"
+[[.args]]
+type = item
+
+
+
+
+
+
+
+[PO_HS_BEIZHU15]
+title = "---------- ★  排序组函数  ★ ----------"
+description = "---------- ★  排序组函数  ★ ----------"
+comment = ""
+category = PO_Sort
+returns = SortGroup
+
+[PO_Sort_create]
+title = "新建排序组 [P]"
+description = "新建空的排序组"
+comment = ""
+category = PO_Sort
+returns = SortGroup
+
+[PO_Sort_GetIndex]
+title = "获取排序组索引 [P]"
+description = "获取 ${排序组} 中排名为 ${index} 的索引"
+comment = ""
+category = PO_Sort
+returns = integer
+[[.args]]
+type = SortGroup
+default = "PO_lastCreatedSortGroup"
+[[.args]]
+type = integer
+
+[PO_Sort_GetValue]
+title = "获取排序组数据 [P]"
+description = "获取 ${排序组} 中排名为 ${index} 的数据"
+comment = ""
+category = PO_Sort
+returns = real
+[[.args]]
+type = SortGroup
+default = "PO_lastCreatedSortGroup"
+[[.args]]
+type = integer
+
+[GetSortInt]
+title = "选取循环数 [P]"
+description = "选取循环数"
+comment ="使用'选取排序组做动作'时, 指代相应的循环整数."
+category = PO_Sort
+returns = integer
+
+[GetSortIndex]
+title = "选取索引 [P]"
+description = "选取索引"
+comment ="使用'选取排序组做动作'时, 指代相应的索引."
+category = PO_Sort
+returns = integer
+
+[GetSortValue]
+title = "选取数据 [P]"
+description = "选取数据"
+comment ="使用'选取排序组做动作'时, 指代相应的数据."
+category = PO_Sort
+returns = real
+
+
+
+
+
+
+
+[PO_HS_BEIZHU18]
+title = "---------- ★  自动施法函数  ★ ----------"
+description = "---------- ★  自动施法函数  ★ ----------"
+comment = ""
+category = PO_AI
+returns = AuMagicId
+
+[PO_AuMagic_create]
+title = "新建自动施法实例 [P]"
+description = "创建自动施法实例[单位：${unit}, 技能：${abilcode}, 半径判断范围：${value}]"
+comment = "只适用于'通魔'."
+category = PO_AI
+returns = AuMagicId
+[[.args]]
+type = unit
+[[.args]]
+type = abilcode
+[[.args]]
+type = real
+
+
+
+
+
+
+
+
+
+[PO_HS_BEIZHU16]
+title = "---------- ★  音频函数  ★ ----------"
+description = "---------- ★  音频函数  ★ ----------"
+comment = ""
+category = PO_Sound
+returns = PO_Music
+
+[PO_Music_create]
+title = "新建音乐组 [P]"
+description = "新建空的音乐组"
+comment = "同步创建，同步播放。"
+category = PO_Sound
+returns = PO_Music
+
+[PO_HS_BEIZHU17]
+title = "---------- ★  音频函数  ★ ----------"
+description = "---------- ★  音频函数  ★ ----------"
+comment = ""
+category = PO_Sound
+returns = PO_Sound
+
+[PO_Sound_create]
+title = "新建音效 [P]"
+description = "创建新的 ${音效}，音量:${Volume}"
+comment = "同步创建，可异步播放。"
+category = PO_Sound
+returns = PO_Sound
+[[.args]]
+type = MusicPath
+[[.args]]
+type = integer
+default = "127"
+min = 0
+max = 127
+
+[PO_MusicPath]
+title = "音频路径 [P]"
+description = "音频路径：${Path}"
+comment = ""
+category = PO_Sound
+returns = MusicPath
+[[.args]]
+type = string
+
+
+
+
+
+
+
+
+
+[GetMapWorkOutLevel]
+title = "计算当前地图等级 [P]"
+description = "通过游戏时长 ${分钟} 计算地图等级"
+comment =""
+category = PO_integer
+returns = integer
+[[.args]]
+type = integer
+min = 0
+
+[PO_GetTimeStamp]
+title = "获取网易平台时间戳 [P]"
+description = "获取网易平台时间戳 ${时间}"
+comment =""
+category = PO_integer
+returns = integer
+[[.args]]
+type = TimeStamp
+default = "TimeStamp1"
+
+[PO_Inverse36System]
+title = "36进制转10进制字符串 [P]"
+description = "转换36进制 (${字符串}) 为10进制整数"
+comment = "36进制“0-z”"
+category = PO_integer
+returns = integer
+[[.args]]
+type = string
+default = "null"
+
+[PO_Inverse62System]
+title = "62进制转10进制字符串 [P]"
+description = "转换62进制 (${字符串}) 为10进制整数"
+comment = "62进制“0-z-Z”"
+category = PO_integer
+returns = integer
+[[.args]]
+type = string
+default = "null"
+
+[PO_Inverse92System]
+title = "92进制转10进制字符串 [P]"
+description = "转换92进制 (${字符串}) 为10进制整数"
+comment = "92进制“0-z-Z-!@#$%^&*()-_=+[{]}\\|;:'\",<.>/?”"
+category = PO_integer
+returns = integer
+[[.args]]
+type = string
+default = "null"
+
+
+
+
+
+[PO_36System]
+title = "10进制整数转36进制字符串 [P]"
+description = "转换 (${整数}) 为36进制字符串,保留长度 ${length}"
+comment = "36进制“0-z”，长度为0不限制长度."
+category = PO_string
+returns = string
+[[.args]]
+type = integer
+[[.args]]
+type = integer
+
+
+[PO_62System]
+title = "10进制整数转62进制字符串 [P]"
+description = "转换 (${整数}) 为62进制字符串,保留长度 ${length}"
+comment = "62进制“0-z-Z”长度为0不限制长度."
+category = PO_string
+returns = string
+[[.args]]
+type = integer
+[[.args]]
+type = integer
+
+
+[PO_92System]
+title = "10进制整数转92进制字符串 [P]"
+description = "转换 (${整数}) 为92进制字符串,保留长度 ${length}"
+comment = "92进制“0-z-Z-!@#$%^&*()-_=+[{]}\\|;:'\",<.>/?”长度为0不限制长度.不包含~."
+category = PO_string
+returns = string
+[[.args]]
+type = integer
+[[.args]]
+type = integer
+
+
+[PO_GetI2ASCII]
+title = "整数转ASCII编码 [P]"
+description = "${整数} 转ASCII编码"
+comment = ""
+category = PO_string
+returns = string
+[[.args]]
+type = integer
+
+
+[PO_R2SWY]
+title = "转实数为数量单位字符串 [P]"
+description = "转 ${real} 为数量单位字符串,保留整数 ${index}保留小数点 ${index}"
+comment = "例:12153保留整数'十'不会转换.保留整数'个'、保留小数点'2'则转为1.21万."
+category = PO_string
+returns = string
+[[.args]]
+type = real
+default = "GetUnitStateSwap"
+[[.args]]
+type = R2SWY
+default = "R2SWY2"
+[[.args]]
+type = integer
+default = "0"
+min = 0
+
+[PO_gsub]
+title = "替换字符串 [P]"
+description = "替换 ${str} 里面的 ${pattern} 内容为 ${value}, 替换次数 ${count}"
+comment ="替换次数为0，则将所有的pattern都替换掉。"
+category = PO_string
+returns = string
+[[.args]]
+type = string
+[[.args]]
+type = string
+[[.args]]
+type = string
+[[.args]]
+type = integer
+
+[PO_R2S]
+title = "转换实数为字符串(去小数点) [P]"
+description = "转换 ${Real} 为字符串(去小数点)"
+comment = "例：1.24转为1"
+category = PO_string
+returns = string
+[[.args]]
+type = real
+default = "GetUnitStateSwap"
+
+
+[PO_miR2S]
+title = "实数取整转字符串 [P]"
+description = "${Real} 取整转字符串"
+comment = "四舍五入"
+category = PO_string
+returns = string
+[[.args]]
+type = real
+default = "GetUnitStateSwap"
+
+
+[PO_miR2SP]
+title = "实数取整转百分比字符串 [P]"
+description = "${Real} 取整转百分比字符串"
+comment = "四舍五入"
+category = PO_string
+returns = string
+[[.args]]
+type = real
+default = "GetUnitStateSwap"
+
+[PO_miR2SP1]
+title = "实数转百分比字符串 [P]"
+description = "${Real} 转百分比字符串"
+comment = ""
+category = PO_string
+returns = string
+[[.args]]
+type = real
+default = "GetUnitStateSwap"
+
+
+
+
+
+
+
+
+
+
+
+
+
+[CreateTextTagUnitBJ]
+title = "创建漂浮文字(指定单位) [P]"
+description = "创建漂浮文字: ${文字} 在 ${单位}的头顶, Z轴偏移 ${Z},字体大小: ${Size} ,颜色值:(${Red}%, ${Green}%, ${Blue}%) ,透明度: ${Transparency}%"
+comment = "该方式创建的漂浮文字并不会跟随单位一起移动.  颜色格式为(红,绿,蓝). 透明度100%是不可见的."
+category = PO_string
+returns = texttag
+[[.args]]
+type = StringExt
+[[.args]]
+type = unit
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "10"
+min = 1
+[[.args]]
+type = real
+default = "100"
+min = 0
+max = 100
+[[.args]]
+type = real
+default = "100"
+min = 0
+max = 100
+[[.args]]
+type = real
+default = "100"
+min = 0
+max = 100
+[[.args]]
+type = real
+default = "0"
+min = 0
+max = 100
+
+[PO_CreateTextTagUnit_C]
+title = "创建漂浮文字(指定单位) [C][P]"
+description = "创建漂浮文字: ${文字} 在 ${单位}的头顶, Z轴高度: ${Z} ,字体大小: ${Size} ,颜色值:(${Red}, ${Green}, ${Blue}) ,透明度: ${Transparency}"
+comment = "颜色格式为(红,绿,蓝). 透明值0为不可见. 颜色值和透明值取值范围为0-255."
+category = PO_string
+returns = texttag
+[[.args]]
+type = StringExt
+[[.args]]
+type = unit
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0.23"
+[[.args]]
+type = integer
+default = "255"
+min = 0
+max = 255
+[[.args]]
+type = integer
+default = "255"
+min = 0
+max = 255
+[[.args]]
+type = integer
+default = "255"
+min = 0
+max = 255
+[[.args]]
+type = integer
+default = "255"
+min = 0
+max = 255
+
+[PO_CreateTextTagMark]
+title = "创建漂浮文字(指定坐标) [P]"
+description = "创建漂浮文字: ${文字} 在坐标（${X} ${Y}）,Z轴高度: ${Z} ,字体大小: ${Size} ,颜色值:(${Red}%, ${Green}%, ${Blue}%) ,透明度: ${Transparency}%"
+comment = "颜色格式为(红,绿,蓝). 透明度100%是不可见的."
+category = PO_string
+returns = texttag
+[[.args]]
+type = StringExt
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "10"
+min = 1
+[[.args]]
+type = real
+default = "100"
+min = 0
+max = 100
+[[.args]]
+type = real
+default = "100"
+min = 0
+max = 100
+[[.args]]
+type = real
+default = "100"
+min = 0
+max = 100
+[[.args]]
+type = real
+default = "0"
+min = 0
+max = 100
+
+[PO_CreateTextTagMark_C]
+title = "创建漂浮文字(指定坐标) [C][P]"
+description = "创建漂浮文字: ${文字} 在坐标（${X} ${Y}）,Z轴高度: ${Z} ,字体大小: ${Size} ,颜色值:(${Red}, ${Green}, ${Blue}) ,透明度: ${Transparency}"
+comment = "颜色格式为(红,绿,蓝). 透明值0为不可见. 颜色值和透明值取值范围为0-255."
+category = PO_string
+returns = texttag
+[[.args]]
+type = StringExt
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0.23"
+[[.args]]
+type = integer
+default = "255"
+min = 0
+max = 255
+[[.args]]
+type = integer
+default = "255"
+min = 0
+max = 255
+[[.args]]
+type = integer
+default = "255"
+min = 0
+max = 255
+[[.args]]
+type = integer
+default = "255"
+min = 0
+max = 255
+
+[PO_IsWalkable]
+title = "判断坐标是否可通过 [P]"
+description = "判断坐标（${X} ${Y}）是否可通过"
+comment = "会创建一个隐藏的物品.如果有选取物品的动作一定要判断物品是否隐藏."
+category = PO_boolean
+returns = boolean
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+
+[PO_IsDead]
+title = "判断目标是否死亡 [P]"
+description = "判断 ${目标} 是否死亡"
+comment = ""
+category = PO_boolean
+returns = boolean
+[[.args]]
+type = unit
+
+[PO_SuspendedAnimation_Create]
+title = "新建假死单位(假死单位不足则新建单位) [P]"
+description = "新建 ${玩家} 的 ${单位} 在(${X},${Y}),面向角度:${Face} 度"
+comment = "假死的单位可用此函数重新创建出来，可用'最后创建的假死单位'来获取。"
+category = PO_unit
+returns = unit
+[[.args]]
+type = player
+default = "Player00"
+[[.args]]
+type = unitcode
+default = "hfoo"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = degree
+default = "0"
+
+
+[PO_SuspendedAnimation_GetKillingUnit]
+title = "获取假凶手单位 [P]"
+description = "假凶手单位"
+comment = "响应单位假死事件."
+category = PO_unit
+returns = unit
+
+[PO_SuspendedAnimation_Unit]
+title = "获取假死单位 [P]"
+description = "假死单位"
+comment = "响应单位假死事件."
+category = PO_unit
+returns = unit
+
+[PO_majia]
+title = "获取万能马甲 [P]"
+description = "万能马甲"
+comment = "中立单位."
+category = PO_unit
+returns = unit
+
+
+[PO_Lifebar_BTUnit]
+title = "获取白条到期单位 [P]"
+description = "白条到期单位"
+comment = "响应白条到期事件."
+category = PO_unit
+returns = unit
+
+
+[PO_GetCreateUnit]
+title = "获取新建单位 [P]"
+description = "新建单位"
+comment = "响应任意单位新建事件."
+category = PO_unit
+returns = unit
+
+
+[PO_ItemMouse]
+title = "获取鼠标指向的物品 [P]"
+description = "获取鼠标指向的物品"
+comment = "硬件动作"
+category = PO_item
+returns = item
+
+[PO_ItemsFormula_CraftItem]
+title = "检视单位背包合成物品 [P]"
+description = "检视 ${单位} 背包合成物品"
+comment = "物品合成系统."
+category = PO_item
+returns = item
+[[.args]]
+type = unit
+
+
+
+
+
+
+
+[PO_HS_BEIZHU09]
+title = "---------- ★  FDF函数  ★ ----------"
+description = "---------- ★  FDF函数  ★ ----------"
+comment = ""
+category = PO_FDF
+returns = frame
+
+[pp_fdf_create]
+title = "新建FrameFDF [P]"
+description = "新建Frame 类型:${type} 父节点:${parent}"
+comment = "带贴图的按钮无法直接设置贴图，需要用设置按钮贴图修改，其他类型均可常规使用"
+category = PO_FDF
+returns = frame
+[[.args]]
+type = PPfdfFrame
+default = "PPfdfFrame1"
+[[.args]]
+type = frame
+default = DzGetGameUI
+
+[pp_fdf_GetSliderThumbButton]
+title = "获取滚动条中的滑块 [P]"
+description = "获取 ${滚动条} 中的滑块"
+comment = "获取创建滚动条时自带的滑块控件，用于设置大小，可响应事件"
+category = PO_FDF
+returns = frame
+[[.args]]
+type = frame
+
+[pp_fdf_GetSliderValue]
+title = "获取滚动条的数据 [P]"
+description = "获取 ${滚动条} 的 ${数据}"
+comment = "获取滚动条的最小值,最大值,步进值"
+category = PO_FDF
+returns = real
+[[.args]]
+type = frame
+[[.args]]
+type = PPfdfSlider
+
+
+[PO_IsMouseCli]
+title = "判断被移动的Frame [P]"
+description = "判断被移动的 ${Frame}"
+comment = "特殊用途"
+category = PO_Drag
+returns = boolean
+[[.args]]
+type = frame
+
+[PO_IsMouseCli2]
+title = "判断鼠标点击和释放 [P]"
+description = "判断鼠标点击和释放"
+comment = "特殊用途"
+category = PO_Drag
+returns = boolean
+
+[PO_Screen_GetPointX]
+title = "获取拖动fram的X坐标 [P]"
+description = "获取拖动 ${Frame} 的X坐标"
+comment = ""
+category = PO_Drag
+returns = real
+[[.args]]
+type = frame
+
+[PO_Screen_GetPointY]
+title = "获取拖动fram的Y坐标 [P]"
+description = "获取拖动 ${Frame} 的Y坐标"
+comment = ""
+category = PO_Drag
+returns = real
+[[.args]]
+type = frame
+
+[PO_Screen_X]
+title = "获取鼠标在UI上的X坐标 [P]"
+description = "获取鼠标的中心锚点的绝对X坐标"
+comment = "无偏差"
+category = BZ_GUI
+returns = real
+
+[PO_Screen_Y]
+title = "获取鼠标在UI上的Y坐标 [P]"
+description = "获取鼠标的中心锚点的绝对Y坐标"
+comment = "无偏差"
+category = BZ_GUI
+returns = real
+
+[PO_Screen_InX]
+title = "获取鼠标相对游戏UI中心的X坐标 [P]"
+description = "获取鼠标相对游戏UI中心的X坐标"
+comment = ""
+category = BZ_GUI
+returns = real
+
+[PO_Screen_InY]
+title = "获取鼠标相对游戏UI中心的Y坐标 [P]"
+description = "获取鼠标相对游戏UI中心的Y坐标"
+comment = ""
+category = BZ_GUI
+returns = real
+
+[PO_Frame_X]
+title = "UI分辨率计算UI宽 [P]"
+description = "像素宽: ${value} 缩放比例: ${value}"
+comment = "默认为1440*1080分辨率计算"
+category = BZ_GUI
+returns = real
+[[.args]]
+type = real
+default = 0
+[[.args]]
+type = real
+default = 1.0
+
+[PO_Frame_Y]
+title = "UI分辨率计算UI高 [P]"
+description = "像素高: ${value} 缩放比例: ${value}"
+comment = "默认为1440*1080分辨率计算"
+category = BZ_GUI
+returns = real
+[[.args]]
+type = real
+default = 0
+[[.args]]
+type = real
+default = 1.0
+
+[PO_NativeFrame]
+title = "[破破] - 原生Frame [P]"
+description = "原生Frame:${Frame}"
+comment = ""
+category = BZ_GUI
+returns = frame
+[[.args]]
+type = NativeFrame
+
+
+    
+
+
+
+
+
+[PO_GetTriggeringRect]
+title = "触发区域 [P]"
+description = "触发区域"
+comment = "响应单位进入/离开矩形区域事件."
+category = TC_EVENTRESPONSE
+returns = rect
+
+[PO_RandomRectX]
+title = "随机X坐标 [P]"
+description = "${矩形区域} 的随机X坐标"
+comment = ""
+category = TC_RECT
+returns = real
+[[.args]]
+type = rect
+default = "GetPlayableMapRect"
+
+[PO_RandomRectY]
+title = "随机Y坐标 [P]"
+description = "${矩形区域} 的随机Y坐标"
+comment = ""
+category = TC_RECT
+returns = real
+[[.args]]
+type = rect
+default = "GetPlayableMapRect"
+
+[ConvertFogState]
+title = "转句柄整数为迷雾状态 [P]"
+description = "转 ${句柄整数} 为迷雾状态"
+comment = ""
+category = PO_CJ
+returns = fogstate
+[[.args]]
+type = integer
+
+
+
+
+
+
+
+

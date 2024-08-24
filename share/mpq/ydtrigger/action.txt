@@ -1,0 +1,465 @@
+
+[YDWERegionMultiple]
+title = "收纳盒"
+description = "--------  ★   ${注释文本}   ★  --------"
+comment = ""
+category = TC_COMMENT
+[[.args]]
+type = scriptcode
+
+[CommentString]
+title = "文本注释"
+description = "--------  ★   ${注释文本}   ★  --------"
+comment = ""
+category = TC_COMMENT
+[[.args]]
+type = scriptcode
+
+[CustomScriptCode]
+title = "自定义代码"
+description = "自定义代码:   ${Jass 代码}"
+comment = "输入一行代码. 比如: call my_func(udg_my_var)"
+category = TC_YDBF
+[[.args]]
+type = scriptcode
+
+[YDWEForGroupMultiple]
+title = "选取单位 -- 单位组做动作"
+description = "选取 ${单位组} 内所有单位做动作"
+comment = "循环单位组第一个单位做动作"
+category = TC_YDBF
+[[.args]]
+type = group
+
+[YDWEEnumUnitsInRangeMultiple]
+title = "选取单位 -- 圆形范围"
+description = "选取以(${坐标X}, ${坐标Y})为圆心,${半径}为半径的圆范围内的单位做动作"
+comment = "选取范围内的单位做动作"
+category = TC_YDBF
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "512"
+
+[YDWESetAnyTypeLocalVariable]
+title = "局部变量 -- 设置"
+description = "设置 [${类型}] loc_${变量名} = ${null}"
+comment = "设置局部变量，可以指定变量类型.在1.24下不可直接将变量置为null"
+category = TC_YDBF
+[[.args]]
+type = typename
+[[.args]]
+type = scriptcode
+[[.args]]
+type = Null
+
+
+[YDWESetAnyTypeLocalVariableop]
+title = "局部变量 -- 运算设置 [P]"
+description = "设置 [${类型}] loc_${变量名} ${运算符}= ${null}"
+comment = "局部变量算术运算"
+category = TC_YDBF
+[[.args]]
+type = typenamep
+[[.args]]
+type = scriptcode
+[[.args]]
+type = YArithmeticOperator
+default = "YOperatorAdd"
+[[.args]]
+type = Null
+
+[YDWESetAnyTypeLocalArray]
+title = "局部变量 -- 设置数组 [New!]"
+description = "设置 [${类型}] loc_${变量名}[${索引}] = ${null}"
+comment = "设置局部变量数组，注意: 数组不能穿透逆天计时器、逆天触发器"
+category = TC_YDBF
+[[.args]]
+type = typename
+[[.args]]
+type = scriptcode
+[[.args]]
+type = integer
+default = 0
+[[.args]]
+type = Null
+
+[YDWESetAnyTypeLocalArrayop]
+title = "局部变量 -- 运算设置数组 [P]"
+description = "设置 [${类型}] loc_${变量名}[${索引}] ${运算符}= ${null}"
+comment = "局部变量数组算术运算"
+category = TC_YDBF
+[[.args]]
+type = typenamep
+[[.args]]
+type = scriptcode
+[[.args]]
+type = integer
+default = 0
+[[.args]]
+type = YArithmeticOperator
+default = "YOperatorAdd"
+[[.args]]
+type = Null
+
+[YDWESetAnyTypeLocalVariableClear]
+title = "局部变量 -- 清除 [P]"
+description = "清除 [${类型}] loc_${变量名}"
+comment = "清空局部变量。"
+category = TC_YDBF
+[[.args]]
+type = typename
+[[.args]]
+type = scriptcode
+
+
+[YDWEForLoopLocVarMultiple]
+title = "局部变量 -- 循环"
+description = "循环 loop_${局部变量名} 从 ${开始} 到 ${结束}"
+comment = ""
+category = TC_YDBF
+[[.args]]
+type = scriptcode
+[[.args]]
+type = integer
+default = "1"
+[[.args]]
+type = integer
+default = "10"
+
+
+[ForLoopLocVarPlayer]
+title = "在线的用户玩家 -- 循环 [P]"
+description = "循环在线的用户 play_${局部变量名} 从 ${开始} 到 ${结束}"
+comment = ""
+category = TC_YDBF
+[[.args]]
+type = scriptcode
+[[.args]]
+type = integer
+default = "1"
+min = 1
+max = 16
+[[.args]]
+type = integer
+default = "10"
+min = 1
+max = 16
+
+[YDWETimerStartMultiple]
+title = "计时器   -- 运行"
+description = "运行 ${计时器}，周期: ${时间} 秒，模式: ${模式}"
+comment = "让计时器运行多个动作。计时器内不能使用等待。"
+category = TC_YDBF
+[[.args]]
+type = timer
+default = "CreateTimer"
+[[.args]]
+type = real
+default = "0.03"
+min = 0
+[[.args]]
+type = periodicoption
+default = "PeriodicOptionOneTime"
+
+[YDWETimerStartFlush]
+title = "计时器   -- 清除"
+description = "清除当前逆天计时器"
+comment = "删除当前逆天计时器，并清空缓存或哈希表."
+category = TC_YDBF
+[[.args]]
+type = nothing
+
+[YDWERegisterTriggerMultiple]
+title = "触发器   -- 注册"
+description = "注册 ${触发器}"
+comment = "触发器内不能使用等待。"
+category = TC_YDBF
+[[.args]]
+type = trigger
+default = "CreateTrigger"
+
+[YDWERegisterTriggerFlush]
+title = "触发器   -- 清除"
+description = "清除当前逆天触发器"
+comment = "删除当前逆天触发器，并清空缓存或哈希表."
+category = TC_YDBF
+[[.args]]
+type = nothing
+
+[YDWEExecuteTriggerMultiple]
+title = "触发器   -- 运行 [New!]"
+description = "运行 ${触发器}， ${条件}"
+comment = ""
+category = TC_YDBF
+[[.args]]
+type = trigger
+[[.args]]
+type = tirggerexecute
+default = "tirggerexecute_notcondition"
+
+[YDWESaveAnyTypeDataByUserData]
+title = "自定义值 -- 设置"
+description = "设置 [${类型}] ${null} 的 ${属性} 为 [${类型}]${null}"
+comment = "设置某个数据的自定义属性，如设置[单位]李启铭_的_爸爸_为[单位]李刚。"
+category = TC_YDBF
+[[.args]]
+type = typename
+[[.args]]
+type = Null
+[[.args]]
+type = scriptcode
+[[.args]]
+type = typename
+[[.args]]
+type = Null
+
+[YDWESaveAnyTypeDataByUserDataop]
+title = "自定义值 -- 运算设置 [P]"
+description = "设置 [${类型}] ${null} 的 ${属性} 为 [${类型}] ${运算符} ${null}"
+comment = "自定义值算术运算"
+category = TC_YDBF
+[[.args]]
+type = typename
+[[.args]]
+type = Null
+[[.args]]
+type = scriptcode
+[[.args]]
+type = typenameop
+[[.args]]
+type = YArithmeticOperator
+default = "YOperatorAdd"
+[[.args]]
+type = Null
+
+
+[YDWEFlushAnyTypeDataByUserData]
+title = "自定义值 -- 清除"
+description = "清空 [${类型}] ${null} 的[${类型}] ${属性}"
+comment = "清空某个数据的某项自定义属性。"
+category = TC_YDBF
+[[.args]]
+type = typename
+[[.args]]
+type = Null
+[[.args]]
+type = typename
+[[.args]]
+type = scriptcode
+
+[YDWEFlushAllByUserData]
+title = "自定义值 -- 清除全部"
+description = "清空 [${类型}] ${null} 的所有自定义属性。"
+comment = "清空某个数据所有的自定义属性。"
+category = TC_YDBF
+[[.args]]
+type = typename
+[[.args]]
+type = Null
+
+[YDWESaveAnyTypeDataByUserData2]
+title = "自定义值 -- 设置 [P]"
+description = "设置 ${Key} 的 ${属性} 为 [${类型}] ${null}"
+comment = "自定义值全字符串设置"
+category = TC_YDBF
+[[.args]]
+type = scriptcode
+[[.args]]
+type = scriptcode
+[[.args]]
+type = typename
+[[.args]]
+type = Null
+
+[YDWESaveAnyTypeDataByUserData3]
+title = "自定义值 -- 设置 [P][New!]"
+description = "设置 [${类型}] ${null} 的 ${整数} 为 [${类型}]${null}"
+comment = "设置某个数据的自定义属性，如设置[单位]李启铭_的_爸爸_为[单位]李刚。"
+category = TC_YDBF
+[[.args]]
+type = typename
+[[.args]]
+type = Null
+[[.args]]
+type = integer
+[[.args]]
+type = typename
+[[.args]]
+type = Null
+
+[YDWESaveAnyTypeDataByUserDataop3]
+title = "自定义值 -- 运算设置 [P][New!]"
+description = "设置 [${类型}] ${null} 的 ${整数} 为 [${类型}] ${运算符} ${null}"
+comment = "自定义值算术运算"
+category = TC_YDBF
+[[.args]]
+type = typename
+[[.args]]
+type = Null
+[[.args]]
+type = integer
+[[.args]]
+type = typenameop
+[[.args]]
+type = YArithmeticOperator
+default = "YOperatorAdd"
+[[.args]]
+type = Null
+
+[YDWEFlushAnyTypeDataByUserData3]
+title = "自定义值 -- 清除 [P][New!]"
+description = "清空 [${类型}] ${null} 的[${类型}] ${整数}"
+comment = "清空某个数据的某项自定义属性。"
+category = TC_YDBF
+[[.args]]
+type = typename
+[[.args]]
+type = Null
+[[.args]]
+type = typename
+[[.args]]
+type = integer
+
+[YDWESaveAnyTypeDataByUserPlayerData]
+title = "玩家自定义值 -- 设置 [P][New!]"
+description = "设置 ${玩家} 的 [${类型}] ${null} 的 ${属性} 为 [${类型}]${null}"
+comment = "每个玩家独立的哈希表"
+category = TC_YDBF
+[[.args]]
+type = player
+[[.args]]
+type = typename
+[[.args]]
+type = Null
+[[.args]]
+type = scriptcode
+[[.args]]
+type = typename
+[[.args]]
+type = Null
+
+[YDWESaveAnyTypeDataByUserPlayerDataop]
+title = "玩家自定义值 -- 运算设置 [P][New!]"
+description = "设置 ${玩家} 的 [${类型}] ${null} 的 ${属性} 为 [${类型}] ${运算符} ${null}"
+comment = "每个玩家独立的哈希表"
+category = TC_YDBF
+[[.args]]
+type = player
+[[.args]]
+type = typename
+[[.args]]
+type = Null
+[[.args]]
+type = scriptcode
+[[.args]]
+type = typenameop
+[[.args]]
+type = YArithmeticOperator
+default = "YOperatorAdd"
+[[.args]]
+type = Null
+
+
+[YDWEFlushAnyTypeDataByUserPlayerData]
+title = "玩家自定义值 -- 清除 [P][New!]"
+description = "清空 ${玩家} 的 [${类型}] ${null} 的[${类型}] ${属性}"
+comment = "每个玩家独立的哈希表"
+category = TC_YDBF
+[[.args]]
+type = player
+[[.args]]
+type = typename
+[[.args]]
+type = Null
+[[.args]]
+type = typename
+[[.args]]
+type = scriptcode
+
+[YDWEFlushAllByUserPlayerData]
+title = "玩家自定义值 -- 清除全部 [P][New!]"
+description = "清空 ${玩家} 的 [${类型}] ${null} 的所有自定义属性。"
+comment = "每个玩家独立的哈希表"
+category = TC_YDBF
+[[.args]]
+type = player
+[[.args]]
+type = typename
+[[.args]]
+type = Null
+
+[SetVariable]
+title = "设置变量"
+description = "设置 ${变量} = ${Value}"
+comment = "给变量赋值."
+category = TC_PUTONG
+[[.args]]
+type = AnyGlobal
+[[.args]]
+type = Null
+
+[ReturnAction]
+title = "跳过剩余动作"
+description = "跳过剩余动作"
+comment = "跳过剩余动作,直接中止触发运行. 但是在组动作中无效."
+category = TC_PUTONG2
+[[.args]]
+type = nothing
+
+[YDWEExitLoop]
+title = "退出循环"
+description = "退出循环"
+comment = "退出循环,也能退出逆天选取单位动作."
+script_name = DoNothing() YDNL exitwhen true//
+category = TC_PUTONG2
+[[.args]]
+type = nothing
+
+[IfThenElseMultiple]
+title = "If / Then / Else (多项功能)"
+description = "如果(所有的条件成立) 则运行 (Then - 动作) 否则运行 (Else - 动作)"
+comment = ""
+category = TC_PUTONG3
+[[.args]]
+type = nothing
+
+[IfThenElse]
+title = "If / Then / Else (单项功能)"
+description = "如果 ${条件} 成立,则运行 ${Action} 否则运行 ${Action}"
+comment = ""
+category = TC_PUTONG3
+[[.args]]
+type = boolexpr
+[[.args]]
+type = code
+default = "DoNothing"
+[[.args]]
+type = code
+default = "DoNothing"
+
+[YDWEActivateTrigger]
+title = "激活触发"
+description = "激活 ${Trigger} ( ${On/Off} 兼容模式 )"
+comment = "不要多次激活一个触发器。不要激活未开启休眠的触发器。打开兼容模式会略微影响效率，若关闭兼容模式，请保证该动作在需要激活的触发器之后，否则会有语法错误。"
+category = TC_TRIGGER
+[[.args]]
+type = trigger
+[[.args]]
+type = onoffoption
+default = "OnOffOn"
+
+[YDWEWaitForLocalVariable]
+title = "等待(局部变量专用)[YDWE]"
+description = "等待 ${Time} 秒(局部变量专用)"
+comment = "使用逆天系列的UI，无需使用它。"
+category = TC_YDHIDE
+[[.args]]
+type = real
+default = "2"
+min = 0

@@ -1,0 +1,16 @@
+﻿[PO_OperatorCompareFrame]
+title = "Frame [P]"
+description = "[Frame] - ${Frame} ${Operator} ${Frame}"
+comment = ""
+category = PO_CONDITION
+[[.args]]
+type = frame
+default = "DzGetTriggerUIEventFrame"
+[[.args]]
+type = EqualNotEqualOperator
+default = "OperatorEqualENE"
+[[.args]]
+type = frame
+default = "DzGetGameUI"
+
+

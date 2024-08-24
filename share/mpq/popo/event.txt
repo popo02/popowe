@@ -1,0 +1,33 @@
+﻿[PO_SuspendedAnimation_Event]
+title = "单位假死事件 [P]"
+description = "预设单位 假死"
+comment = "需预设假死单位类型."
+category = PO_unit
+
+[PO_Lifebar_BTEvent]
+title = "Frame白条到期事件 [P]"
+description = "Frame白条 到期"
+comment = "血条系统中单位血条下方的白条结束事件."
+category = PO_unit
+
+[PO_TriggerRegisterEnterRectSimple]
+title = "单位进入矩形区域 [P]"
+description = "任意单位进入 ${矩形区域}"
+comment = "可以获取触发区域."
+category = PO_unit
+[[.args]]
+type = rect
+
+[PO_TriggerRegisterLeaveRectSimple]
+title = "单位离开矩形区域  [P]"
+description = "任意单位离开 ${矩形区域}"
+comment = "可以获取触发区域."
+category = PO_unit
+[[.args]]
+type = rect
+
+[PO_CreateUnitEvent]
+title = "单位新建事件 [P]"
+description = "任意单位 新建"
+comment = "响应新建单位坐标和点."
+category = PO_unit

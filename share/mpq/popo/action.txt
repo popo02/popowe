@@ -1,0 +1,2738 @@
+[PO_SendVersion]
+title = "发送编辑器版本号信息"
+description = "发送编辑器版本号信息"
+comment = ""
+category = Oninit
+
+[SetPlatformEnvironment]
+title = "平台环境"
+description = "设置平台环境为 ${平台}"
+comment = "11环境需要有11平台的asi文件"
+category = Oninit
+[[.args]]
+type = Maprecord
+default = Maprecord01
+
+[PO_Console]
+title = "显示和隐藏黑窗口控制台"
+description = "黑窗口控制台：${类型}"
+comment = "显示或隐藏开始游戏时多出来的黑窗口."
+category = Oninit
+[[.args]]
+type = Console
+default = Console01
+
+[Leak_Initialization]
+title = "泄漏检测初始化"
+description = "泄漏检测初始化"
+comment = "按ESC显示泄漏数据"
+category = Oninit
+
+[CheckSync_Initialization]
+title = "异次元检测初始化"
+description = "异次元检测初始化"
+comment = "当玩家进入异次元时会有信息提示,单人不会检测."
+category = Oninit
+
+[PO_ClearNotes]
+title = "清理物编注释符"
+description = "清理物编注释符"
+comment = "清理物编单位和物品中名字带有'#'的字符串."
+category = Oninit
+
+[PO_Command]
+title = "初始化命令按钮位置"
+description = "移动：(${X1},${Y1}) 攻击：(${X2},${Y2}) 攻击地面：(${X3},${Y3}) 保持原位：(${X4},${Y4}) 巡逻：(${X5},${Y5}) 设集结点：(${X6},${Y6}) 英雄技能：(${X7},${Y7}) 停止：(${X8},${Y8})"
+comment = "可用0,-11隐藏按钮"
+category = Oninit
+[[.args]]
+type = CommandX
+default = "CommandX1"
+[[.args]]
+type = CommandY
+default = "CommandY1"
+[[.args]]
+type = CommandX
+default = "CommandX4"
+[[.args]]
+type = CommandY
+default = "CommandY1"
+[[.args]]
+type = CommandX
+default = "CommandX4"
+[[.args]]
+type = CommandY
+default = "CommandY2"
+[[.args]]
+type = CommandX
+default = "CommandX3"
+[[.args]]
+type = CommandY
+default = "CommandY1"
+[[.args]]
+type = CommandX
+default = "CommandX1"
+[[.args]]
+type = CommandY
+default = "CommandY2"
+[[.args]]
+type = CommandX
+default = "CommandX4"
+[[.args]]
+type = CommandY
+default = "CommandY2"
+[[.args]]
+type = CommandX
+default = "CommandX4"
+[[.args]]
+type = CommandY
+default = "CommandY2"
+[[.args]]
+type = CommandX
+default = "CommandX2"
+[[.args]]
+type = CommandY
+default = "CommandY1"
+
+[CenterWindow]
+title = "窗口居中(分辨率为16:9)"
+description = "窗口居中(分辨率为16:9)"
+comment = ""
+category = NZjapi
+
+
+[Removeborders]
+title = "去除边框"
+description = "去除边框（${true} 保留标题栏）"
+comment = ""
+category = NZjapi
+[[.args]]
+type = boolean
+default = "true"
+
+
+
+
+
+
+
+
+
+
+[PO_DZ_BEIZHU01]
+title = "---------- ★  单位、英雄  ★ ----------"
+description = "---------- ★  单位、英雄  ★ ----------"
+comment = ""
+category = NZjapi
+
+[SetUnitName]
+title = "设置单位名字 [内置japi]"
+description = "设置 ${单位} 的名字为 ${名字}"
+comment ="每个单位独立,互相不影响,修改后获取单位名字还是返回原值"
+category = NZjapi
+[[.args]]
+type = unit
+[[.args]]
+type = string
+default = "null"
+
+[SetUnitProperName]
+title = "设置英雄称谓 [内置japi]"
+description = "设置 ${英雄} 的称谓为 ${称谓}"
+comment ="每个英雄独立,互相不影响,修改后获取英雄称谓返回修改后的值"
+category = NZjapi
+[[.args]]
+type = unit
+[[.args]]
+type = string
+default = "null"
+
+[PO_DZ_1600]
+title = "设置单位模型[内置japi]"
+description = "设置 ${单位} 的 模型:${模型路径}"
+comment ="改变任意单位的模型"
+category = NZjapi
+[[.args]]
+type = unit
+default = "null"
+[[.args]]
+type = modelfile
+default = "null"
+
+[PO_DZ_1601]
+title = "设置单位大头像模型[内置japi]"
+description = "设置 ${单位} 的 大头像模型:${模型路径}"
+comment ="改变任意单位的大头像模型,大头像模型可参考：Units - Human - HeroMountainKing - HeroMountainKing_Portrait.mdx"
+category = NZjapi
+[[.args]]
+type = unit
+default = "null"
+[[.args]]
+type = modelfile
+default = "null"
+
+[SetUnitMissileModel]
+title = "设置单位普攻弹道模型 [内置japi]"
+description = "设置 ${单位} 的普攻弹道模型为 ${模型}"
+comment ="每个单位独立,互相不影响,会被法球覆盖"
+category = NZjapi
+[[.args]]
+type = unit
+[[.args]]
+type = modelfile
+default = "\"effect\\[TX]xuanyun.mdl\""
+
+[SetUnitMissileArc]
+title = "设置单位普攻弹道弧度 [内置japi]"
+description = "设置 ${单位} 的普攻弹道弧度为 ${实数}"
+comment =""
+category = NZjapi
+[[.args]]
+type = unit
+[[.args]]
+type = real
+default = "0."
+
+[SetUnitMissileSpeed]
+title = "设置单位普攻弹道速度 [内置japi]"
+description = "设置 ${单位} 的普攻弹道速度为 ${实数}"
+comment =""
+category = NZjapi
+[[.args]]
+type = unit
+[[.args]]
+type = real
+default = "0."
+
+[SetUnitMissileHoming]
+title = "设置单位普攻弹道自导允许 [内置japi]"
+description = "设置 ${单位} 的单位普攻弹道自导允许为 ${允许}"
+comment =""
+category = NZjapi
+[[.args]]
+type = unit
+[[.args]]
+type = Homing
+default = "Homing1"
+
+[PO_DZ_1637]
+title = "设置单位移送类型 [内置japi]"
+description = "设置 ${单位} 的移动类型为 ${Value}"
+comment = ""
+category =  NZjapi
+[[.args]]
+type = unit
+default = "GetTriggerUnit"
+[[.args]]
+type =  MoveTypeB
+default = " MoveTypeB2"
+
+[PO_DZ_1638]
+title = "设置单位碰撞体积大小 [内置japi]"
+description = "设置 ${单位} 的碰撞体积大小为 ${Value}"
+comment = ""
+category =  NZjapi
+[[.args]]
+type = unit
+default = "GetTriggerUnit"
+[[.args]]
+type = real
+
+[PO_DZ_1605]
+title = "设置单位血条显示隐藏[内置japi]"
+description = "设置 ${单位} 的血条：${显示隐藏}"
+comment ="可以使某个单位的血条单独显示或者隐藏"
+category = NZjapi
+[[.args]]
+type = unit
+default = null
+[[.args]]
+type =  HpState
+default =  HpState1
+
+
+
+
+
+
+
+
+[PO_DZ_BEIZHU02]
+title = "---------- ★  物品  ★ ----------"
+description = "---------- ★  物品  ★ ----------"
+comment = ""
+category = NZjapi
+
+[PO_DZ_1626]
+title = "设置物品鼠标指向时在头顶显示的UI [内置japi]"
+description = "设置 ${物品} 的头顶UI和血条是否显示:${显示}"
+comment =""
+category = NZjapi
+[[.args]]
+type = item
+[[.args]]
+type =  HpState
+default = HpState1
+
+
+
+
+
+
+
+
+
+
+[PO_DZ_BEIZHU03]
+title = "---------- ★  特效  ★ ----------"
+description = "---------- ★  特效  ★ ----------"
+comment = ""
+category = NZjapi
+
+
+[PO_DZ_1629]
+title = "单位绑定特效 [内置japi]"
+description = "设置 ${单位} 的 ${Attachment Point} 位置绑定 ${特效}"
+comment =""
+category = NZjapi
+[[.args]]
+type = unit
+[[.args]]
+type = string
+default = "\"overhead\""
+[[.args]]
+type = effect
+default = "GetLastCreatedEffectBJ"
+
+[PO_DZ_1630]
+title = "物品绑定特效 [内置japi]"
+description = "设置 ${物品} 的 ${Attachment Point} 位置绑定 ${特效}"
+comment =""
+category = NZjapi
+[[.args]]
+type = item
+[[.args]]
+type = string
+default = "\"overhead\""
+[[.args]]
+type = effect
+default = "GetLastCreatedEffectBJ"
+
+[PO_DZ_1631]
+title = "特效绑定特效 [内置japi]"
+description = "设置 ${特效} 的 ${Attachment Point} 位置绑定 ${特效}"
+comment =""
+category = NZjapi
+[[.args]]
+type = effect
+[[.args]]
+type = string
+default = "\"overhead\""
+[[.args]]
+type = effect
+default = "GetLastCreatedEffectBJ"
+
+[EXSetEffectAnimation]
+title = "播放特效动画 [内置japi]"
+description = "播放 ${特效} 的指定动画：${索引}"
+comment =""
+category = NZjapi
+[[.args]]
+type = effect
+[[.args]]
+type = integer
+
+[PO_DZ_1633]
+title = "播放特效动画 [内置japi]"
+description = "播放 ${特效} 的指定动画：${字符串}"
+comment =""
+category = NZjapi
+[[.args]]
+type = effect
+[[.args]]
+type = string
+default = "\"attack\""
+
+[PO_DZ_1634]
+title = "缩放特效粒子 [内置japi]"
+description = "缩放 ${特效} 粒子特效 ${大小}"
+comment =""
+category = NZjapi
+[[.args]]
+type = effect
+[[.args]]
+type = real
+
+[PO_DZ_1617]
+title = "设置特效颜色 [内置japi]"
+description = "设置 ${特效} 的颜色为(红:${0-100}% 绿:${0-100}% 蓝:${0-100}%)"
+comment =""
+category = NZjapi
+[[.args]]
+type = effect
+[[.args]]
+type = real
+default = "0."
+min = 0
+max = 100
+[[.args]]
+type = real
+default = "0."
+min = 0
+max = 100
+[[.args]]
+type = real
+default = "0."
+min = 0
+max = 100
+
+
+[PO_DZ_1606]
+title = "设置特效显示隐藏[内置japi]"
+description = "设置 ${特效} ${显示隐藏}"
+comment ="立即设置某个特效隐藏还是显示"
+category = NZjapi
+[[.args]]
+type = effect
+default = null
+[[.args]]
+type =  EffectState
+default =  EffectState1
+
+[PO_DZ_1607]
+title = "设置特效迷雾中是否可见[内置japi]"
+description = "设置 ${特效} 迷雾中：${可见隐藏}"
+comment ="特效在进入到迷雾当中可见或不可见"
+category = NZjapi
+[[.args]]
+type = effect
+default = null
+[[.args]]
+type =  EffectFogState
+default =  EffectFogState1
+
+[PO_DZ_1608]
+title = "设置特效阴影中是否可见[内置japi]"
+description = "设置 ${特效} 阴影中：${可见隐藏}"
+comment ="特效在进入到阴影当中可见或不可见"
+category = NZjapi
+[[.args]]
+type = effect
+default = null
+[[.args]]
+type =  EffectShadowState
+default =  EffectShadowState1
+
+[PO_DZ_1632]
+title = "解除特效绑定 [内置japi]"
+description = "解除特效绑定: ${特效}"
+comment =""
+category = NZjapi
+[[.args]]
+type = effect
+default = "GetLastCreatedEffectBJ"
+
+
+
+
+
+
+
+
+[PO_DZ_BEIZHU04]
+title = "---------- ★  特殊  ★ ----------"
+description = "---------- ★  特殊  ★ ----------"
+comment = ""
+category = NZjapi
+
+[PO_DZ_1602]
+title = "设置游戏FPS隐藏显示[内置japi]"
+description = "设置游戏的FPS ${显示隐藏}"
+comment ="显示隐藏FPS"
+category = NZjapi
+[[.args]]
+type =  Fps
+default =  Fps1
+
+[PO_DZ_1603]
+title = "设置游戏锁定解锁60fps上限[内置japi]"
+description = "设置游戏的FPS上限为：${显示隐藏}"
+comment ="可以使游戏60fps突破至144fps"
+category = NZjapi
+[[.args]]
+type =  FpsLimit
+default =  FpsLimit1
+
+[PO_DZ_1610]
+title = "设置魔兽窗口宽度高度[内置japi]"
+description = "设置魔兽窗口宽度：${宽} 高度：${高}"
+comment ="仅在窗口化模式下有效！可以异步使单独玩家变化,条件布尔值中有判断是否窗口化函数,注意分辨率不同的玩家,实际感受大小不同"
+category = NZjapi
+[[.args]]
+type = integer
+default = 1600
+[[.args]]
+type = integer
+default = 900
+
+[PO_DZ_1610_1]
+title = "设置魔兽窗口在屏幕中的位置[内置japi]"
+description = "设置魔兽窗口在屏幕中的位置 X坐标：${宽} Y坐标：${高}"
+comment ="仅在窗口化模式下有效！可以异步使单独玩家变化,条件布尔值中有判断是否窗口化函数,注意分辨率不同的玩家,实际感受大小不同"
+category = NZjapi
+[[.args]]
+type = real
+default = 160
+[[.args]]
+type = real
+default = 70
+
+[PO_DZ_1612]
+title = "设置游戏blp像素上限锁定解锁[内置japi]"
+description = "设置游戏blp像素上限：${锁定解锁}"
+comment ="可以使超过512的blp贴图依旧发挥出像素的清晰度"
+category = NZjapi
+[[.args]]
+type =  BlpLimitState
+default =  BlpLimitState1
+
+[PO_DZ_1604]
+title = "立即清理模型内存[内置japi]"
+description = "立即清理模型内存"
+comment ="可以使用’读取模型内存‘来查看当前有多少数量可清理,建议定期循环动作清理"
+category = NZjapi
+
+
+[PO_DZ_1609]
+title = "立即清理字符串泄露[内置japi]"
+description = "立即清理字符串泄露"
+comment ="所有的游戏消息,字符串,都存在有泄露,使用本条函数可清理干净,建议定期清理！"
+category = NZjapi
+
+[MsgUrl]
+title = "打开网页链接[内置japi]"
+description = "打开网页链接：${网站地址}"
+comment =""
+category = NZjapi
+[[.args]]
+type =  string
+
+
+
+
+
+
+
+
+
+
+
+
+[PO_DZ_BEIZHU10]
+title = "---------- ★  整数组函数  ★ ----------"
+description = "---------- ★  整数组函数  ★ ----------"
+comment = ""
+category = PO_IntGroup
+
+[pp_IntGroup_create]
+title = "新建的整数组 [P]"
+description = "新建的空整数组"
+comment ="会创建整数组实例.可用'最后创建的整数组'来获取"
+category = PO_IntGroup
+
+[ForLoopIntGroup]
+title = "选取整数组内整数做动作(多个动作) [P]"
+description = "选取 ${整数组} 内所有整数做动作"
+comment = "使用'选取整数'来取代相应的整数.包括单位类型和物品类型."
+category = PO_IntGroup
+[[.args]]
+type = IntGroup
+default = "PO_lastCreatedIntGroup"
+
+[pp_IntGroup_Destroy]
+title = "删除整数组 [P]"
+description = "删除 ${整数组}"
+comment =""
+category = PO_IntGroup
+[[.args]]
+type = IntGroup
+default = "PO_lastCreatedIntGroup"
+
+[pp_IntGroup_Clear]
+title = "清空整数组 [P]"
+description = "清空 ${整数组} 内所有整数"
+comment ="并不影响整数本身."
+category = PO_IntGroup
+[[.args]]
+type = IntGroup
+default = "PO_lastCreatedIntGroup"
+
+[IntGroup_Addint_PP]
+title = "添加整数 [P]"
+description = "为 ${整数组} 添加 [${类型}]${null}"
+comment = "单位类型与物品类型都是整数, 默认权重为1.0."
+category = PO_IntGroup
+[[.args]]
+type = IntGroup
+default = "PO_lastCreatedIntGroup"
+[[.args]]
+type = IntGrouptype
+[[.args]]
+type = Null
+
+[IntGroup_AddintWeight_PP]
+title = "添加整数(权重) [P]"
+description = "为 ${整数组} 添加 [${类型}]${null}, 权重:${null}"
+comment = "单位类型与物品类型都是整数"
+category = PO_IntGroup
+[[.args]]
+type = IntGroup
+default = "PO_lastCreatedIntGroup"
+[[.args]]
+type = IntGrouptype
+[[.args]]
+type = Null
+[[.args]]
+type = real
+default = 1.00
+
+[IntGroup_DestroyInt_PP]
+title = "移除整数 [P]"
+description = "为 ${整数组} 删除 [${类型}]${null}"
+comment = "单位类型与物品类型都是整数"
+category = PO_IntGroup
+[[.args]]
+type = IntGroup
+default = "PO_lastCreatedIntGroup"
+[[.args]]
+type = IntGrouptype
+[[.args]]
+type = Null
+
+
+
+
+
+
+
+
+[PO_DZ_BEIZHU12]
+title = "---------- ★  特效实例函数  ★ ----------"
+description = "---------- ★  特效实例函数  ★ ----------"
+comment = ""
+category = PO_Effect
+
+[PO_EctSwitch]
+title = "设置玩家特效实例隐藏开关 [P]"
+description = "设置 ${玩家} 特效实例隐藏 ${开关}"
+comment = "用于隐藏特效"
+category = PO_Effect
+[[.args]]
+type = player
+default = "Player00"
+[[.args]]
+type = PO_Switch
+default = "PO_Switch2"
+
+[PO_EctSwitchA]
+title = "设置玩家伤害特效实例隐藏开关 [P]"
+description = "设置 ${玩家} 伤害特效实例隐藏 ${开关}"
+comment = "用于隐藏伤害漂浮特效"
+category = PO_Effect
+[[.args]]
+type = player
+default = "Player00"
+[[.args]]
+type = PO_Switch
+default = "PO_Switch2"
+
+[PO_EctPure]
+title = "纯净模式 [P]"
+description = "纯净模式 ${开关}"
+comment = "所有玩家特效都不显示,新建特效实例时不会创建特效."
+category = PO_Effect
+[[.args]]
+type = PO_Switch
+default = "PO_Switch2"
+
+[PO_EctCreate]
+title = "新建特效实例(创建到坐标) [P]"
+description = "新建特效实例 ${Model File} 在(${X},${Y})处"
+comment = "会创建特效.纯净模式不会创建特效.异步显示开关仅影响显示依旧会创建特效.特效实例属于整数类型."
+category = PO_Effect
+[[.args]]
+type = modelfile
+default = "\"effect\\[TX]xuanyun.mdl\""
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+
+[PO_EctCreateUnit]
+title = "新建特效实例(创建到单位) [P]"
+description = "新建特效实例 ${Model File} 并绑定到 ${单位} 的 ${Attachment Point} 附加点上"
+comment = "会创建特效.纯净模式不会创建特效.异步显示开关仅影响显示依旧会创建特效.特效实例属于整数类型."
+category = PO_Effect
+[[.args]]
+type = modelfile
+default = "\"effect\\[TX]xuanyun.mdl\""
+[[.args]]
+type = unit
+default = "GetTriggerUnit"
+[[.args]]
+type = string
+default = "\"overhead\""
+
+[PO_EctCreateA]
+title = "新建伤害特效实例(创建到坐标) [P]"
+description = "玩家:${player} 新建伤害特效实例 ${Model File} 在(${X},${Y},${Z})处"
+comment = "会创建特效.纯净模式不会创建特效.与伤害异步显示相关.特效实例属于整数类型.只显示当前玩家特效."
+category = PO_Effect
+[[.args]]
+type = player
+default = "Player00"
+[[.args]]
+type = modelfile
+default = "\"effect\\[TX]xuanyun.mdl\""
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+
+[PO_Ectdelete]
+title = "删除特效实例 [P]"
+description = "删除 ${Special Effect}"
+comment = ""
+category = PO_Effect
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+
+[PO_Ectclear]
+title = "立即删除特效实例 [P]"
+description = "立即删除 ${Special Effect}"
+comment = "部分特效无法立即消失,可以试试这个函数."
+category = PO_Effect
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+
+[PO_Ecttimed]
+title = "计时器系统-删除特效实例 [P]"
+description = "在 ${时间} 秒后删除 ${特效实例} 立即删除 ${立即删除}"
+comment = "启动计时器,在指定时间之后删除特效.部分特效无法立即消失,可以试试打开立即删除."
+category = PO_Effect
+[[.args]]
+type = real
+default = "2"
+min = 0
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+[[.args]]
+type = PO_Switch
+default = "PO_Switch2"
+
+[PO_SetEctMove]
+title = "移动到坐标 [P]"
+description = "移动 ${特效实例} 到（ ${X}, ${Y} ）"
+comment = ""
+category = PO_Effect
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+
+[PO_SetEctZ]
+title = "设置高度 [P]"
+description = "设置 ${特效实例} 的高度为 ${高度}"
+comment = ""
+category = PO_Effect
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+[[.args]]
+type = real
+default = "0"
+
+[PO_SetEctSize]
+title = "设置大小 [P]"
+description = "设置 ${特效实例} 的大小为 ${大小}"
+comment = ""
+category = PO_Effect
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+[[.args]]
+type = real
+default = "1"
+
+[PO_SetEctSpeed]
+title = "设置动画速度 [P]"
+description = "设置 ${特效实例} 的动画速度为 ${动画速度}"
+comment = ""
+category = PO_Effect
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+[[.args]]
+type = real
+default = "1"
+
+[PO_SetEctReset]
+title = "重置变换 [P]"
+description = "重置 ${特效实例}"
+comment = "清空所有的旋转和缩放，重置为初始状态。"
+category = PO_Effect
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+
+[PO_SetEctRotateX]
+title = "绕X轴旋转 [P]"
+description = "${特效实例} 绕X轴旋转 ${度} 度"
+comment = "多次调用，效果会叠加，不想叠加需要先重置为初始状态。"
+category = PO_Effect
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+[[.args]]
+type = degree
+default = "0"
+
+[PO_SetEctRotateY]
+title = "绕Y轴旋转 [P]"
+description = "${特效实例} 绕Y轴旋转 ${度} 度"
+comment = "多次调用，效果会叠加，不想叠加需要先重置为初始状态。"
+category = PO_Effect
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+[[.args]]
+type = degree
+default = "0"
+
+[PO_SetEctRotateZ]
+title = "绕Z轴旋转 [P]"
+description = "${特效实例} 绕Z轴旋转 ${度} 度"
+comment = "多次调用，效果会叠加，不想叠加需要先重置为初始状态。"
+category = PO_Effect
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+[[.args]]
+type = degree
+default = "0"
+
+[PO_SetEctScale]
+title = "缩放 [P]"
+description = "设置 ${特效实例} 的X轴缩放[ ${缩放} ]，Y轴缩放[ ${缩放} ]，Z轴缩放[ ${缩放} ]。"
+comment = "多次调用，效果会叠加，不想叠加需要先重置为初始状态。设置为2,2,2时相当于大小变为2倍。设置为负数时，就是镜像翻转。"
+category = PO_Effect
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+[[.args]]
+type = real
+default = "1"
+[[.args]]
+type = real
+default = "1"
+[[.args]]
+type = real
+default = "1"
+
+[PO_SetEctAnimation]
+title = "播放动画 [P]"
+description = "播放 ${特效实例} 动画序列 ${index}"
+comment = ""
+category = PO_Effect
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+[[.args]]
+type = integer
+
+[PO_SetEctPariticle]
+title = "缩放粒子 [P]"
+description = "设置 ${特效实例} 的粒子效果缩放比例 ${index}"
+comment = ""
+category = PO_Effect
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+[[.args]]
+type = real
+
+[PO_SetEctColor]
+title = "改变颜色(RGB:0-100%) [P]"
+description = "改变 ${特效实例}  的颜色比例: (${Red}%, ${Green}%, ${Blue}%),透明度: ${Transparency}%"
+comment = "颜色格式为(红,绿,蓝)."
+category = PO_Effect
+[[.args]]
+type = EffectId
+default = "PO_GetLastCreatedEffect"
+[[.args]]
+type = real
+default = "100"
+min  = 0
+max  = 100
+[[.args]]
+type = real
+default = "100"
+min  = 0
+max  = 100
+[[.args]]
+type = real
+default = "100"
+min  = 0
+max  = 100
+[[.args]]
+type = real
+default = "0"
+min  = 0
+max  = 100
+
+[SaveHashtableHandle]
+title = "<1.24> 保存特效实例 [P]"
+description = "在 ${Hashtable} 的主索引 ${Value} 子索引 ${Value} 中保存特效实例 ${Value}"
+comment = "使用 '特效实例 - 从哈希表提取特效实例' 可以取出保存的值"
+category = PO_Effect
+[[.args]]
+type = hashtable
+default = "GetLastCreatedHashtableBJ"
+[[.args]]
+type = integer
+[[.args]]
+type = integer
+[[.args]]
+type = EffectId
+default = "PO_lastCreatedEffectId"
+
+[PO_Setdamageeffect]
+title = "设置漂浮伤害特效模型 [P]"
+description = "漂浮伤害 编号:${id} 字符:${Str} 模型路径:${model}"
+comment = "未设置的数位模型不会进行计算.例:未设置万则10000仍是10000."
+category = PO_Effect
+[[.args]]
+type = integer
+default = "1"
+[[.args]]
+type = HurtMolde
+[[.args]]
+type = modelfile
+
+[PO_Damageeffect]
+title = "设置漂浮伤害显示特效 [P]"
+description = "设置 （${玩家}） 的 （${伤害}） 编号:${id} 暴击:${是否暴击} X:${坐标} Y:${坐标} 高度:${实数} 数字间距:${实数}"
+comment = "自动进行数位转换."
+category = PO_Effect
+[[.args]]
+type = player
+[[.args]]
+type = real
+[[.args]]
+type = integer
+[[.args]]
+type = boolean
+[[.args]]
+type = real
+[[.args]]
+type = real
+[[.args]]
+type = real
+[[.args]]
+type = real
+
+[PO_ChargeEffect]
+title = "特效冲锋 [P]"
+description = "命令 ${特效} 向 ${方向} 方向冲锋，射程为 ${距离} ，持续 ${时间} 秒，刷新周期 ${I} 造成范围伤害(单次)[伤害单位:${单位} 伤害半径:${半径} 伤害数值:${Amount} 攻击伤害:${是} 远程攻击:${不是} 攻击类型:${AttackType} 伤害类型:${DamageType} 武器类型:${WeaponType}]"
+comment = "特效结束时自动删除,对伤害单位的敌对单位造成伤害."
+category = PO_Effect
+[[.args]]
+type = EffectId
+default = "PO_lastCreatedEffectId"
+[[.args]]
+type = degree
+default = "0"
+min = 0
+max = 360
+[[.args]]
+type = real
+default = "800"
+min = 0
+[[.args]]
+type = real
+default = "1"
+min = 0.01
+[[.args]]
+type = real
+default = "0.03"
+min = 0.01
+[[.args]]
+type = unit
+default = "GetTriggerUnit"
+[[.args]]
+type = real
+default = "512.0"
+[[.args]]
+type = real
+default = "500"
+[[.args]]
+type = isnotoption
+default = "IsNotIs"
+[[.args]]
+type = isnotoption
+default = "IsNotNot"
+[[.args]]
+type = PO_attacktype
+default = "PO_AttackTypeNormal"
+[[.args]]
+type = PO_damagetype
+default = "PO_DamageTypeNormal"
+[[.args]]
+type = PO_weapontype
+default = "PO_WEAPON_TYPE_WHOKNOWS"
+
+[PO_EffectLinearMotion]
+title = "特效直线运动 [P]"
+description = "命令 ${特效} 向 ${方向} 方向冲锋，射程为 ${距离} ，持续 ${时间} 秒，刷新周期 ${I}"
+comment = "特效结束时自动删除."
+category = PO_Effect
+[[.args]]
+type = EffectId
+default = "PO_lastCreatedEffectId"
+[[.args]]
+type = degree
+default = "0"
+min = 0
+max = 360
+[[.args]]
+type = real
+default = "800"
+min = 0
+[[.args]]
+type = real
+default = "1"
+min = 0.01
+[[.args]]
+type = real
+default = "0.03"
+min = 0.01
+
+
+
+
+
+[PO_DZ_BEIZHU13]
+title = "---------- ★  特效实例组函数  ★ ----------"
+description = "---------- ★  特效实例组函数  ★ ----------"
+comment = ""
+category = PO_EctGroup
+
+[PO_EctGroup_create]
+title = "新建的特效实例组 [P]"
+description = "新建的空特效实例组"
+comment ="会创建特效实例组实例.可用'最后创建的特效实例组'来获取"
+category = PO_EctGroup
+
+[ForLoopEctGroup]
+title = "选取特效实例组内特效实例做动作(多个动作) [P]"
+description = "选取 ${特效实例组} 内所有特效实例做动作"
+comment = "使用'选取特效实例'来取代相应的特效实例."
+category = PO_EctGroup
+[[.args]]
+type = EctGroup
+default = "PO_lastCreatedEffectId"
+
+[PO_EctGroup_Destroy]
+title = "删除特效实例组 [P]"
+description = "删除 ${特效实例组}"
+comment =""
+category = PO_EctGroup
+[[.args]]
+type = EctGroup
+default = "PO_lastCreatedEffectId"
+
+[PO_EctGroup_Clear]
+title = "清空特效实例组 [P]"
+description = "清空 ${特效实例组}"
+comment =""
+category = PO_EctGroup
+[[.args]]
+type = EctGroup
+default = "PO_lastCreatedEffectId"
+
+[PO_EctGroup_Addect]
+title = "添加特效实例 [P]"
+description = "为 ${特效实例组} 添加 ${特效实例}"
+comment = ""
+category = PO_EctGroup
+[[.args]]
+type = EctGroup
+default = "PO_lastCreatedEffectId"
+[[.args]]
+type = EffectId
+
+[PO_EctGroup_DestroyEct]
+title = "移除特效实例 [P]"
+description = "为 ${特效实例组} 移除 ${特效实例}"
+comment = ""
+category = PO_EctGroup
+[[.args]]
+type = EctGroup
+default = "PO_lastCreatedEffectId"
+[[.args]]
+type = EffectId
+
+[PO_EctGroup_Engraved]
+title = "添加特效实例组 [P]"
+description = "添加 ${特效实例组} 内所有特效实例到 ${特效实例组}"
+comment = ""
+category = PO_EctGroup
+[[.args]]
+type = EctGroup
+[[.args]]
+type = EctGroup
+default = "PO_lastCreatedEffectId"
+
+
+
+
+
+
+
+
+[PO_DZ_BEIZHU15]
+title = "---------- ★  物品组函数  ★ ----------"
+description = "---------- ★  物品组函数  ★ ----------"
+comment = ""
+category = PO_ItemGroup
+
+[PO_ItemGroup_create]
+title = "新建的物品组 [P]"
+description = "新建的空物品组"
+comment ="会创建物品组.可用'最后创建的物品组'来获取"
+category = PO_ItemGroup
+
+[ForLoopItemGroup]
+title = "选取物品例组内物品做动作(多个动作) [P]"
+description = "选取 ${物品组} 内所有物品做动作"
+comment = "使用'选取物品'来取代相应的物品."
+category = PO_ItemGroup
+[[.args]]
+type = ItemGroup
+default = "PO_lastCreatedItemGroup"
+
+[PO_ItemGroup_GroupEnumItemsInRange]
+title = "选取物品添加到物品组(坐标) [P]"
+description = "为 ${物品组} 添加以( ${坐标X} , ${坐标Y} )为圆心，${半径} 为半径的圆范围内的物品"
+comment = ""
+category = PO_ItemGroup
+[[.args]]
+type = ItemGroup
+default = "PO_lastCreatedItemGroup"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "512"
+min = 0
+
+[PO_ItemGroup_GroupEnumItemsInRange_A]
+title = "选取物品添加到物品组(矩形区域) [P]"
+description = "为 ${物品组} 添加 ${矩形区域} 范围内的物品"
+comment = ""
+category = PO_ItemGroup
+[[.args]]
+type = ItemGroup
+default = "PO_lastCreatedItemGroup"
+[[.args]]
+type = rect
+
+[PO_ItemGroup_Destroy]
+title = "删除物品组 [P]"
+description = "删除 ${物品组}"
+comment =""
+category = PO_ItemGroup
+[[.args]]
+type = ItemGroup
+default = "PO_lastCreatedItemGroup"
+
+[PO_ItemGroup_Clear]
+title = "清空物品组 [P]"
+description = "清空 ${物品组}"
+comment =""
+category = PO_ItemGroup
+[[.args]]
+type = ItemGroup
+default = "PO_lastCreatedItemGroup"
+
+[PO_ItemGroup_Addect]
+title = "添加物品 [P]"
+description = "为 ${物品组} 添加 ${物品}"
+comment = ""
+category = PO_ItemGroup
+[[.args]]
+type = ItemGroup
+default = "PO_lastCreatedItemGroup"
+[[.args]]
+type = item
+default = "GetManipulatedItem"
+
+[PO_ItemGroup_DestroyEct]
+title = "移除物品 [P]"
+description = "为 ${物品组} 移除 ${物品}"
+comment = ""
+category = PO_ItemGroup
+[[.args]]
+type = ItemGroup
+default = "PO_lastCreatedItemGroup"
+[[.args]]
+type = item
+default = "GetManipulatedItem"
+
+[PO_ItemGroup_Engraved]
+title = "添加物品组 [P]"
+description = "添加 ${物品组} 内所有物品到 ${物品组}"
+comment = ""
+category = PO_ItemGroup
+[[.args]]
+type = ItemGroup
+[[.args]]
+type = ItemGroup
+default = "PO_lastCreatedItemGroup"
+
+
+
+
+
+
+
+[PO_DZ_BEIZHU16]
+title = "---------- ★  排位组函数  ★ ----------"
+description = "---------- ★  排位组函数  ★ ----------"
+comment = ""
+category = PO_Sort
+
+[PO_Sort_create]
+title = "新建排序组 [P]"
+description = "新建空的排序组.可用'最后创建的排序组'来获取"
+comment = ""
+category = PO_Sort
+
+[ForLoopSortGroup]
+title = "运行排序组做动作（多个动作） [P]"
+description = "运行排序组 ${排序组}, 排序方式 ${true}（true:降序 false:升序）做动作"
+comment = ""
+category = PO_Sort
+[[.args]]
+type = SortGroup
+default = "PO_lastCreatedSortGroup"
+[[.args]]
+type = boolean
+default = "true"
+
+[PO_Sort_AddSorting]
+title = "添加数据 [P]"
+description = "为 ${排序组} 添加索引为 (${index}) 的数据 (${value})"
+comment = ""
+category = PO_Sort
+[[.args]]
+type = SortGroup
+default = "PO_lastCreatedSortGroup"
+[[.args]]
+type = integer
+[[.args]]
+type = real
+
+[PO_Sort_Sorting]
+title = "运行排序组 [P]"
+description = "运行排序组 ${排序组}, 排序方式 ${true}（true:降序 false:升序）"
+comment = ""
+category = PO_Sort
+[[.args]]
+type = SortGroup
+default = "PO_lastCreatedSortGroup"
+[[.args]]
+type = boolean
+default = "true"
+
+[PO_Sort_Clear]
+title = "清空排序组 [P]"
+description = "清空排序组 ${排序组}"
+comment = ""
+category = PO_Sort
+[[.args]]
+type = SortGroup
+default = "PO_lastCreatedSortGroup"
+
+[PO_Sort_Destroy]
+title = "删除并清空排序组 [P]"
+description = "删除并清空排序组 ${排序组}"
+comment = ""
+category = PO_Sort
+[[.args]]
+type = SortGroup
+default = "PO_lastCreatedSortGroup"
+
+
+
+
+[PO_DZ_BEIZHU19]
+title = "---------- ★  自动施法函数  ★ ----------"
+description = "---------- ★  自动施法函数  ★ ----------"
+comment = ""
+category = PO_AI
+
+[PO_AuMagic_create]
+title = "新建自动施法实例 [P]"
+description = "创建自动施法实例[单位：${unit}, 技能：${abilcode}, 半径判断范围：${value}]"
+comment = "可用'最后创建的自动施法实例'来获取,只适用于'通魔'."
+category = PO_AI
+[[.args]]
+type = unit
+[[.args]]
+type = abilcode
+[[.args]]
+type = real
+
+
+[PO_AuMagic_Pause]
+title = "暂停/恢复自动施法 [P]"
+description = "自动施法实例：${AuMagic} ${暂停恢复}"
+comment = ""
+category = PO_AI
+[[.args]]
+type = AuMagicId
+default = "PO_lastCreatedAuMagic"
+[[.args]]
+type = AuMagicPause
+default = "AuMagicPause2"
+
+[PO_AuMagic_Destroy]
+title = "删除自动施法 [P]"
+description = "删除自动施法 ${AuMagic}"
+comment = ""
+category = PO_AI
+[[.args]]
+type = AuMagicId
+default = "PO_lastCreatedAuMagic"
+
+
+
+
+[PO_DZ_BEIZHU18]
+title = "---------- ★  音频函数  ★ ----------"
+description = "---------- ★  音频函数  ★ ----------"
+comment = ""
+category = PO_Sound
+
+[PO_Music_create]
+title = "新建音乐组 [P]"
+description = "新建空的音乐组"
+comment = "可用'最后创建的音乐组'来获取,同步创建，同步播放。"
+category = PO_Sound
+
+[PO_Music_Addsound]
+title = "[音乐组] - 添加音乐 [P]"
+description = "为 ${音乐组} 添加 ${音乐}"
+comment = ""
+category = PO_Sound
+[[.args]]
+type = PO_Music
+default = "PO_lastCreatedMusic"
+[[.args]]
+type = MusicPath
+
+[PO_Music_playMusic]
+title = "[音乐组] - 播放音乐组 [P]"
+description = "播放 ${音乐组} "
+comment = "随机播放."
+category = PO_Sound
+[[.args]]
+type = PO_Music
+default = "PO_lastCreatedMusic"
+
+
+[PO_Music_StopMusic]
+title = "[音乐组] - 停止音乐组 [P]"
+description = "停止音乐组 ${After Fading/Immediately}"
+comment = ""
+category = PO_Sound
+[[.args]]
+type = fadedontoption
+default = "FadeDontFade"
+
+[PO_Music_ResumeMusic]
+title = "[音乐组] - 恢复音乐组 [P]"
+description = "恢复音乐组"
+comment = ""
+category = PO_Sound
+
+[PO_Music_MusicVolume]
+title = "[音乐组] - 设置音乐组音量 [P]"
+description = "设置音乐组音量为 ${Volume}"
+comment = "音量取值范围为0-127."
+category = PO_Sound
+[[.args]]
+type = integer
+default = "127"
+min = 0
+max = 127
+
+[PO_Sound_create]
+title = "[音效] - 新建音效 [P]"
+description = "创建新的 ${音效}，音量:${Volume}"
+comment = "可用'最后创建的音效'来获取,同步创建，可异步播放。"
+category = PO_Sound
+[[.args]]
+type = MusicPath
+[[.args]]
+type = integer
+default = "127"
+min = 0
+max = 127
+
+[PO_Sound_playsound]
+title = "[音效] - 播放音效 [P]"
+description = "播放 ${音效} "
+comment = "多次播放音效可叠加声音."
+category = PO_Sound
+[[.args]]
+type = PO_Sound
+default = "PO_lastCreatedSound"
+
+[PO_Sound_Pitch]
+title = "[音效] - 设置音效速率 [P]"
+description = "设置 ${音效} 的速率为 ${数值}"
+comment = "表示正常速率的倍数."
+category = PO_Sound
+[[.args]]
+type = PO_Sound
+default = "PO_lastCreatedSound"
+[[.args]]
+type = real
+default = "1.0"
+
+
+
+
+
+
+
+
+
+[PO_DZ_BEIZHU14]
+title = "---------- ★  单位相关函数  ★ ----------"
+description = "---------- ★  单位相关函数  ★ ----------"
+comment = ""
+category = PO_unit
+
+[PO_SuspendedAnimation_Create]
+title = "新建假死单位(假死单位不足则新建单位) [P]"
+description = "新建 ${玩家} 的 ${单位} 在(${X},${Y}),面向角度:${Face} 度"
+comment = "假死的单位可用此函数重新创建出来，可用'最后创建的假死单位'来获取。"
+category = PO_unit
+[[.args]]
+type = player
+default = "Player00"
+[[.args]]
+type = unitcode
+default = "hfoo"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = degree
+default = "0"
+
+[PO_SuspendedAnimation_KillUnit]
+title = "清除单位假死状态并杀死单位 [P]"
+description = "清除 ${unit} 的假死状态并杀死"
+comment = "会触发死亡事件,不是假死单位也会被杀死."
+category = PO_unit
+[[.args]]
+type = unit
+default = PO_SuspendedAnimation_Unit
+
+[PO_Vertigo]
+title = "眩晕目标 [P]"
+description = "眩晕 ${目标} 持续时间:${Timer}秒"
+comment = "无特效."
+category = PO_unit
+[[.args]]
+type = unit
+[[.args]]
+type = real
+default = "2"
+min  = 0
+
+[PO_Repel]
+title = "击退目标 [P]"
+description = "击退 ${目标} 角度:${Deg} 速度:${Spd} 距离:${Dis} 间隔:${0.03}秒"
+comment = "无特效.已判断坐标是否可通行."
+category = PO_unit
+[[.args]]
+type = unit
+[[.args]]
+type = degree
+[[.args]]
+type = real
+[[.args]]
+type = real
+[[.args]]
+type = real
+default = "0.03"
+min  = 0
+
+[PO_Jump]
+title = "击飞目标 [P]"
+description = "击飞 ${目标} 高度:${High} 持续时间:${Timer}秒"
+comment = "无特效."
+category = PO_unit
+[[.args]]
+type = unit
+[[.args]]
+type = real
+[[.args]]
+type = real
+default = "1.0"
+min  = 0
+
+[PO_JumpMove]
+title = "单位抛物线 [P]"
+description = "单位 ${目标} 角度:${Deg} 距离:${Dis} 高度:${High} 持续时间:${Timer}秒"
+comment = "无特效.已判断坐标是否可通行."
+category = PO_unit
+[[.args]]
+type = unit
+[[.args]]
+type = degree
+[[.args]]
+type = real
+[[.args]]
+type = real
+[[.args]]
+type = real
+default = "1.0"
+min  = 0
+
+[PO_MoveD]
+title = "单位冲锋 [P]"
+description = "冲锋 ${目标} X:${Real} Y:${Real} 速度:${Spd} 最大距离:${Dis} 间隔:${0.03}秒 残影:${Switch} 残影模型:${Switch}"
+comment = "用于D闪,无特效."
+category = PO_unit
+[[.args]]
+type = unit
+[[.args]]
+type = real
+[[.args]]
+type = real
+[[.args]]
+type = real
+default = "30.0"
+[[.args]]
+type = real
+default = "1000.0"
+[[.args]]
+type = real
+default = "0.01"
+min  = 0
+[[.args]]
+type = PO_Switch
+default = "PO_Switch2"
+[[.args]]
+type = modelfile
+default = "\"effect\\[TX]xuanyun.mdl\""
+
+[PO_SetItemSuperposition]
+title = "设置物品类型可叠加 [P]"
+description = "设置 ${物品类型} 可叠加使用次数为 ${int}（0为无上限）"
+comment = "设置过的物品类型即可叠加"
+category = PO_item
+[[.args]]
+type = itemcode
+[[.args]]
+type = integer
+default = "100"
+min = 0
+
+[PO_ItemsFormula_create]
+title = "物品合成系统 [P]"
+description = "物品预设 [1.(${类型},${整数}) 2.(${类型},${整数}) 3.(${类型},${整数}) 4.(${类型},${整数}) 5.(${类型},${整数}) 6.(${类型},${整数})] 合成预设 [${物品}]"
+comment = "填写物品合成所需的材料及其数量，最多可以填6种；当所需材料数量为0时，对应材料将被忽略。对应物品函数 - 检视单位背包合成物品。"
+category = PO_item
+[[.args]]
+type = itemcode
+default = "ches"
+[[.args]]
+type = integer
+default = "0"
+min = 0
+[[.args]]
+type = itemcode
+default = "ches"
+[[.args]]
+type = integer
+default = "0"
+min = 0
+[[.args]]
+type = itemcode
+default = "ches"
+[[.args]]
+type = integer
+default = "0"
+min = 0
+[[.args]]
+type = itemcode
+default = "ches"
+[[.args]]
+type = integer
+default = "0"
+min = 0
+[[.args]]
+type = itemcode
+default = "ches"
+[[.args]]
+type = integer
+default = "0"
+min = 0
+[[.args]]
+type = itemcode
+default = "ches"
+[[.args]]
+type = integer
+default = "0"
+min = 0
+[[.args]]
+type = itemcode
+default = "bzbe"
+
+
+
+
+
+
+
+
+
+
+[PO_DZ_BEIZHU20]
+title = "---------- ★  函数相关  ★ ----------"
+description = "---------- ★  函数相关  ★ ----------"
+comment = ""
+category = PO_func
+
+[POPOfunction]
+title = "新建jass函数 [P]"
+description = "新建jass函数: ( ${函数名} ), 序列：${index}"
+comment ="jass的function,遵循jass的函数运行规则.可用中文名.序列用于排序.9为最低"
+category =PO_func
+[[.args]]
+type = scriptcode
+[[.args]]
+type = JassIndex
+default = "JassIndex9"
+
+[POPOcall]
+title = "运行jass函数 [P]"
+description = "运行jass函数: ( ${函数名} )"
+comment ="jass的call 函数名()可传参,遵循jass的函数运行规则."
+category =PO_func
+[[.args]]
+type = scriptcode
+
+[POPORe]
+title = "设置jass函数返回值 [P]"
+description = "返回值: [${类型}] loc_${变量名}"
+comment = "逆天局部变量模拟的返回值.仅可在新建jass函数中使用.允许有多个返回值."
+category = PO_func
+[[.args]]
+type = typename
+[[.args]]
+type = scriptcode
+
+
+
+
+
+[PO_DZ_BEIZHU21]
+title = "---------- ★  CJ函数  ★ ----------"
+description = "---------- ★  CJ函数  ★ ----------"
+comment = ""
+category = PO_CJ
+
+[PO_EndGame]
+title = "结束游戏"
+description = "结束游戏"
+comment = ""
+category = PO_CJ
+
+
+
+
+
+
+
+
+[PO_DZ_BEIZHU05]
+title = "---------- ★  内置界面模型  ★ ----------"
+description = "---------- ★  内置界面模型  ★ ----------"
+comment = ""
+category = BZ_GUI
+
+[PO_SetModel]
+title = "一键设置Frame的模型文件 [P]"
+description = "一键设置 ${Frame} 的模型文件为：${模型文件}"
+comment =""
+category = BZ_GUI
+[[.args]]
+type = frame
+default = null
+[[.args]]
+type = modelfile
+default = "null"
+
+[PO_SetModellocation]
+title = "一键设置Frame的模型文件的位置 [P]"
+description = "一键设置 ${Frame} 的模型文件在控件内的位置为[x偏移:${real} y偏移:${real} x旋转:${real} y旋转:${real} z旋转:${real} x坐标:${real} y坐标:${real} z坐标:${real}]"
+comment ="x偏移和y偏移貌似无效。"
+category = BZ_GUI
+[[.args]]
+type = frame
+default = null
+[[.args]]
+type = real
+default = 0.0
+[[.args]]
+type = real
+default = 0.0
+[[.args]]
+type = real
+default = 0.0
+[[.args]]
+type = real
+default = 0.0
+[[.args]]
+type = real
+default = 0.0
+[[.args]]
+type = real
+default = 0.0
+[[.args]]
+type = real
+default = 0.0
+[[.args]]
+type = real
+default = -100.0
+
+[PO_DZ_1613]
+title = "设置Frame的模型文件[内置japi]"
+description = "设置 ${Frame} 的模型文件为${模型文件} ID:${0}"
+comment ="设置内置构建模型UI的模型文件"
+category = BZ_GUI
+[[.args]]
+type = frame
+default = null
+[[.args]]
+type = modelfile
+default = "null"
+[[.args]]
+type = integer
+default = 0
+
+[PO_DZ_1614]
+title = "设置模型在框架内的坐标[内置japi]"
+description = "设置 ${Frame} 的模型在框架内的坐标 (x:${x},y:${y},z:${z})"
+comment ="设置模型在框架内的X,Y,Z坐标位置"
+category = BZ_GUI
+[[.args]]
+type = frame
+default = null
+[[.args]]
+type = real
+default = 0
+[[.args]]
+type = real
+default = 0
+[[.args]]
+type = real
+default = "-100."
+
+[PO_DZ_1615]
+title = "设置模型镜头源的坐标[内置japi]"
+description = "设置 ${Frame} 的模型镜头源的坐标 (x:${x},y:${y},z:${z})"
+comment ="设置模型镜头的X,Y,Z坐标位置,观察角度会不同"
+category = BZ_GUI
+[[.args]]
+type = frame
+default = null
+[[.args]]
+type = real
+default = "200."
+[[.args]]
+type = real
+default = 0
+[[.args]]
+type = real
+default = "100."
+
+[PO_DZ_1616]
+title = "设置模型镜头目标的坐标[内置japi]"
+description = "设置 ${Frame} 的模型镜头目标的坐标 (x:${x},y:${y},z:${z})"
+comment ="设置模型镜头的X,Y,Z坐标位置,观察角度会不同"
+category = BZ_GUI
+[[.args]]
+type = frame
+default = null
+[[.args]]
+type = real
+default = "0."
+[[.args]]
+type = real
+default = "0."
+[[.args]]
+type = real
+default = "0."
+
+[PO_DZ_1625]
+title = "设置Frame模型与框架的偏移坐标 [内置japi]"
+description = "设置Frame ${控件} 的偏移坐标为(X:${real} Y:${real})"
+comment =""
+category = BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+
+[PO_DZ_1620]
+title = "播放Frame模型指定动画 [内置japi]"
+description = "播放Frame ${控件} 指定动画索引:${索引}"
+comment ="同单位一样的 按照索引播放指定动画"
+category = BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = integer
+default = "0"
+
+[PO_DZ_1624]
+title = "设置Frame模型动画播放倍率 [内置japi]"
+description = "设置Frame ${控件} 的动画播放倍率为:${real}"
+comment =""
+category = BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = real
+default = "0"
+
+[PO_DZ_1621]
+title = "设置Frame模型缩放倍率 [内置japi]"
+description = "设置Frame ${控件} 缩放倍率:${倍率}"
+comment =""
+category = BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = real
+default = "0"
+
+[PO_DZ_1622]
+title = "设置Frame模型按xyz轴缩放 [内置japi]"
+description = "设置Frame ${控件} 缩放(X:${real} Y:${real} Z:${real})"
+comment =""
+category = BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+
+[PO_DZ_1623]
+title = "设置Frame模型绕xyz轴旋转 [内置japi]"
+description = "设置Frame ${控件} ${real} ${real}度"
+comment =""
+category = BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = rotate
+default = "rotatex"
+[[.args]]
+type = real
+default = "0"
+
+[PO_DZ_1619]
+title = "设置Frame模型删除绑点特效 [内置japi]"
+description = "设置Frame ${控件} 删除绑点特效:${特效}"
+comment ="绑点特效在整数中查找  要删除的特效填写绑点时得到的整数"
+category = BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = integer
+default = "0"
+
+[PO_DZ_1635]
+title = "缩放UI模型粒子 [内置japi]"
+description = "缩放 ${控件} 粒子特效 ${大小}"
+comment =""
+category = BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = real
+
+
+
+
+
+
+
+[PO_DZ_BEIZHU06]
+title = "---------- ★  内置界面  ★ ----------"
+description = "---------- ★  内置界面  ★ ----------"
+comment = ""
+category = BZ_GUI
+
+[PO_DZ_1636]
+title = "解除屏幕限制 [内置japi]"
+description = "解除屏幕限制:${限制}"
+comment ="内置默认是 解锁frame控件的 屏幕限制的 就是可以随便移动到屏幕之外的位置， 但是有个别用户 依赖这个限制 用网易的接口写了ui 导致加了内置之后 位置变了， 故此新增这个接口 自行决定是否解锁。"
+category = BZ_GUI
+[[.args]]
+type =  Switch1
+default = "Switch1"
+
+[PO_DZ_1627]
+title = "设置Frame模型屏蔽鼠标点击事件 [内置japi]"
+description = "设置Frame ${控件} 屏蔽鼠标点击事件:${true}"
+comment =""
+category = BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = DZ1619
+default = "DZ1619_1"
+
+[PO_DZ_1611]
+title = "设置UI移动到单位的坐标 [内置japi]"
+description = "设置 ${UI} 的 ${锚点} 锚点在 ${单位} 的 xy坐标 (${x},${Y}) 镜头缩放：${是否}"
+comment ="设置UI移动到游戏中单位的坐标上,镜头缩放是根据视角高度缩放UI,可以使用计时器来绑定,以实现NPC称号等功能"
+category = BZ_GUI
+[[.args]]
+type = frame
+default = null
+[[.args]]
+type = framepoints
+default = FramePoints_Center
+[[.args]]
+type = unit
+default = null
+[[.args]]
+type = real
+default = 0.00
+[[.args]]
+type = real
+default = 0.00
+[[.args]]
+type = boolean
+default = "true"
+
+[FrameSetViewPort]
+title = "设置Frame控件视口 [内置japi]"
+description = "设置Frame ${控件} 的视口渲染为:${显示}"
+comment ="设置开启 设置控件视口 比如 底板开启后 他的子控件 在边缘 超出部分不会渲染"
+category = BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type =  ViewPort
+default = "ViewPort1"
+
+[PO_DZ_1639]
+title = "设置原生控件的贴图 [内置japi]"
+description = "设置 ${原生控件} 的贴图为 ${Value}"
+comment = ""
+category =  BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = imagefile
+
+[PO_HS_1641]
+title = "设置Simple类型控件的父控件 [内置japi]"
+description = "设置Simple类型 ${控件} 的父控件:${控件}"
+comment = ""
+category =  BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = frame
+
+[PO_DZ_1640]
+title = "解除Simple类型与Frame类型的关联 [内置japi]"
+description = "解除Simple类型与Frame类型的关联:${Frame}"
+comment = ""
+category =  BZ_GUI
+[[.args]]
+type = frame
+
+
+
+
+
+
+
+
+[PO_DZ_BEIZHU09]
+title = "---------- ★  FDF函数  ★ ----------"
+description = "---------- ★  FDF函数  ★ ----------"
+comment = ""
+category = BZ_GUI
+
+[pp_fdf_SetButtonTexture]
+title = "[FDF] - 设置按钮贴图 [P]"
+description = "设置Frame ${控件} 的 ${贴图} 为 ${贴图} "
+comment ="针对FDF创建的带贴图的按钮修改贴图用"
+category =BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = PPfdfButton
+default = "PPfdfButton1"
+[[.args]]
+type = imagefile
+
+[pp_fdf_SetSliderTexture]
+title = "[FDF] - 设置滚动条与滑块贴图 [P]"
+description = "设置Frame ${控件} 的 ${贴图} 为 ${贴图} "
+comment ="针对FDF创建的滚动条修改贴图用"
+category =BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = PPfdfButton1
+default = "PPfdfButton11"
+[[.args]]
+type = imagefile
+
+[pp_fdf_SetSliderValue]
+title = "[FDF] - 设置滚动条上下限，步进值，当前值 [P]"
+description = "设置滚动条 ${控件} 的最小值:${min} 最大值:${max} 步进值:${spet} 当前值:${value}"
+comment ="针对FDF创建的滚动条修改贴图用"
+category =BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = real
+[[.args]]
+type = real
+[[.args]]
+type = real
+[[.args]]
+type = real
+
+[PO_DZ_BEIZHU11]
+title = "---------- ★  Frame拖动函数  ★ ----------"
+description = "---------- ★  Frame拖动函数  ★ ----------"
+comment = ""
+category = BZ_GUI
+
+[PO_SetPoints]
+title = "[Frame拖动] - 设置可拖动的Frame [P]"
+description = "设置可拖动 ${frame} 的 ${Point} 锚点 (跟随Frame-->${relativeFrame} 的 ${relativePoint} 锚点) 偏移(${x}, ${y}) 大小（宽 ${w} 高 ${h}）拖动方式(${movexy}) 偏移范围(最小${min} 最大${max})"
+comment ="跟随游戏UI时无偏差。拖动方式为X拖动或Y拖动时，可设置偏移范围。偏移范围为坐标拖动范围."
+category =BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = framepoints
+default = "FramePoints_Center"
+[[.args]]
+type = frame
+default = DzGetGameUI
+[[.args]]
+type = framepoints
+default = "FramePoints_Center"
+[[.args]]
+type = real
+default = 0
+min = -0.8
+max = 0.8
+[[.args]]
+type = real
+default = 0
+min = -0.6
+max = 0.6
+[[.args]]
+type = real
+default = 0
+[[.args]]
+type = real
+default = 0
+[[.args]]
+type = PPMOVEXY
+default = "PPMOVEXY1"
+[[.args]]
+type = real
+default = 0
+[[.args]]
+type = real
+default = 0
+
+[PO_SetMouseEnt]
+title = "[Frame拖动] - 鼠标进入UI的标识 [P]"
+description = "设置鼠标进入UI的标识为 ${Switch}"
+comment ="鼠标进入Frame 设置true 离开 设置false"
+category =BZ_GUI
+[[.args]]
+type = boolean
+
+[PO_SetMouseCli]
+title = "[Frame拖动] - 鼠标点击左键标识 [P]"
+description = "设置鼠标点击左键标识为 ${Switch}"
+comment ="鼠标点击Frame 设置true 离开 设置false"
+category =BZ_GUI
+[[.args]]
+type = boolean
+
+[PO_MoveFrame]
+title = "[Frame拖动] - 每帧绘制frame拖动 [P]"
+description = "每帧绘制 - frame拖动"
+comment ="放至每帧绘制中即可"
+category =BZ_GUI
+
+[PO_ResetFrame]
+title = "[Frame拖动] - 重置Frame位置 [P]"
+description = "重置 ${Frame} 的位置"
+comment ="可重置被拖动的Frame为初始位置"
+category =BZ_GUI
+[[.args]]
+type = frame
+
+[PO_Screen_SetPoint]
+title = "[Frame拖动] - 设置Frame位置 [P]"
+description = "设置 ${Frame} 的[X:${real}, Y:${real}]位置"
+comment ="设置可拖动Frame的位置,若是设置了X或Y拖动,则Y或X设置无效,并且X或Y限制在最小与最大值区间内."
+category =BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = real
+[[.args]]
+type = real
+
+
+
+
+[PO_DZ_BEIZHU08]
+title = "---------- ★  Frame血条  ★ ----------"
+description = "---------- ★  Frame血条  ★ ----------"
+comment = ""
+category = BZ_GUI
+
+[PO_Lifebar_create]
+title = "[Frame血条] - 注册血条Frame [P]"
+description = "设置 ${英雄}:${单位} 的血条Frame [宽度比例:${比例} 血条高度:${高度} 整体比例:${比例} 分辨率比例:${比例}] "
+comment ="跟随游戏UI时无偏差。拖动方式为X拖动或Y拖动时，可设置拖动范围。"
+category =BZ_GUI
+[[.args]]
+type = UnitHero
+default = "UnitHero1"
+[[.args]]
+type = unit
+default = "GetTriggerUnit"
+[[.args]]
+type = real
+default = 1.0
+[[.args]]
+type = real
+default = 0.0
+[[.args]]
+type = real
+default = 1.0
+[[.args]]
+type = PPRES
+default = "PPRES1"
+
+[PO_Lifebar_Clear]
+title = "[Frame血条] - 删除单位血条 [P]"
+description = "删除 ${单位} 血条"
+comment =""
+category = BZ_GUI
+[[.args]]
+type = unit
+
+[PO_Lifebar_UnitName]
+title = "[Frame血条] - 设置单位血条显示的名字 [P]"
+description = "设置 ${单位} 血条的 ${名字} [字体:${font}, 大小:${size}]"
+comment =""
+category = BZ_GUI
+[[.args]]
+type = unit
+[[.args]]
+type = string
+[[.args]]
+type = string
+default = "\"Fonts\\dfst-m3u.ttf\""
+[[.args]]
+type = real
+
+[PO_Lifebar_Display]
+title = "[Frame血条] - 设置单位血条显示开关 [P]"
+description = "设置 ${单位} 血条显示:${开关}"
+comment =""
+category = BZ_GUI
+[[.args]]
+type = unit
+[[.args]]
+type = ViewPort
+default = "ViewPort2"
+
+[PO_Lifebar_SetBorders]
+title = "[Frame血条] - 设置血条显示边界 [P]"
+description = "设置血条显示边界 上方边界:${real} 下方边界:${real}"
+comment ="所有血条都生效,推荐上方边界：0.025,下方边界：0.138"
+category = BZ_GUI
+[[.args]]
+type = real
+max = 0.8
+[[.args]]
+type = real
+max = 0.8
+
+[PO_Lifebar_setHDbar]
+title = "[Frame血条] - 设置单位护盾百分比 [P]"
+description = "设置 ${单位} 护盾百分比 ${real}%"
+comment ="同步函数,不设置或设置0则为隐藏"
+category = BZ_GUI
+[[.args]]
+type = unit
+[[.args]]
+type = real
+min = 0
+max = 100
+
+[PO_Lifebar_setBTbar]
+title = "[Frame血条] - 设置单位白条显示时间 [P]"
+description = "设置 ${单位} 白条显示时间 ${real} 秒"
+comment ="同步函数，可作为英雄被控制时间的显示和单位存在时间的显示"
+category = BZ_GUI
+[[.args]]
+type = unit
+[[.args]]
+type = real
+min = 0
+
+[PO_Lifebar_setJBbar]
+title = "[Frame血条] - 设置单位血条金边显示 [P]"
+description = "设置 ${单位} 血条金边 显示：${true}"
+comment ="用途暂定无敌使用"
+category = BZ_GUI
+[[.args]]
+type = unit
+[[.args]]
+type = boolean
+default = "true"
+
+[PO_Lifebar_SetHeroLevel]
+title = "[Frame血条] - 设置英雄血条等级 [P]"
+description = "设置 ${英雄} 血条等级为:${等级}"
+comment ="同步函数"
+category = BZ_GUI
+[[.args]]
+type = unit
+[[.args]]
+type = integer
+
+[PO_Lifebar_SetSterTexture]
+title = "[Frame血条] - 替换精英贴图标识 [P]"
+description = "设置 ${精英} 贴图标识为:${贴图}"
+comment ="同步函数"
+category = BZ_GUI
+[[.args]]
+type = unit
+[[.args]]
+type = imagefile
+
+[PO_Lifebar_Color]
+title = "[Frame血条] - 设置单位血条素材 [P]"
+description = "设置 ${单位} 血条素材为 ${index}"
+comment ="仅对单位类型血条有效"
+category = BZ_GUI
+[[.args]]
+type = unit
+[[.args]]
+type = LifeColor
+
+
+[PO_Lifebar_Refresh]
+title = "[Frame血条] - 血条刷新 [P]"
+description = "血条每帧绘制刷新"
+comment ="函数放在每帧绘制中刷新"
+category = BZ_GUI
+
+
+
+
+
+[PO_DZ_BEIZHU23]
+title = "---------- ★  聊天弹幕  ★ ----------"
+description = "---------- ★  聊天弹幕  ★ ----------"
+comment = ""
+category = BZ_GUI
+
+
+[PO_Chatbarrage_create]
+title = "[聊天弹幕] - 发送聊天弹幕 [P]"
+description = "[聊天弹幕] - 头像：${atr}  字幕：${str}  字体：${fileName}  字体大小：${height}"
+comment = "推荐字体大小：0.012."
+category = BZ_GUI
+[[.args]]
+type = imagefile
+[[.args]]
+type = string
+default = "GetEventPlayerChatString"
+[[.args]]
+type = string
+default = "\"Fonts\\dfst-m3u.ttf\""
+[[.args]]
+type = real
+
+
+
+
+
+
+[PO_DZ_BEIZHU24]
+title = "---------- ★  漂浮伤害  ★ ----------"
+description = "---------- ★  漂浮伤害  ★ ----------"
+comment = ""
+category = BZ_GUI
+
+
+[PO_HarmFrame_create]
+title = "[漂浮伤害] - 伤害漂浮Frame [P]"
+description = "[漂浮伤害] - 本地玩家：${player}  伤害文本：${str}  显示在单位位置：${unit}  暴击设置（贴图：${bjmodel}  显示：${flag}）"
+comment = "橙色：|cffff7f00  蓝色：|cff00ffff"
+category = BZ_GUI
+[[.args]]
+type = player
+default = "Player00"
+[[.args]]
+type = string
+[[.args]]
+type = unit
+[[.args]]
+type = bjmodel
+[[.args]]
+type = boolean
+
+
+[PO_HarmFrame_fileName]
+title = "[漂浮伤害] - 设置字体 [P]"
+description = "[漂浮伤害] - 设置字体为 ${font}"
+comment = "漂浮伤害的字体，初始化设置."
+category = BZ_GUI
+[[.args]]
+type = string
+
+
+[PO_HarmFrame_height]
+title = "[漂浮伤害] - 设置字体大小 [P]"
+description = "[漂浮伤害] - 设置字体大小为 ${height}"
+comment = ""
+category = BZ_GUI
+[[.args]]
+type = real
+
+
+
+
+
+
+
+[PO_DZ_BEIZHU17]
+title = "---------- ★  常规Frame  ★ ----------"
+description = "---------- ★  常规Frame  ★ ----------"
+comment = ""
+category = BZ_GUI
+
+[PO_Frame_Res]
+title = "设置UI分辨率计算模式 [P]"
+description = "设置UI分辨率计算模式为 ${Resolution} [P]"
+comment = "用于计算UI宽高的函数,设置一次即可"
+category = BZ_GUI
+[[.args]]
+type = PPRES
+default = "PPRES1"
+
+[PO_FrameSetSizeRes]
+title = "设置大小(分辨率模式) [P]"
+description = "设置 ${frame} （宽 ${w} 高 ${h}） 缩放比例: ${value} [P]"
+comment = "配套缩放使用，默认为1440*1080分辨率计算"
+category = BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = real
+default = 0
+[[.args]]
+type = real
+default = 0
+[[.args]]
+type = real
+default = 1
+
+[PO_FrameSetSize]
+title = "设置大小 [P]"
+description = "设置 ${frame} （宽 ${w} 高 ${h}） [P]"
+comment = "配套缩放使用"
+category = BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = real
+default = 0
+[[.args]]
+type = real
+default = 0
+
+[PO_FrameSetScale]
+title = "设置缩放 [P]"
+description = "设置 ${frame} 的缩放 ${scale} [P]"
+comment = "原生缩放有瑕疵，用此缩放没问题"
+category = BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = real
+default = 1
+
+[PO_FrameSetPoint]
+title = "设置Frame坐标偏移 [P]"
+description = "设置 ${frame} 坐标偏移(${x}, ${y}) [P]"
+comment = "需要先设置Frame位置,坐标偏移不叠加,以预设的Frame坐标为基准."
+category = BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = real
+default = 0
+min = -0.8
+max = 0.8
+[[.args]]
+type = real
+default = 0
+min = -0.6
+max = 0.6
+
+
+[PO_FrameSortingHor]
+title = "设置Frame窗体横排排序算法 [P]"
+description = "设置 ${frame} 的 ${Point} 锚点 (跟随Frame-->${relativeFrame} 的 ${relativePoint} 锚点) 偏移(${x}, ${y}) 间距(${x}, ${y}) 横排数量 (${数量}) 当前序号 (${序号})"
+comment = "用于循环创建一排一排的窗体,横排排序"
+category = BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = framepoints
+default = "FramePoints_Center"
+[[.args]]
+type = frame
+[[.args]]
+type = framepoints
+default = "FramePoints_Center"
+[[.args]]
+type = real
+default = 0
+min = -0.8
+max = 0.8
+[[.args]]
+type = real
+default = 0
+min = -0.6
+max = 0.6
+[[.args]]
+type = real
+default = 0
+min = -0.8
+max = 0.8
+[[.args]]
+type = real
+default = 0
+min = -0.6
+max = 0.6
+[[.args]]
+type = integer
+default = 1
+min = 1
+[[.args]]
+type = integer
+default = 1
+min = 1
+
+[PO_FrameSortingVer]
+title = "设置Frame窗体竖排排序算法 [P]"
+description = "设置 ${frame} 的 ${Point} 锚点 (跟随Frame-->${relativeFrame} 的 ${relativePoint} 锚点) 偏移(${x}, ${y}) 间距(${x}, ${y}) 竖排数量 (${数量}) 当前序号 (${序号})"
+comment = "用于循环创建一排一排的窗体,竖排排序"
+category = BZ_GUI
+[[.args]]
+type = frame
+[[.args]]
+type = framepoints
+default = "FramePoints_Center"
+[[.args]]
+type = frame
+[[.args]]
+type = framepoints
+default = "FramePoints_Center"
+[[.args]]
+type = real
+default = 0
+min = -0.8
+max = 0.8
+[[.args]]
+type = real
+default = 0
+min = -0.6
+max = 0.6
+[[.args]]
+type = real
+default = 0
+min = -0.8
+max = 0.8
+[[.args]]
+type = real
+default = 0
+min = -0.6
+max = 0.6
+[[.args]]
+type = integer
+default = 1
+min = 1
+[[.args]]
+type = integer
+default = 1
+min = 1
+
+[PO_SetmobileAlpha]
+title = "设置Frame的移动与淡化 [P]"
+description = "设置本地玩家：${play} 的 ${frame} 的 ${Point} 锚点 (跟随Frame-->${relativeFrame} 的 ${relativePoint} 锚点) 偏移：(${x}, ${y}) 移动：（距离：${dis} 角度：${deg} 间隔：${value} 时间：${time}） 渐变模式：${Alpha} 结束显示与隐藏：${enable}"
+comment = ""
+category = BZ_GUI
+[[.args]]
+type = player
+default = "Player00"
+[[.args]]
+type = frame
+[[.args]]
+type = framepoints
+default = "FramePoints_Center"
+[[.args]]
+type = frame
+[[.args]]
+type = framepoints
+default = "FramePoints_Center"
+[[.args]]
+type = real
+default = 0
+min = -0.8
+max = 0.8
+[[.args]]
+type = real
+default = 0
+min = -0.6
+max = 0.6
+[[.args]]
+type = real
+[[.args]]
+type = real
+[[.args]]
+type = real
+[[.args]]
+type = real
+[[.args]]
+type = PPALPHA
+default = "PPALPHA1"
+[[.args]]
+type = boolean
+default = "false"
+
+
+[PO_DZ_BEIZHU07]
+title = "---------- ★  网易函数  ★ ----------"
+description = "---------- ★  网易函数  ★ ----------"
+comment = ""
+category = TC_DZAPI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[DisplayTextToPlayer]
+title = "对玩家显示文本消息(自动限时) [R]"
+description = "对 ${玩家} 在屏幕位移(${X},${Y})处显示文本: ${文字}"
+comment = "显示时间取决于文字长度. 位移的取值在0-1之间. 可使用'本地玩家'实现对所有玩家发送消息."
+category = TC_GAME
+[[.args]]
+type = player
+default = "Player00"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = StringExt
+
+[DisplayTimedTextToPlayer]
+title = "对玩家显示文本消息(指定时间) [R]"
+description = "对 ${玩家} 在屏幕位移(${X},${Y})处显示 ${时间} 秒的文本信息: ${文字}"
+comment = "位移的取值在0-1之间. 可使用'本地玩家[R]'实现对所有玩家发送消息."
+category = TC_GAME
+[[.args]]
+type = player
+default = "Player00"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "0"
+[[.args]]
+type = real
+default = "30"
+[[.args]]
+type = StringExt
+
+[DisplayTextToForce]
+title = "对玩家组显示文本消息(自动限时)"
+description = "对 ${玩家组} 发送文本信息: ${文字}"
+comment = "显示时间取决于文字长度."
+category = TC_GAME
+[[.args]]
+type = force
+default = "GetPlayersAll"
+[[.args]]
+type = StringExt
+
+[DisplayTimedTextToForce]
+title = "对玩家组显示文本消息(指定时间)"
+description = "对 ${玩家组} 发送显示 ${Time} 秒的文本信息: ${文字}"
+comment = ""
+category = TC_GAME
+[[.args]]
+type = force
+default = "GetPlayersAll"
+[[.args]]
+type = real
+default = "30"
+min = 0
+[[.args]]
+type = StringExt
+
+[PO_Print]
+title = "发送控制台消息 [P]"
+description = "发送控制台信息: ${文字}"
+comment = "对黑窗口控制台发送消息. 一般用于地图调试."
+category = TC_GAME
+[[.args]]
+type = string
+
+[BJDebugMsg]
+title = "显示Debug消息 [C]"
+description = "显示Debug信息: ${文字}"
+comment = "对玩家发送持续60秒的信息. 一般用于地图调试."
+category = TC_GAME
+[[.args]]
+type = StringExt
