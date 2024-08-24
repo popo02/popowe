@@ -6,7 +6,7 @@
 library YDWEItemAbilitySystem initializer YDWEItemAbilitySystemInit requires YDWEBase
 
 //===========================================================================
-//物品属性系
+//鐗╁搧灞炴�х郴
 //===========================================================================
 function YDWEItemAbilityStorage takes integer itid,integer ab returns nothing
     local integer index = YDWEGetIntegerByString(I2S(itid),"AbilityStorageIndex")
@@ -16,7 +16,7 @@ function YDWEItemAbilityStorage takes integer itid,integer ab returns nothing
 endfunction
 
 //===========================================================================
-//拾取物品触发
+//鎷惧彇鐗╁搧瑙﹀彂
 //===========================================================================
 function YDWEItemAbilitySystemByAbility_CON takes nothing returns boolean
     local unit hero = GetTriggerUnit()
