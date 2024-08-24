@@ -4,7 +4,7 @@
 #include "YDWEBase.j"
 
 //===========================================================================
-//ˢ��ϵͳ 
+//Ë¢±øÏµÍ³ 
 //===========================================================================
 library YDWEAttackWaveTimer requires YDWEBase
 	private function AttackWaveProc takes nothing returns nothing
