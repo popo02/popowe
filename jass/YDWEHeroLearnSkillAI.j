@@ -4,7 +4,7 @@
 #include "YDWEBase.j"
 
 //===========================================================================
-//AI-�Զ�ѧϰ���� 
+//AI-自动学习技能 
 //===========================================================================
 library YDWEHeroLearnSkillAI requires YDWEBase
  
@@ -65,7 +65,7 @@ function YDWEHeroLearnSkillAI takes unit hero,integer level returns integer
             endif            
             call UnitModifySkillPoints(hero, -1)               
 			//call SelectHeroSkill(hero,skills)
-			//call DisplayTimedTextToPlayer(GetLocalPlayer(), 0, 0, 3600, ( "ѧϰ  " + GetAbilityName(skills)+ "��" +  "Ŀǰ���ܵȼ�Ϊ" +I2S(GetUnitAbilityLevel(hero,skills))))   
+			//call DisplayTimedTextToPlayer(GetLocalPlayer(), 0, 0, 3600, ( "学习  " + GetAbilityName(skills)+ "，" +  "目前技能等级为" +I2S(GetUnitAbilityLevel(hero,skills))))   
             return skills
         endif
         set i = i + 1
