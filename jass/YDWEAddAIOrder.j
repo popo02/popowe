@@ -4,7 +4,7 @@
 #include "YDWEBase.j"
 
 //===========================================================================
-//AI-×Ô¶¯ÊÍ·Å¼¼ÄÜ 
+//AI-è‡ªåŠ¨é‡Šæ”¾æŠ€èƒ½ 
 //===========================================================================
 library YDWEAddAIOrder requires YDWEBase 
 private function AIOrderRun takes nothing returns boolean           
@@ -25,7 +25,7 @@ private function AIOrderRun takes nothing returns boolean
         exitwhen i >= count
         set i = i + 1
     endloop
-    // 1£ºµĞÄ¿±ê 2£ºµãÄ¿±ê 3£ºÎŞÄ¿±ê 4£º×Ô¼º
+    // 1ï¼šæ•Œç›®æ ‡ 2ï¼šç‚¹ç›®æ ‡ 3ï¼šæ— ç›®æ ‡ 4ï¼šè‡ªå·±
     if index == 1 then
         call IssueTargetOrderById(u,order,GetEventTargetUnit())
     elseif index == 2 then
@@ -46,12 +46,12 @@ function YDWEAddAIOrder takes unit u,integer N,integer index,string orderA,strin
     if i==0 then
         set trg = CreateTrigger()
         if N==1 then
-            call TriggerRegisterUnitEvent(trg, u, EVENT_UNIT_TARGET_IN_RANGE) //ÓÃ·¢¶¯¹¥»÷ÎªÊÂ¼ş
+            call TriggerRegisterUnitEvent(trg, u, EVENT_UNIT_TARGET_IN_RANGE) //ç”¨å‘åŠ¨æ”»å‡»ä¸ºäº‹ä»¶
           else
-            call TriggerRegisterUnitEvent(trg, u, EVENT_UNIT_ATTACKED  ) //ÓÃ±»¹¥»÷ÎªÊÂ¼ş 
+            call TriggerRegisterUnitEvent(trg, u, EVENT_UNIT_ATTACKED  ) //ç”¨è¢«æ”»å‡»ä¸ºäº‹ä»¶ 
         endif      
         call YDWESaveIntegerByString(I2S(YDWEH2I(u)), "MercenaryTrigger",YDWEH2I(trg))
-        call YDWESaveTriggerConditionByString(I2S(YDWEH2I(trg)), "TriggerCondition",TriggerAddCondition(trg, Condition(function AIOrderRun))) //ºÃ°É£¬Õâ¸öÌáÉıĞ§ÂÊÊÇ·Ç³£Ã÷ÏÔµÄ
+        call YDWESaveTriggerConditionByString(I2S(YDWEH2I(trg)), "TriggerCondition",TriggerAddCondition(trg, Condition(function AIOrderRun))) //å¥½å§ï¼Œè¿™ä¸ªæå‡æ•ˆç‡æ˜¯éå¸¸æ˜æ˜¾çš„
     endif
     if index == 1 then
         set order=orderA
@@ -62,14 +62,14 @@ function YDWEAddAIOrder takes unit u,integer N,integer index,string orderA,strin
       elseif index == 4 then
         set order=orderA
     endif                                         
-    call YDWESaveIntegerByString(I2S(YDWEH2I(u)), "MercenaryAIOrder"+I2S(i), OrderId(order)) //Ê¹ÓÃOrderIdÒª±ÈOrderStringºÃµÃ¶à
+    call YDWESaveIntegerByString(I2S(YDWEH2I(u)), "MercenaryAIOrder"+I2S(i), OrderId(order)) //ä½¿ç”¨OrderIdè¦æ¯”OrderStringå¥½å¾—å¤š
     call YDWESaveIntegerByString(I2S(YDWEH2I(u)), "MercenaryAIOrder_Probability"+I2S(i), probability)
     call YDWESaveIntegerByString(I2S(YDWEH2I(u)), "MercenaryAIOrder_Index"+I2S(i), index)
     call YDWESaveIntegerByString(I2S(YDWEH2I(u)), "MercenaryAIOrder_Count", i+1)
     set trg = null            
 endfunction 
 
-//Õâ¸öÊÇÇå¿Õº¯Êı
+//è¿™ä¸ªæ˜¯æ¸…ç©ºå‡½æ•°
 function YDWEFlushAIOrder takes unit u returns nothing
     local trigger trg=YDWEGetTriggerByString(I2S(YDWEH2I(u)), "MercenaryTrigger")
     call TriggerRemoveCondition(trg,YDWEGetTriggerConditionByString(I2S(YDWEH2I(trg)), "TriggerCondition"))
