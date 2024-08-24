@@ -55,7 +55,7 @@ library YDWETimerPeriodic requires YDWEBase
         endif
     endfunction
     
-    // 获取计时器：逝去时间、剩余时间、设置的时间    
+    // 鑾峰彇璁℃椂鍣細閫濆幓鏃堕棿銆佸墿浣欐椂闂淬�佽缃殑鏃堕棿    
     function YDWE_TP_GetElapsedTime takes TimerData data returns real
         return data.dur
     endfunction
